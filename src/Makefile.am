@@ -66,15 +66,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += marbled
+  bin_PROGRAMS += marcod
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += marble-cli marble-tx
+  bin_PROGRAMS += marco-cli marco-tx
 endif
 
 .PHONY: FORCE
-# marble core #
+# marco core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -190,7 +190,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between marbled and marble-qt
+# server: shared between marcod and marco-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -236,7 +236,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between marbled and marble-qt, but only linked
+# wallet: shared between marcod and marco-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -356,7 +356,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between marbled, and marble-qt and non-server tools
+# common: shared between marcod, and marco-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -416,7 +416,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between marble-cli and marble-qt
+# cli: shared between marco-cli and marco-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -426,7 +426,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-marbled_LDADD = \
+marcod_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -438,26 +438,26 @@ marbled_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-marbled_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+marcod_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-marbled_LDADD += libbitcoin_wallet.a
+marcod_LDADD += libbitcoin_wallet.a
 endif
-marbled_SOURCES = marbled.cpp
+marcod_SOURCES = marcod.cpp
 #
 
 if TARGET_WINDOWS
-marbled_SOURCES += marbled-res.rc
+marcod_SOURCES += marcod-res.rc
 endif
 
-marbled_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-marbled_CPPFLAGS = $(BITCOIN_INCLUDES)
-marbled_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+marcod_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+marcod_CPPFLAGS = $(BITCOIN_INCLUDES)
+marcod_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# marble-cli binary #
-marble_cli_LDADD = \
+# marco-cli binary #
+marco_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -465,14 +465,14 @@ marble_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-marble_cli_SOURCES = \
-  marble-cli.cpp
+marco_cli_SOURCES = \
+  marco-cli.cpp
 
-marble_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+marco_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# marble-tx binary #
-marble_tx_LDADD = \
+# marco-tx binary #
+marco_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -482,15 +482,15 @@ marble_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-marble_tx_SOURCES = marble-tx.cpp
-marble_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+marco_tx_SOURCES = marco-tx.cpp
+marco_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-marble_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+marco_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-marble_cli_SOURCES += marble-cli-res.rc
+marco_cli_SOURCES += marco-cli-res.rc
 endif
-marble_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+marco_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

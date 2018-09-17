@@ -805,7 +805,7 @@ primitives/libbitcoin_common_a-transaction.o: primitives/transaction.cpp \
  /usr/include/boost/mpl/equal.hpp /usr/include/boost/variant/get.hpp \
  /usr/include/boost/variant/visitor_ptr.hpp \
  /usr/include/boost/variant/bad_visit.hpp chain.h pow.h \
- primitives/block.h tinyformat.h util.h config/marble-config.h compat.h \
+ primitives/block.h tinyformat.h util.h config/marco-config.h compat.h \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
@@ -2895,7 +2895,7 @@ tinyformat.h:
 
 util.h:
 
-config/marble-config.h:
+config/marco-config.h:
 
 compat.h:
 

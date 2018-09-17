@@ -1,5 +1,5 @@
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The Marble developers
+// Copyright (c) 2017-2018 The Marco developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,16 +15,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZMarbleControlDialog;
+class ZMarcoControlDialog;
 }
 
-class ZMarbleControlDialog : public QDialog
+class ZMarcoControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZMarbleControlDialog(QWidget *parent);
-    ~ZMarbleControlDialog();
+    explicit ZMarcoControlDialog(QWidget *parent);
+    ~ZMarcoControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -33,7 +33,7 @@ public:
     static std::vector<CZerocoinMint> GetSelectedMints();
 
 private:
-    Ui::ZMarbleControlDialog *ui;
+    Ui::ZMarcoControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 

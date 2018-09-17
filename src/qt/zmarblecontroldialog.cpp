@@ -1,22 +1,22 @@
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The Marble developers
+// Copyright (c) 2017-2018 The Marco developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zmarblecontroldialog.h"
-#include "ui_zmarblecontroldialog.h"
+#include "zmarcocontroldialog.h"
+#include "ui_zmarcocontroldialog.h"
 
 #include "main.h"
 #include "walletmodel.h"
 
 using namespace std;
 
-std::list<std::string> ZMarbleControlDialog::listSelectedMints;
-std::list<CZerocoinMint> ZMarbleControlDialog::listMints;
+std::list<std::string> ZMarcoControlDialog::listSelectedMints;
+std::list<CZerocoinMint> ZMarcoControlDialog::listMints;
 
-ZMarbleControlDialog::ZMarbleControlDialog(QWidget *parent) :
+ZMarcoControlDialog::ZMarcoControlDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::ZMarbleControlDialog),
+    ui(new Ui::ZMarcoControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -30,19 +30,19 @@ ZMarbleControlDialog::ZMarbleControlDialog(QWidget *parent) :
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
 
-ZMarbleControlDialog::~ZMarbleControlDialog()
+ZMarcoControlDialog::~ZMarcoControlDialog()
 {
     delete ui;
 }
 
-void ZMarbleControlDialog::setModel(WalletModel *model)
+void ZMarcoControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
 }
 
 //Update the tree widget
-void ZMarbleControlDialog::updateList()
+void ZMarcoControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -134,7 +134,7 @@ void ZMarbleControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZMarbleControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZMarcoControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -157,7 +157,7 @@ void ZMarbleControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZMarbleControlDialog::updateLabels()
+void ZMarcoControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CZerocoinMint mint : listMints) {
@@ -167,14 +167,14 @@ void ZMarbleControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZMarble_int->setText(QString::number(nAmount));
+    ui->labelZMarco_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(listSelectedMints.size()));
 
     //update PrivacyDialog labels
-    privacyDialog->setZMarbleControlLabels(nAmount, listSelectedMints.size());
+    privacyDialog->setZMarcoControlLabels(nAmount, listSelectedMints.size());
 }
 
-std::vector<CZerocoinMint> ZMarbleControlDialog::GetSelectedMints()
+std::vector<CZerocoinMint> ZMarcoControlDialog::GetSelectedMints()
 {
     std::vector<CZerocoinMint> listReturn;
     for (const CZerocoinMint mint : listMints) {
@@ -187,7 +187,7 @@ std::vector<CZerocoinMint> ZMarbleControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZMarbleControlDialog::ButtonAllClicked()
+void ZMarcoControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

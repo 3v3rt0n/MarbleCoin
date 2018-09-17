@@ -2410,7 +2410,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                 if (nChange > 0) {
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-marble-address
+                    // change transaction isn't always pay-to-marco-address
                     CScript scriptChange;
 
                     // coin control: send change to custom address
@@ -4045,7 +4045,7 @@ bool CWallet::CreateZerocoinMintTransaction(const CAmount nValue, CMutableTransa
             reservekey->ReturnKey();
     }
 
-    // Sign if these are marble outputs - NOTE that zMARCO outputs are signed later in SoK
+    // Sign if these are marco outputs - NOTE that zMARCO outputs are signed later in SoK
     if (!isZCSpendChange) {
         int nIn = 0;
         for (const std::pair<const CWalletTx*, unsigned int>& coin : setCoins) {
@@ -4104,7 +4104,7 @@ bool CWallet::MintToTxIn(CZerocoinMint zerocoinSelected, int nSecurityLevel, con
         serializedCoinSpend << spend;
         std::vector<unsigned char> data(serializedCoinSpend.begin(), serializedCoinSpend.end());
 
-        //Add the coin spend into a Marble transaction
+        //Add the coin spend into a Marco transaction
         newTxIn.scriptSig = CScript() << OP_ZEROCOINSPEND << data.size();
         newTxIn.scriptSig.insert(newTxIn.scriptSig.end(), data.begin(), data.end());
         newTxIn.prevout.SetNull();
@@ -4168,7 +4168,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
     }
 
     if (nValue < 1) {
-        receipt.SetStatus("Value is below the the smallest available denomination (= 1) of zMarble", nStatus);
+        receipt.SetStatus("Value is below the the smallest available denomination (= 1) of zMarco", nStatus);
         return false;
     }
 
@@ -4196,7 +4196,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
         if(!fWholeNumber)
             nValueToSelect = static_cast<CAmount>(ceil(dValue) * COIN);
 
-        // Select the zMarble mints to use in this spend
+        // Select the zMarco mints to use in this spend
         std::map<libzerocoin::CoinDenomination, CAmount> DenomMap = GetMyZerocoinDistribution();
         vSelectedMints = SelectMintsFromList(nValueToSelect, nValueSelected, nMaxSpends, fMinimizeChange,
                                              nCoinsReturned, listMints, DenomMap, nNeededSpends);
@@ -4305,7 +4305,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
                 }
             }
 
-            //add output to marble address to the transaction (the actual primary spend taking place)
+            //add output to marco address to the transaction (the actual primary spend taking place)
             CTxOut txOutZerocoinSpend(nValue, scriptZerocoinSpend);
             txNew.vout.push_back(txOutZerocoinSpend);
 
@@ -4444,21 +4444,21 @@ void CWallet::ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored)
 }
 
 
-void CWallet::ZMarbleBackupWallet()
+void CWallet::ZMarcoBackupWallet()
 {
     filesystem::path backupDir = GetDataDir() / "backups";
     filesystem::path backupPath;
     string strNewBackupName;
 
     for (int i = 0; i < 10; i++) {
-        strNewBackupName = strprintf("wallet-autozmarblebackup-%d.dat", i);
+        strNewBackupName = strprintf("wallet-autozmarcobackup-%d.dat", i);
         backupPath = backupDir / strNewBackupName;
 
         if (filesystem::exists(backupPath)) {
             //Keep up to 10 backups
             if (i <= 8) {
                 //If the next file backup exists and is newer, then iterate
-                filesystem::path nextBackupPath = backupDir / strprintf("wallet-autozmarblebackup-%d.dat", i + 1);
+                filesystem::path nextBackupPath = backupDir / strprintf("wallet-autozmarcobackup-%d.dat", i + 1);
                 if (filesystem::exists(nextBackupPath)) {
                     time_t timeThis = filesystem::last_write_time(backupPath);
                     time_t timeNext = filesystem::last_write_time(nextBackupPath);
@@ -4473,7 +4473,7 @@ void CWallet::ZMarbleBackupWallet()
                 continue;
             }
             //reset to 0 because name with 9 already used
-            strNewBackupName = strprintf("wallet-autozmarblebackup-%d.dat", 0);
+            strNewBackupName = strprintf("wallet-autozmarcobackup-%d.dat", 0);
             backupPath = backupDir / strNewBackupName;
             break;
         }
@@ -4529,7 +4529,7 @@ string CWallet::MintZerocoin(CAmount nValue, CWalletTx& wtxNew, vector<CZerocoin
 
     //Create a backup of the wallet
     if (fBackupMints)
-        ZMarbleBackupWallet();
+        ZMarcoBackupWallet();
 
     return "";
 }
@@ -4551,7 +4551,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, int nSecurityLevel, CWalletTx& wtxN
     }
 
     if (fMintChange && fBackupMints)
-        ZMarbleBackupWallet();
+        ZMarcoBackupWallet();
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
     if (!CommitTransaction(wtxNew, reserveKey)) {

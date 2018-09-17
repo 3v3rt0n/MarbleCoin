@@ -1,0 +1,6 @@
+usr/local/bin/marco-qt usr/bin
+share/pixmaps/bitcoin32.xpm usr/share/pixmaps
+share/pixmaps/bitcoin16.xpm usr/share/pixmaps
+share/pixmaps/bitcoin128.png usr/share/pixmaps
+debian/marco-qt.desktop usr/share/applications
+debian/marco-qt.protocol usr/share/kde4/services/

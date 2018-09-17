@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/marble-config.h"
+#include "config/marco-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -79,10 +79,10 @@ void OptionsModel::Init()
         settings.setValue("nZeromintPercentage", 10);
     nZeromintPercentage = settings.value("nZeromintPercentage").toLongLong();
 
-    if (!settings.contains("nAnonymizeMarbleAmount"))
-        settings.setValue("nAnonymizeMarbleAmount", 1000);
+    if (!settings.contains("nAnonymizeMarcoAmount"))
+        settings.setValue("nAnonymizeMarcoAmount", 1000);
 
-    nAnonymizeMarbleAmount = settings.value("nAnonymizeMarbleAmount").toLongLong();
+    nAnonymizeMarcoAmount = settings.value("nAnonymizeMarcoAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -151,8 +151,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizeMarbleAmount"))
-        SoftSetArg("-anonymizemarbleamount", settings.value("nAnonymizeMarbleAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeMarcoAmount"))
+        SoftSetArg("-anonymizemarcoamount", settings.value("nAnonymizeMarcoAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -163,7 +163,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in marble.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in marco.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -234,8 +234,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizeMarbleAmount:
-            return QVariant(nAnonymizeMarbleAmount);
+        case AnonymizeMarcoAmount:
+            return QVariant(nAnonymizeMarcoAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -350,10 +350,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit preferredDenomChanged(nPreferredDenom);
             break;
 
-        case AnonymizeMarbleAmount:
-            nAnonymizeMarbleAmount = value.toInt();
-            settings.setValue("nAnonymizeMarbleAmount", nAnonymizeMarbleAmount);
-            emit anonymizeMarbleAmountChanged(nAnonymizeMarbleAmount);
+        case AnonymizeMarcoAmount:
+            nAnonymizeMarcoAmount = value.toInt();
+            settings.setValue("nAnonymizeMarcoAmount", nAnonymizeMarcoAmount);
+            emit anonymizeMarcoAmountChanged(nAnonymizeMarcoAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

@@ -1,0 +1,26 @@
+[Unit]
+Description=Marco's distributed currency daemon
+After=network.target
+
+[Service]
+User=marco
+Group=marco
+
+Type=forking
+PIDFile=/var/lib/marcod/marcod.pid
+
+ExecStart=/usr/bin/marcod -daemon -pid=/var/lib/marcod/marcod.pid \
+          -conf=/etc/marco/marco.conf -datadir=/var/lib/marcod
+
+ExecStop=-/usr/bin/marco-cli -conf=/etc/marco/marco.conf \
+         -datadir=/var/lib/marcod stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

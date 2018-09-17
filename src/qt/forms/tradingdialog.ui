@@ -445,7 +445,7 @@
       <string>Buy MARCO</string>
      </property>
      <property name="icon">
-      <iconset resource="../marble.qrc">
+      <iconset resource="../marco.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1754,7 +1754,7 @@
       <string>Sell MARCO</string>
      </property>
      <property name="icon">
-      <iconset resource="../marble">
+      <iconset resource="../marco">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -2941,10 +2941,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate Marble Deposit Address</string>
+      <string>Generate Marco Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../marble.qrc">
+      <iconset resource="../marco.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertMarble">
+     <widget class="QPushButton" name="btnConvertMarco">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../marble.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../marco.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../marble.qrc">
+      <iconset resource="../marco.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../marble.qrc"/>
+  <include location="../marco.qrc"/>
  </resources>
  <connections/>
 </ui>

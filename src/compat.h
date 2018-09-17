@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/marble-config.h"
+#include "config/marco-config.h"
 #endif
 
 #ifdef WIN32

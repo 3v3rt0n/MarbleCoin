@@ -62,10 +62,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/marble
-pkgincludedir = $(includedir)/marble
-pkglibdir = $(libdir)/marble
-pkglibexecdir = $(libexecdir)/marble
+pkgdatadir = $(datadir)/marco
+pkgincludedir = $(includedir)/marco
+pkglibdir = $(libdir)/marco
+pkglibexecdir = $(libexecdir)/marco
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -90,15 +90,15 @@ am__append_5 = libbitcoin_wallet.a
 bin_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2) $(am__EXEEXT_3) \
 	$(am__EXEEXT_4) $(am__EXEEXT_5)
 TESTS = $(am__EXEEXT_6) $(am__EXEEXT_5)
-am__append_7 = marbled
-am__append_8 = marble-cli marble-tx
+am__append_7 = marcod
+am__append_8 = marco-cli marco-tx
 #am__append_9 = compat/glibc_compat.cpp \
 #	compat/glibcxx_compat.cpp
 #am__append_10 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_11 = libbitcoin_wallet.a
 #
-#am__append_12 = marbled-res.rc
-#am__append_13 = marble-cli-res.rc
+#am__append_12 = marcod-res.rc
+#am__append_13 = marco-cli-res.rc
 ##am__append_14 = compat/glibc_compat.cpp \
 ##	compat/glibcxx_compat.cpp
 ##am__append_15 = secp256k1/libsecp256k1.la
@@ -108,8 +108,8 @@ DIST_COMMON = $(srcdir)/Makefile.test.include \
 	$(srcdir)/Makefile.am $(top_srcdir)/build-aux/depcomp \
 	$(am__include_HEADERS_DIST) \
 	$(top_srcdir)/build-aux/test-driver
-am__append_16 = test/test_marble test/bitcoin-util-test.py
-am__append_17 = test/test_marble
+am__append_16 = test/test_marco test/bitcoin-util-test.py
+am__append_17 = test/test_marco
 am__append_18 = \
 	test/bctest.py \
 	test/bitcoin-util-test.py \
@@ -131,7 +131,7 @@ am__append_19 = \
 am__append_20 = $(LIBBITCOIN_WALLET)
 #am__append_21 = $(ZMQ_LIBS)
 am__append_22 = $(CLEAN_BITCOIN_TEST)
-#am__append_23 = qt/marble-qt
+#am__append_23 = qt/marco-qt
 #am__append_24 = qt/libbitcoinqt.a
 #am__append_25 = \
 #  qt/addressbookpage.cpp \
@@ -167,15 +167,15 @@ am__append_22 = $(CLEAN_BITCOIN_TEST)
 #  qt/walletmodel.cpp \
 #  qt/walletmodeltransaction.cpp \
 #  qt/walletview.cpp \
-#  qt/zmarblecontroldialog.cpp
+#  qt/zmarcocontroldialog.cpp
 
 ##am__append_26 = $(BITCOIN_MM)
 ##am__append_27 = $(BITCOIN_RC)
 #am__append_28 = $(LIBBITCOIN_WALLET)
 ##am__append_29 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 #am__append_30 = $(CLEAN_QT)
-#am__append_31 = qt/test/test_marble-qt
-#am__append_32 = qt/test/test_marble-qt
+#am__append_31 = qt/test/test_marco-qt
+#am__append_32 = qt/test/test_marco-qt
 #am__append_33 = qt/test/moc_paymentservertests.cpp
 #am__append_34 = \
 #  qt/test/paymentservertests.cpp
@@ -211,7 +211,7 @@ am__aclocal_m4_deps = $(top_srcdir)/build-aux/m4/ax_boost_base.m4 \
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(install_sh) -d
-CONFIG_HEADER = $(top_builddir)/src/config/marble-config.h
+CONFIG_HEADER = $(top_builddir)/src/config/marco-config.h
 CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 ARFLAGS = cru
@@ -449,7 +449,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/transactionrecord.cpp qt/transactiontablemodel.cpp \
 	qt/transactionview.cpp qt/walletframe.cpp qt/walletmodel.cpp \
 	qt/walletmodeltransaction.cpp qt/walletview.cpp \
-	qt/zmarblecontroldialog.cpp qt/addressbookpage.h \
+	qt/zmarcocontroldialog.cpp qt/addressbookpage.h \
 	qt/addresstablemodel.h qt/askpassphrasedialog.h \
 	qt/bip38tooldialog.h qt/bitcoinaddressvalidator.h \
 	qt/bitcoinamountfield.h qt/bitcoingui.h qt/bitcoinunits.h \
@@ -472,7 +472,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/transactionrecord.h qt/transactiontablemodel.h \
 	qt/transactionview.h qt/utilitydialog.h qt/walletframe.h \
 	qt/walletmodel.h qt/walletmodeltransaction.h qt/walletview.h \
-	qt/winshutdownmonitor.h qt/zmarblecontroldialog.h \
+	qt/winshutdownmonitor.h qt/zmarcocontroldialog.h \
 	qt/forms/addressbookpage.ui qt/forms/askpassphrasedialog.ui \
 	qt/forms/bip38tooldialog.ui qt/forms/coincontroldialog.ui \
 	qt/forms/blockexplorer.ui qt/forms/obfuscationconfig.ui \
@@ -485,21 +485,21 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/forms/rpcconsole.ui qt/forms/sendcoinsdialog.ui \
 	qt/forms/sendcoinsentry.ui qt/forms/signverifymessagedialog.ui \
 	qt/forms/transactiondescdialog.ui \
-	qt/forms/zmarblecontroldialog.ui qt/marble.qrc \
-	qt/marble_locale.qrc qt/locale/marble_bg.ts \
-	qt/locale/marble_ca.ts qt/locale/marble_cs.ts \
-	qt/locale/marble_da.ts qt/locale/marble_de.ts \
-	qt/locale/marble_en.ts qt/locale/marble_en_US.ts \
-	qt/locale/marble_es.ts qt/locale/marble_fi.ts \
-	qt/locale/marble_fr_FR.ts qt/locale/marble_hr.ts \
-	qt/locale/marble_it.ts qt/locale/marble_ja.ts \
-	qt/locale/marble_ko_KR.ts qt/locale/marble_nl.ts \
-	qt/locale/marble_pl.ts qt/locale/marble_pt.ts \
-	qt/locale/marble_pt_BR.ts qt/locale/marble_ro_RO.ts \
-	qt/locale/marble_ru.ts qt/locale/marble_sk.ts \
-	qt/locale/marble_sv.ts qt/locale/marble_tr.ts \
-	qt/locale/marble_uk.ts qt/locale/marble_zh_CN.ts \
-	qt/locale/marble_zh_TW.ts qt/paymentrequest.proto \
+	qt/forms/zmarcocontroldialog.ui qt/marco.qrc \
+	qt/marco_locale.qrc qt/locale/marco_bg.ts \
+	qt/locale/marco_ca.ts qt/locale/marco_cs.ts \
+	qt/locale/marco_da.ts qt/locale/marco_de.ts \
+	qt/locale/marco_en.ts qt/locale/marco_en_US.ts \
+	qt/locale/marco_es.ts qt/locale/marco_fi.ts \
+	qt/locale/marco_fr_FR.ts qt/locale/marco_hr.ts \
+	qt/locale/marco_it.ts qt/locale/marco_ja.ts \
+	qt/locale/marco_ko_KR.ts qt/locale/marco_nl.ts \
+	qt/locale/marco_pl.ts qt/locale/marco_pt.ts \
+	qt/locale/marco_pt_BR.ts qt/locale/marco_ro_RO.ts \
+	qt/locale/marco_ru.ts qt/locale/marco_sk.ts \
+	qt/locale/marco_sv.ts qt/locale/marco_tr.ts \
+	qt/locale/marco_uk.ts qt/locale/marco_zh_CN.ts \
+	qt/locale/marco_zh_TW.ts qt/paymentrequest.proto \
 	qt/res/icons/add.png qt/res/icons/address-book.png \
 	qt/res/icons/bitcoin.ico qt/res/icons/bitcoin.png \
 	qt/res/icons/bitcoin_testnet.ico \
@@ -527,12 +527,12 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/res/icons/transaction_conflicted.png \
 	qt/res/icons/tx_inout.png qt/res/icons/tx_input.png \
 	qt/res/icons/tx_output.png qt/res/icons/tx_mined.png \
-	qt/res/icons/unit_marble.png qt/res/icons/unit_mmarble.png \
-	qt/res/icons/unit_umarble.png qt/res/icons/unit_tmarble.png \
-	qt/res/icons/unit_tmmarble.png qt/res/icons/unit_tumarble.png \
+	qt/res/icons/unit_marco.png qt/res/icons/unit_mmarco.png \
+	qt/res/icons/unit_umarco.png qt/res/icons/unit_tmarco.png \
+	qt/res/icons/unit_tmmarco.png qt/res/icons/unit_tumarco.png \
 	qt/res/images/about.png qt/res/images/splash.png \
 	qt/res/images/splash_testnet.png \
-	qt/res/images/marble_logo_horizontal.png \
+	qt/res/images/marco_logo_horizontal.png \
 	qt/res/images/downArrow.png qt/res/images/downArrow_small.png \
 	qt/res/images/upArrow_small.png \
 	qt/res/images/leftArrow_small.png \
@@ -574,7 +574,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 #	qt/qt_libbitcoinqt_a-walletmodel.$(OBJEXT) \
 #	qt/qt_libbitcoinqt_a-walletmodeltransaction.$(OBJEXT) \
 #	qt/qt_libbitcoinqt_a-walletview.$(OBJEXT) \
-#	qt/qt_libbitcoinqt_a-zmarblecontroldialog.$(OBJEXT)
+#	qt/qt_libbitcoinqt_a-zmarcocontroldialog.$(OBJEXT)
 #am__objects_4 = qt/qt_libbitcoinqt_a-bitcoinaddressvalidator.$(OBJEXT) \
 #	qt/qt_libbitcoinqt_a-bitcoinamountfield.$(OBJEXT) \
 #	qt/qt_libbitcoinqt_a-bitcoingui.$(OBJEXT) \
@@ -655,11 +655,11 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 #	qt/qt_libbitcoinqt_a-moc_walletframe.$(OBJEXT) \
 #	qt/qt_libbitcoinqt_a-moc_walletmodel.$(OBJEXT) \
 #	qt/qt_libbitcoinqt_a-moc_walletview.$(OBJEXT) \
-#	qt/qt_libbitcoinqt_a-moc_zmarblecontroldialog.$(OBJEXT)
+#	qt/qt_libbitcoinqt_a-moc_zmarcocontroldialog.$(OBJEXT)
 #am__objects_6 = qt/qt_libbitcoinqt_a-paymentrequest.pb.$(OBJEXT)
 #am__objects_7 =  \
-#	qt/qt_libbitcoinqt_a-qrc_marble.$(OBJEXT)
-#am__objects_8 = qt/qt_libbitcoinqt_a-qrc_marble_locale.$(OBJEXT)
+#	qt/qt_libbitcoinqt_a-qrc_marco.$(OBJEXT)
+#am__objects_8 = qt/qt_libbitcoinqt_a-qrc_marco_locale.$(OBJEXT)
 #nodist_qt_libbitcoinqt_a_OBJECTS = $(am__objects_5) \
 #	$(am__objects_1) $(am__objects_6) \
 #	$(am__objects_1) $(am__objects_7) \
@@ -748,41 +748,41 @@ libbitcoinconsensus_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(LDFLAGS) -o $@
 #am_libbitcoinconsensus_la_rpath = -rpath \
 #	$(libdir)
-am__EXEEXT_1 = marbled$(EXEEXT)
-am__EXEEXT_2 = marble-cli$(EXEEXT) \
-	marble-tx$(EXEEXT)
-am__EXEEXT_3 = test/test_marble$(EXEEXT)
-#am__EXEEXT_4 = qt/marble-qt$(EXEEXT)
-#am__EXEEXT_5 = qt/test/test_marble-qt$(EXEEXT)
+am__EXEEXT_1 = marcod$(EXEEXT)
+am__EXEEXT_2 = marco-cli$(EXEEXT) \
+	marco-tx$(EXEEXT)
+am__EXEEXT_3 = test/test_marco$(EXEEXT)
+#am__EXEEXT_4 = qt/marco-qt$(EXEEXT)
+#am__EXEEXT_5 = qt/test/test_marco-qt$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
-am__marble_cli_SOURCES_DIST = marble-cli.cpp marble-cli-res.rc
-#am__objects_10 = marble-cli-res.$(OBJEXT)
-am_marble_cli_OBJECTS = marble_cli-marble-cli.$(OBJEXT) \
+am__marco_cli_SOURCES_DIST = marco-cli.cpp marco-cli-res.rc
+#am__objects_10 = marco-cli-res.$(OBJEXT)
+am_marco_cli_OBJECTS = marco_cli-marco-cli.$(OBJEXT) \
 	$(am__objects_10)
-marble_cli_OBJECTS = $(am_marble_cli_OBJECTS)
-marble_cli_DEPENDENCIES = $(LIBBITCOIN_CLI) $(LIBBITCOIN_UTIL) \
+marco_cli_OBJECTS = $(am_marco_cli_OBJECTS)
+marco_cli_DEPENDENCIES = $(LIBBITCOIN_CLI) $(LIBBITCOIN_UTIL) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
-marble_cli_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
+marco_cli_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(AM_CXXFLAGS) \
-	$(CXXFLAGS) $(marble_cli_LDFLAGS) $(LDFLAGS) -o $@
-am_marble_tx_OBJECTS = marble_tx-marble-tx.$(OBJEXT)
-marble_tx_OBJECTS = $(am_marble_tx_OBJECTS)
-marble_tx_DEPENDENCIES = $(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_COMMON) \
+	$(CXXFLAGS) $(marco_cli_LDFLAGS) $(LDFLAGS) -o $@
+am_marco_tx_OBJECTS = marco_tx-marco-tx.$(OBJEXT)
+marco_tx_OBJECTS = $(am_marco_tx_OBJECTS)
+marco_tx_DEPENDENCIES = $(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_COMMON) \
 	$(LIBBITCOIN_ZEROCOIN) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
 	$(LIBSECP256K1) $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
-marble_tx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
+marco_tx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(AM_CXXFLAGS) \
-	$(CXXFLAGS) $(marble_tx_LDFLAGS) $(LDFLAGS) -o $@
-am__marbled_SOURCES_DIST = marbled.cpp marbled-res.rc
-#am__objects_11 = marbled-res.$(OBJEXT)
-am_marbled_OBJECTS = marbled-marbled.$(OBJEXT) $(am__objects_11)
-marbled_OBJECTS = $(am_marbled_OBJECTS)
+	$(CXXFLAGS) $(marco_tx_LDFLAGS) $(LDFLAGS) -o $@
+am__marcod_SOURCES_DIST = marcod.cpp marcod-res.rc
+#am__objects_11 = marcod-res.$(OBJEXT)
+am_marcod_OBJECTS = marcod-marcod.$(OBJEXT) $(am__objects_11)
+marcod_OBJECTS = $(am_marcod_OBJECTS)
 am__DEPENDENCIES_2 = $(am__append_2)
 am__DEPENDENCIES_3 = $(am__append_3)
 #am__DEPENDENCIES_4 = $(LIBBITCOIN_ZMQ) \
 #	$(am__DEPENDENCIES_1)
-marbled_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
+marcod_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
 	$(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_ZEROCOIN) \
 	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(am__DEPENDENCIES_2) \
 	$(am__DEPENDENCIES_3) $(LIBSECP256K1) $(am__DEPENDENCIES_4) \
@@ -790,27 +790,27 @@ marbled_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1)
-marbled_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
+marcod_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(AM_CXXFLAGS) \
-	$(CXXFLAGS) $(marbled_LDFLAGS) $(LDFLAGS) -o $@
-am__qt_marble_qt_SOURCES_DIST = qt/marble.cpp qt/macdockiconhandler.mm \
-	qt/macnotificationhandler.mm qt/res/marble-qt-res.rc
+	$(CXXFLAGS) $(marcod_LDFLAGS) $(LDFLAGS) -o $@
+am__qt_marco_qt_SOURCES_DIST = qt/marco.cpp qt/macdockiconhandler.mm \
+	qt/macnotificationhandler.mm qt/res/marco-qt-res.rc
 #am__objects_12 =  \
-#	qt/qt_marble_qt-macdockiconhandler.$(OBJEXT) \
-#	qt/qt_marble_qt-macnotificationhandler.$(OBJEXT)
+#	qt/qt_marco_qt-macdockiconhandler.$(OBJEXT) \
+#	qt/qt_marco_qt-macnotificationhandler.$(OBJEXT)
 ##am__objects_13 =  \
 ##	$(am__objects_12)
-#am__objects_14 = qt/res/marble-qt-res.$(OBJEXT)
+#am__objects_14 = qt/res/marco-qt-res.$(OBJEXT)
 ##am__objects_15 =  \
 ##	$(am__objects_14)
-#am_qt_marble_qt_OBJECTS =  \
-#	qt/qt_marble_qt-marble.$(OBJEXT) \
+#am_qt_marco_qt_OBJECTS =  \
+#	qt/qt_marco_qt-marco.$(OBJEXT) \
 #	$(am__objects_13) $(am__objects_15)
-qt_marble_qt_OBJECTS = $(am_qt_marble_qt_OBJECTS)
+qt_marco_qt_OBJECTS = $(am_qt_marco_qt_OBJECTS)
 ##am__DEPENDENCIES_5 =  \
 ##	$(LIBBITCOIN_ZMQ) \
 ##	$(am__DEPENDENCIES_1)
-#qt_marble_qt_DEPENDENCIES = qt/libbitcoinqt.a \
+#qt_marco_qt_DEPENDENCIES = qt/libbitcoinqt.a \
 #	$(LIBBITCOIN_SERVER) $(am__append_28) \
 #	$(am__DEPENDENCIES_5) $(LIBBITCOIN_CLI) \
 #	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
@@ -823,28 +823,28 @@ qt_marble_qt_OBJECTS = $(am_qt_marble_qt_OBJECTS)
 #	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 #	$(LIBSECP256K1) $(am__DEPENDENCIES_1) \
 #	$(am__DEPENDENCIES_1)
-qt_marble_qt_LINK = $(LIBTOOL) $(AM_V_lt) $(qt_marble_qt_LIBTOOLFLAGS) \
+qt_marco_qt_LINK = $(LIBTOOL) $(AM_V_lt) $(qt_marco_qt_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(OBJCXXLD) $(AM_OBJCXXFLAGS) \
-	$(OBJCXXFLAGS) $(qt_marble_qt_LDFLAGS) $(LDFLAGS) -o $@
-am__qt_test_test_marble_qt_SOURCES_DIST = qt/test/test_main.cpp \
+	$(OBJCXXFLAGS) $(qt_marco_qt_LDFLAGS) $(LDFLAGS) -o $@
+am__qt_test_test_marco_qt_SOURCES_DIST = qt/test/test_main.cpp \
 	qt/test/uritests.cpp qt/test/uritests.h \
 	qt/test/paymentrequestdata.h qt/test/paymentservertests.h \
 	qt/test/paymentservertests.cpp
-#am__objects_16 = qt/test/qt_test_test_marble_qt-paymentservertests.$(OBJEXT)
-#am_qt_test_test_marble_qt_OBJECTS = qt/test/qt_test_test_marble_qt-test_main.$(OBJEXT) \
-#	qt/test/qt_test_test_marble_qt-uritests.$(OBJEXT) \
+#am__objects_16 = qt/test/qt_test_test_marco_qt-paymentservertests.$(OBJEXT)
+#am_qt_test_test_marco_qt_OBJECTS = qt/test/qt_test_test_marco_qt-test_main.$(OBJEXT) \
+#	qt/test/qt_test_test_marco_qt-uritests.$(OBJEXT) \
 #	$(am__objects_1) $(am__objects_16)
-#am__objects_17 = qt/test/qt_test_test_marble_qt-moc_paymentservertests.$(OBJEXT)
-#am__objects_18 = qt/test/qt_test_test_marble_qt-moc_uritests.$(OBJEXT) \
+#am__objects_17 = qt/test/qt_test_test_marco_qt-moc_paymentservertests.$(OBJEXT)
+#am__objects_18 = qt/test/qt_test_test_marco_qt-moc_uritests.$(OBJEXT) \
 #	$(am__objects_17)
-#nodist_qt_test_test_marble_qt_OBJECTS =  \
+#nodist_qt_test_test_marco_qt_OBJECTS =  \
 #	$(am__objects_18)
-qt_test_test_marble_qt_OBJECTS = $(am_qt_test_test_marble_qt_OBJECTS) \
-	$(nodist_qt_test_test_marble_qt_OBJECTS)
+qt_test_test_marco_qt_OBJECTS = $(am_qt_test_test_marco_qt_OBJECTS) \
+	$(nodist_qt_test_test_marco_qt_OBJECTS)
 ##am__DEPENDENCIES_6 =  \
 ##	$(LIBBITCOIN_ZMQ) \
 ##	$(am__DEPENDENCIES_1)
-#qt_test_test_marble_qt_DEPENDENCIES =  \
+#qt_test_test_marco_qt_DEPENDENCIES =  \
 #	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
 #	$(am__append_35) $(am__DEPENDENCIES_6) \
 #	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
@@ -865,11 +865,11 @@ qt_test_test_marble_qt_OBJECTS = $(am_qt_test_test_marble_qt_OBJECTS) \
 #	$(am__DEPENDENCIES_1) $(LIBSECP256K1) \
 #	$(am__DEPENDENCIES_1) \
 #	$(am__DEPENDENCIES_1)
-qt_test_test_marble_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+qt_test_test_marco_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
-	$(AM_CXXFLAGS) $(CXXFLAGS) $(qt_test_test_marble_qt_LDFLAGS) \
+	$(AM_CXXFLAGS) $(CXXFLAGS) $(qt_test_test_marco_qt_LDFLAGS) \
 	$(LDFLAGS) -o $@
-am__test_test_marble_SOURCES_DIST =  \
+am__test_test_marco_SOURCES_DIST =  \
 	test/zerocoin_implementation_tests.cpp \
 	test/zerocoin_denomination_tests.cpp \
 	test/zerocoin_transactions_tests.cpp \
@@ -887,7 +887,7 @@ am__test_test_marble_SOURCES_DIST =  \
 	test/script_tests.cpp test/scriptnum_tests.cpp \
 	test/serialize_tests.cpp test/sighash_tests.cpp \
 	test/sigopcount_tests.cpp test/skiplist_tests.cpp \
-	test/test_marble.cpp test/timedata_tests.cpp \
+	test/test_marco.cpp test/timedata_tests.cpp \
 	test/torcontrol_tests.cpp test/transaction_tests.cpp \
 	test/uint256_tests.cpp test/univalue_tests.cpp \
 	test/util_tests.cpp test/accounting_tests.cpp \
@@ -899,62 +899,62 @@ am__test_test_marble_SOURCES_DIST =  \
 	test/data/script_invalid.json test/data/tx_invalid.json \
 	test/data/tx_valid.json test/data/sighash.json \
 	test/data/alertTests.raw
-am__objects_19 = test/test_test_marble-accounting_tests.$(OBJEXT) \
-	test/test_test_marble-wallet_tests.$(OBJEXT) \
-	test/test_test_marble-rpc_wallet_tests.$(OBJEXT)
-am__objects_20 = test/test_test_marble-zerocoin_implementation_tests.$(OBJEXT) \
-	test/test_test_marble-zerocoin_denomination_tests.$(OBJEXT) \
-	test/test_test_marble-zerocoin_transactions_tests.$(OBJEXT) \
-	test/test_test_marble-benchmark_zerocoin.$(OBJEXT) \
-	test/test_test_marble-tutorial_zerocoin.$(OBJEXT) \
-	test/test_test_marble-libzerocoin_tests.$(OBJEXT) \
-	test/test_test_marble-allocator_tests.$(OBJEXT) \
-	test/test_test_marble-base32_tests.$(OBJEXT) \
-	test/test_test_marble-base58_tests.$(OBJEXT) \
-	test/test_test_marble-base64_tests.$(OBJEXT) \
-	test/test_test_marble-checkblock_tests.$(OBJEXT) \
-	test/test_test_marble-Checkpoints_tests.$(OBJEXT) \
-	test/test_test_marble-coins_tests.$(OBJEXT) \
-	test/test_test_marble-compress_tests.$(OBJEXT) \
-	test/test_test_marble-crypto_tests.$(OBJEXT) \
-	test/test_test_marble-DoS_tests.$(OBJEXT) \
-	test/test_test_marble-getarg_tests.$(OBJEXT) \
-	test/test_test_marble-hash_tests.$(OBJEXT) \
-	test/test_test_marble-key_tests.$(OBJEXT) \
-	test/test_test_marble-main_tests.$(OBJEXT) \
-	test/test_test_marble-mempool_tests.$(OBJEXT) \
-	test/test_test_marble-mruset_tests.$(OBJEXT) \
-	test/test_test_marble-multisig_tests.$(OBJEXT) \
-	test/test_test_marble-netbase_tests.$(OBJEXT) \
-	test/test_test_marble-pmt_tests.$(OBJEXT) \
-	test/test_test_marble-rpc_tests.$(OBJEXT) \
-	test/test_test_marble-sanity_tests.$(OBJEXT) \
-	test/test_test_marble-script_P2SH_tests.$(OBJEXT) \
-	test/test_test_marble-script_tests.$(OBJEXT) \
-	test/test_test_marble-scriptnum_tests.$(OBJEXT) \
-	test/test_test_marble-serialize_tests.$(OBJEXT) \
-	test/test_test_marble-sighash_tests.$(OBJEXT) \
-	test/test_test_marble-sigopcount_tests.$(OBJEXT) \
-	test/test_test_marble-skiplist_tests.$(OBJEXT) \
-	test/test_test_marble-test_marble.$(OBJEXT) \
-	test/test_test_marble-timedata_tests.$(OBJEXT) \
-	test/test_test_marble-torcontrol_tests.$(OBJEXT) \
-	test/test_test_marble-transaction_tests.$(OBJEXT) \
-	test/test_test_marble-uint256_tests.$(OBJEXT) \
-	test/test_test_marble-univalue_tests.$(OBJEXT) \
-	test/test_test_marble-util_tests.$(OBJEXT) \
+am__objects_19 = test/test_test_marco-accounting_tests.$(OBJEXT) \
+	test/test_test_marco-wallet_tests.$(OBJEXT) \
+	test/test_test_marco-rpc_wallet_tests.$(OBJEXT)
+am__objects_20 = test/test_test_marco-zerocoin_implementation_tests.$(OBJEXT) \
+	test/test_test_marco-zerocoin_denomination_tests.$(OBJEXT) \
+	test/test_test_marco-zerocoin_transactions_tests.$(OBJEXT) \
+	test/test_test_marco-benchmark_zerocoin.$(OBJEXT) \
+	test/test_test_marco-tutorial_zerocoin.$(OBJEXT) \
+	test/test_test_marco-libzerocoin_tests.$(OBJEXT) \
+	test/test_test_marco-allocator_tests.$(OBJEXT) \
+	test/test_test_marco-base32_tests.$(OBJEXT) \
+	test/test_test_marco-base58_tests.$(OBJEXT) \
+	test/test_test_marco-base64_tests.$(OBJEXT) \
+	test/test_test_marco-checkblock_tests.$(OBJEXT) \
+	test/test_test_marco-Checkpoints_tests.$(OBJEXT) \
+	test/test_test_marco-coins_tests.$(OBJEXT) \
+	test/test_test_marco-compress_tests.$(OBJEXT) \
+	test/test_test_marco-crypto_tests.$(OBJEXT) \
+	test/test_test_marco-DoS_tests.$(OBJEXT) \
+	test/test_test_marco-getarg_tests.$(OBJEXT) \
+	test/test_test_marco-hash_tests.$(OBJEXT) \
+	test/test_test_marco-key_tests.$(OBJEXT) \
+	test/test_test_marco-main_tests.$(OBJEXT) \
+	test/test_test_marco-mempool_tests.$(OBJEXT) \
+	test/test_test_marco-mruset_tests.$(OBJEXT) \
+	test/test_test_marco-multisig_tests.$(OBJEXT) \
+	test/test_test_marco-netbase_tests.$(OBJEXT) \
+	test/test_test_marco-pmt_tests.$(OBJEXT) \
+	test/test_test_marco-rpc_tests.$(OBJEXT) \
+	test/test_test_marco-sanity_tests.$(OBJEXT) \
+	test/test_test_marco-script_P2SH_tests.$(OBJEXT) \
+	test/test_test_marco-script_tests.$(OBJEXT) \
+	test/test_test_marco-scriptnum_tests.$(OBJEXT) \
+	test/test_test_marco-serialize_tests.$(OBJEXT) \
+	test/test_test_marco-sighash_tests.$(OBJEXT) \
+	test/test_test_marco-sigopcount_tests.$(OBJEXT) \
+	test/test_test_marco-skiplist_tests.$(OBJEXT) \
+	test/test_test_marco-test_marco.$(OBJEXT) \
+	test/test_test_marco-timedata_tests.$(OBJEXT) \
+	test/test_test_marco-torcontrol_tests.$(OBJEXT) \
+	test/test_test_marco-transaction_tests.$(OBJEXT) \
+	test/test_test_marco-uint256_tests.$(OBJEXT) \
+	test/test_test_marco-univalue_tests.$(OBJEXT) \
+	test/test_test_marco-util_tests.$(OBJEXT) \
 	$(am__objects_19)
-am_test_test_marble_OBJECTS = $(am__objects_20) \
+am_test_test_marco_OBJECTS = $(am__objects_20) \
 	$(am__objects_1) $(am__objects_1)
 am__objects_21 = $(am__objects_1) $(am__objects_1)
-nodist_test_test_marble_OBJECTS =  \
+nodist_test_test_marco_OBJECTS =  \
 	$(am__objects_21)
-test_test_marble_OBJECTS = $(am_test_test_marble_OBJECTS) \
-	$(nodist_test_test_marble_OBJECTS)
+test_test_marco_OBJECTS = $(am_test_test_marco_OBJECTS) \
+	$(nodist_test_test_marco_OBJECTS)
 #am__DEPENDENCIES_7 = libbitcoinconsensus.la
 #am__DEPENDENCIES_8 =  \
 #	$(am__DEPENDENCIES_1)
-test_test_marble_DEPENDENCIES =  \
+test_test_marco_DEPENDENCIES =  \
 	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) \
 	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
 	$(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) \
@@ -966,9 +966,9 @@ test_test_marble_DEPENDENCIES =  \
 	$(am__DEPENDENCIES_7) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_8)
-test_test_marble_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+test_test_marco_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
-	$(AM_CXXFLAGS) $(CXXFLAGS) $(test_test_marble_LDFLAGS) \
+	$(AM_CXXFLAGS) $(CXXFLAGS) $(test_test_marco_LDFLAGS) \
 	$(LDFLAGS) -o $@
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
@@ -1049,11 +1049,11 @@ SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(qt_libbitcoinqt_a_SOURCES) \
 	$(nodist_qt_libbitcoinqt_a_SOURCES) \
 	$(univalue_libbitcoin_univalue_a_SOURCES) \
-	$(libbitcoinconsensus_la_SOURCES) $(marble_cli_SOURCES) \
-	$(marble_tx_SOURCES) $(marbled_SOURCES) \
-	$(qt_marble_qt_SOURCES) $(qt_test_test_marble_qt_SOURCES) \
-	$(nodist_qt_test_test_marble_qt_SOURCES) \
-	$(test_test_marble_SOURCES) $(nodist_test_test_marble_SOURCES)
+	$(libbitcoinconsensus_la_SOURCES) $(marco_cli_SOURCES) \
+	$(marco_tx_SOURCES) $(marcod_SOURCES) \
+	$(qt_marco_qt_SOURCES) $(qt_test_test_marco_qt_SOURCES) \
+	$(nodist_qt_test_test_marco_qt_SOURCES) \
+	$(test_test_marco_SOURCES) $(nodist_test_test_marco_SOURCES)
 DIST_SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(libbitcoin_cli_a_SOURCES) $(libbitcoin_common_a_SOURCES) \
 	$(libbitcoin_server_a_SOURCES) \
@@ -1064,10 +1064,10 @@ DIST_SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(am__qt_libbitcoinqt_a_SOURCES_DIST) \
 	$(univalue_libbitcoin_univalue_a_SOURCES) \
 	$(am__libbitcoinconsensus_la_SOURCES_DIST) \
-	$(am__marble_cli_SOURCES_DIST) $(marble_tx_SOURCES) \
-	$(am__marbled_SOURCES_DIST) $(am__qt_marble_qt_SOURCES_DIST) \
-	$(am__qt_test_test_marble_qt_SOURCES_DIST) \
-	$(am__test_test_marble_SOURCES_DIST)
+	$(am__marco_cli_SOURCES_DIST) $(marco_tx_SOURCES) \
+	$(am__marcod_SOURCES_DIST) $(am__qt_marco_qt_SOURCES_DIST) \
+	$(am__qt_test_test_marco_qt_SOURCES_DIST) \
+	$(am__test_test_marco_SOURCES_DIST)
 RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \
 	ctags-recursive dvi-recursive html-recursive info-recursive \
 	install-data-recursive install-dvi-recursive \
@@ -1266,7 +1266,7 @@ am__set_TESTS_bases = \
   bases=`for i in $$bases; do echo $$i; done | sed 's/\.log$$//'`; \
   bases=`echo $$bases`
 RECHECK_LOGS = $(TEST_LOGS)
-am__EXEEXT_6 = test/test_marble$(EXEEXT) \
+am__EXEEXT_6 = test/test_marco$(EXEEXT) \
 	test/bitcoin-util-test.py
 TEST_SUITE_LOG = test-suite.log
 TEST_EXTENSIONS =  .test
@@ -1314,20 +1314,20 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /root/Marble-src/build-aux/missing aclocal-1.14
+ACLOCAL = ${SHELL} /root/Marco-src/build-aux/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
-AUTOCONF = ${SHELL} /root/Marble-src/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /root/Marble-src/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /root/Marble-src/build-aux/missing automake-1.14
+AUTOCONF = ${SHELL} /root/Marco-src/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /root/Marco-src/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /root/Marco-src/build-aux/missing automake-1.14
 AWK = mawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
-BITCOIN_CLI_NAME = marble-cli
-BITCOIN_DAEMON_NAME = marbled
-BITCOIN_GUI_NAME = marble-qt
-BITCOIN_TX_NAME = marble-tx
+BITCOIN_CLI_NAME = marco-cli
+BITCOIN_DAEMON_NAME = marcod
+BITCOIN_GUI_NAME = marco-qt
+BITCOIN_TX_NAME = marco-tx
 BOOST_CHRONO_LIB = -lboost_chrono
 BOOST_CPPFLAGS = -pthread -I/usr/include
 BOOST_FILESYSTEM_LIB = -lboost_filesystem
@@ -1410,7 +1410,7 @@ LRELEASE =
 LTLIBOBJS = 
 LUPDATE = 
 MAINT = 
-MAKEINFO = ${SHELL} /root/Marble-src/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /root/Marco-src/build-aux/missing makeinfo
 MAKENSIS = 
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
@@ -1428,11 +1428,11 @@ OBJDUMP = objdump
 OBJEXT = o
 OTOOL = 
 OTOOL64 = 
-PACKAGE = marble
-PACKAGE_BUGREPORT = www.marble.org
-PACKAGE_NAME = Marble Core
-PACKAGE_STRING = Marble Core 1.2.1
-PACKAGE_TARNAME = marble
+PACKAGE = marco
+PACKAGE_BUGREPORT = www.marcopolocoin.io
+PACKAGE_NAME = Marco Core
+PACKAGE_STRING = Marco Core 1.2.1
+PACKAGE_TARNAME = marco
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.2.1
 PATH_SEPARATOR = :
@@ -1493,10 +1493,10 @@ X11XCB_LIBS =
 XGETTEXT = 
 ZMQ_CFLAGS = 
 ZMQ_LIBS = 
-abs_builddir = /root/Marble-src/src
-abs_srcdir = /root/Marble-src/src
-abs_top_builddir = /root/Marble-src
-abs_top_srcdir = /root/Marble-src
+abs_builddir = /root/Marco-src/src
+abs_srcdir = /root/Marco-src/src
+abs_top_builddir = /root/Marco-src
+abs_top_srcdir = /root/Marco-src
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -1528,7 +1528,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /root/Marble-src/build-aux/install-sh
+install_sh = ${SHELL} /root/Marco-src/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -1576,7 +1576,7 @@ EXTRA_LIBRARIES = crypto/libbitcoin_crypto.a libbitcoin_util.a \
 #lib_LTLIBRARIES = libbitcoinconsensus.la
 LIBBITCOIN_CONSENSUS = 
 #LIBBITCOIN_CONSENSUS = libbitcoinconsensus.la
-# marble core #
+# marco core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -1687,7 +1687,7 @@ JSON_H = \
   json/json_spirit_writer_template.h
 
 
-# server: shared between marbled and marble-qt
+# server: shared between marcod and marco-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -1731,7 +1731,7 @@ libbitcoin_server_a_SOURCES = \
 #  zmq/zmqpublishnotifier.cpp
 
 
-# wallet: shared between marbled and marble-qt, but only linked
+# wallet: shared between marcod and marco-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CFLAGS = -fPIC
 libbitcoin_wallet_a_CPPFLAGS = $(BITCOIN_INCLUDES)
@@ -1854,7 +1854,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
 
-# common: shared between marbled, and marble-qt and non-server tools
+# common: shared between marcod, and marco-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -1900,7 +1900,7 @@ libbitcoin_util_a_SOURCES = allocators.cpp compat/strnlen.cpp \
 	utilstrencodings.cpp utilmoneystr.cpp utiltime.cpp \
 	$(BITCOIN_CORE_H) $(am__append_9)
 
-# cli: shared between marble-cli and marble-qt
+# cli: shared between marco-cli and marco-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -1910,18 +1910,18 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-marbled_LDADD = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
+marcod_LDADD = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
 	$(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_ZEROCOIN) \
 	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBLEVELDB) \
 	$(LIBMEMENV) $(LIBSECP256K1) $(am__append_10) $(am__append_11) \
 	$(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
 	$(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-marbled_SOURCES = marbled.cpp $(am__append_12)
-marbled_CPPFLAGS = $(BITCOIN_INCLUDES)
-marbled_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+marcod_SOURCES = marcod.cpp $(am__append_12)
+marcod_CPPFLAGS = $(BITCOIN_INCLUDES)
+marcod_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
-# marble-cli binary #
-marble_cli_LDADD = \
+# marco-cli binary #
+marco_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -1929,12 +1929,12 @@ marble_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-marble_cli_SOURCES = marble-cli.cpp $(am__append_13)
-marble_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+marco_cli_SOURCES = marco-cli.cpp $(am__append_13)
+marco_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# marble-tx binary #
-marble_tx_LDADD = \
+# marco-tx binary #
+marco_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -1944,11 +1944,11 @@ marble_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-marble_tx_SOURCES = marble-tx.cpp
-marble_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+marco_tx_SOURCES = marco-tx.cpp
+marco_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-marble_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-marble_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+marco_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+marco_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 #include_HEADERS = script/bitcoinconsensus.h
 #libbitcoinconsensus_la_SOURCES =  \
 #	allocators.cpp \
@@ -1976,7 +1976,7 @@ CLEANFILES = leveldb/libleveldb.a leveldb/libmemenv.a *.gcda *.gcno \
 DISTCLEANFILES = obj/build.h
 EXTRA_DIST = leveldb $(am__append_18)
 TEST_SRCDIR = test
-TEST_BINARY = test/test_marble$(EXEEXT)
+TEST_BINARY = test/test_marco$(EXEEXT)
 JSON_TEST_FILES = \
   test/data/script_valid.json \
   test/data/base58_keys_valid.json \
@@ -2020,16 +2020,16 @@ BITCOIN_TESTS =  \
 	test/sighash_tests.cpp \
 	test/sigopcount_tests.cpp \
 	test/skiplist_tests.cpp \
-	test/test_marble.cpp \
+	test/test_marco.cpp \
 	test/timedata_tests.cpp \
 	test/torcontrol_tests.cpp \
 	test/transaction_tests.cpp \
 	test/uint256_tests.cpp \
 	test/univalue_tests.cpp test/util_tests.cpp \
 	$(am__append_19)
-test_test_marble_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-test_test_marble_CPPFLAGS = $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
-test_test_marble_LDADD = $(LIBBITCOIN_SERVER) \
+test_test_marco_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+test_test_marco_CPPFLAGS = $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
+test_test_marco_LDADD = $(LIBBITCOIN_SERVER) \
 	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
 	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
 	$(LIBBITCOIN_UNIVALUE) \
@@ -2041,38 +2041,38 @@ test_test_marble_LDADD = $(LIBBITCOIN_SERVER) \
 	$(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) \
 	$(SSL_LIBS) $(CRYPTO_LIBS) \
 	$(MINIUPNPC_LIBS) $(am__append_21)
-test_test_marble_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
-nodist_test_test_marble_SOURCES = $(GENERATED_TEST_FILES)
+test_test_marco_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+nodist_test_test_marco_SOURCES = $(GENERATED_TEST_FILES)
 CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 
-# marble qt core #
+# marco qt core #
 #QT_TS = \
-#  qt/locale/marble_bg.ts \
-#  qt/locale/marble_ca.ts \
-#  qt/locale/marble_cs.ts \
-#  qt/locale/marble_da.ts \
-#  qt/locale/marble_de.ts \
-#  qt/locale/marble_en.ts \
-#  qt/locale/marble_en_US.ts \
-#  qt/locale/marble_es.ts \
-#  qt/locale/marble_fi.ts \
-#  qt/locale/marble_fr_FR.ts \
-#  qt/locale/marble_hr.ts \
-#  qt/locale/marble_it.ts \
-#  qt/locale/marble_ja.ts \
-#  qt/locale/marble_ko_KR.ts \
-#  qt/locale/marble_nl.ts \
-#  qt/locale/marble_pl.ts \
-#  qt/locale/marble_pt.ts \
-#  qt/locale/marble_pt_BR.ts \
-#  qt/locale/marble_ro_RO.ts \
-#  qt/locale/marble_ru.ts \
-#  qt/locale/marble_sk.ts \
-#  qt/locale/marble_sv.ts \
-#  qt/locale/marble_tr.ts \
-#  qt/locale/marble_uk.ts \
-#  qt/locale/marble_zh_CN.ts \
-#  qt/locale/marble_zh_TW.ts
+#  qt/locale/marco_bg.ts \
+#  qt/locale/marco_ca.ts \
+#  qt/locale/marco_cs.ts \
+#  qt/locale/marco_da.ts \
+#  qt/locale/marco_de.ts \
+#  qt/locale/marco_en.ts \
+#  qt/locale/marco_en_US.ts \
+#  qt/locale/marco_es.ts \
+#  qt/locale/marco_fi.ts \
+#  qt/locale/marco_fr_FR.ts \
+#  qt/locale/marco_hr.ts \
+#  qt/locale/marco_it.ts \
+#  qt/locale/marco_ja.ts \
+#  qt/locale/marco_ko_KR.ts \
+#  qt/locale/marco_nl.ts \
+#  qt/locale/marco_pl.ts \
+#  qt/locale/marco_pt.ts \
+#  qt/locale/marco_pt_BR.ts \
+#  qt/locale/marco_ro_RO.ts \
+#  qt/locale/marco_ru.ts \
+#  qt/locale/marco_sk.ts \
+#  qt/locale/marco_sv.ts \
+#  qt/locale/marco_tr.ts \
+#  qt/locale/marco_uk.ts \
+#  qt/locale/marco_zh_CN.ts \
+#  qt/locale/marco_zh_TW.ts
 
 #QT_FORMS_UI = \
 #  qt/forms/addressbookpage.ui \
@@ -2098,7 +2098,7 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 #  qt/forms/sendcoinsentry.ui \
 #  qt/forms/signverifymessagedialog.ui \
 #  qt/forms/transactiondescdialog.ui \
-#  qt/forms/zmarblecontroldialog.ui
+#  qt/forms/zmarcocontroldialog.ui
 
 #QT_MOC_CPP = \
 #  qt/moc_addressbookpage.cpp \
@@ -2151,23 +2151,23 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 #  qt/moc_walletframe.cpp \
 #  qt/moc_walletmodel.cpp \
 #  qt/moc_walletview.cpp \
-#  qt/moc_zmarblecontroldialog.cpp
+#  qt/moc_zmarcocontroldialog.cpp
 
 #BITCOIN_MM = \
 #  qt/macdockiconhandler.mm \
 #  qt/macnotificationhandler.mm
 
 #QT_MOC = \
-#  qt/marble.moc \
+#  qt/marco.moc \
 #  qt/bitcoinamountfield.moc \
 #  qt/intro.moc \
 #  qt/overviewpage.moc \
 #  qt/rpcconsole.moc
 
-#QT_QRC_CPP = qt/qrc_marble.cpp
-#QT_QRC = qt/marble.qrc
-#QT_QRC_LOCALE_CPP = qt/qrc_marble_locale.cpp
-#QT_QRC_LOCALE = qt/marble_locale.qrc
+#QT_QRC_CPP = qt/qrc_marco.cpp
+#QT_QRC = qt/marco.qrc
+#QT_QRC_LOCALE_CPP = qt/qrc_marco_locale.cpp
+#QT_QRC_LOCALE = qt/marco_locale.qrc
 #PROTOBUF_CC = qt/paymentrequest.pb.cc
 #PROTOBUF_H = qt/paymentrequest.pb.h
 #PROTOBUF_PROTO = qt/paymentrequest.proto
@@ -2229,7 +2229,7 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 #  qt/walletmodeltransaction.h \
 #  qt/walletview.h \
 #  qt/winshutdownmonitor.h \
-#  qt/zmarblecontroldialog.h
+#  qt/zmarcocontroldialog.h
 
 #RES_ICONS = \
 #  qt/res/icons/add.png \
@@ -2283,12 +2283,12 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 #  qt/res/icons/tx_input.png \
 #  qt/res/icons/tx_output.png \
 #  qt/res/icons/tx_mined.png \
-#  qt/res/icons/unit_marble.png \
-#  qt/res/icons/unit_mmarble.png \
-#  qt/res/icons/unit_umarble.png \
-#  qt/res/icons/unit_tmarble.png \
-#  qt/res/icons/unit_tmmarble.png \
-#  qt/res/icons/unit_tumarble.png
+#  qt/res/icons/unit_marco.png \
+#  qt/res/icons/unit_mmarco.png \
+#  qt/res/icons/unit_umarco.png \
+#  qt/res/icons/unit_tmarco.png \
+#  qt/res/icons/unit_tmmarco.png \
+#  qt/res/icons/unit_tumarco.png
 
 #BITCOIN_QT_CPP = qt/bitcoinaddressvalidator.cpp \
 #	qt/bitcoinamountfield.cpp qt/bitcoingui.cpp \
@@ -2307,7 +2307,7 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 #  qt/res/images/about.png \
 #  qt/res/images/splash.png \
 #  qt/res/images/splash_testnet.png \
-#  qt/res/images/marble_logo_horizontal.png \
+#  qt/res/images/marco_logo_horizontal.png \
 #  qt/res/images/downArrow.png \
 #  qt/res/images/downArrow_small.png \
 #  qt/res/images/upArrow_small.png \
@@ -2322,7 +2322,7 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 #  qt/res/css/default.css
 
 #RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
-#BITCOIN_RC = qt/res/marble-qt-res.rc
+#BITCOIN_RC = qt/res/marco-qt-res.rc
 #BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
 #  -I$(builddir)/qt/forms
 
@@ -2339,13 +2339,13 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 # forms/foo.h -> forms/ui_foo.h
 #QT_FORMS_H = $(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
 
-# marble-qt binary #
-#qt_marble_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# marco-qt binary #
+#qt_marco_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
 #  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-#qt_marble_qt_SOURCES = qt/marble.cpp $(am__append_26) \
+#qt_marco_qt_SOURCES = qt/marco.cpp $(am__append_26) \
 #	$(am__append_27)
-#qt_marble_qt_LDADD = qt/libbitcoinqt.a \
+#qt_marco_qt_LDADD = qt/libbitcoinqt.a \
 #	$(LIBBITCOIN_SERVER) $(am__append_28) \
 #	$(am__append_29) $(LIBBITCOIN_CLI) \
 #	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
@@ -2356,8 +2356,8 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 #	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
 #	$(MINIUPNPC_LIBS) $(LIBSECP256K1) \
 #	$(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-#qt_marble_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-#qt_marble_qt_LIBTOOLFLAGS = --tag CXX
+#qt_marco_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+#qt_marco_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 #QT_QM = $(QT_TS:.ts=.qm)
@@ -2369,15 +2369,15 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 #  qt/test/paymentrequestdata.h \
 #  qt/test/paymentservertests.h
 
-#qt_test_test_marble_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+#qt_test_test_marco_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
 #  $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
 
-#qt_test_test_marble_qt_SOURCES =  \
+#qt_test_test_marco_qt_SOURCES =  \
 #	qt/test/test_main.cpp \
 #	qt/test/uritests.cpp $(TEST_QT_H) \
 #	$(am__append_34)
-#nodist_qt_test_test_marble_qt_SOURCES = $(TEST_QT_MOC_CPP)
-#qt_test_test_marble_qt_LDADD = $(LIBBITCOINQT) \
+#nodist_qt_test_test_marco_qt_SOURCES = $(TEST_QT_MOC_CPP)
+#qt_test_test_marco_qt_LDADD = $(LIBBITCOINQT) \
 #	$(LIBBITCOIN_SERVER) $(am__append_35) \
 #	$(am__append_36) $(LIBBITCOIN_CLI) \
 #	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
@@ -2390,7 +2390,7 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 #	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
 #	$(MINIUPNPC_LIBS) $(LIBSECP256K1) \
 #	$(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-#qt_test_test_marble_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+#qt_test_test_marco_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 #CLEAN_BITCOIN_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
 all: all-recursive
 
@@ -2733,7 +2733,7 @@ qt/qt_libbitcoinqt_a-walletmodeltransaction.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-walletview.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-zmarblecontroldialog.$(OBJEXT):  \
+qt/qt_libbitcoinqt_a-zmarcocontroldialog.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-moc_addressbookpage.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
@@ -2835,13 +2835,13 @@ qt/qt_libbitcoinqt_a-moc_walletmodel.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-moc_walletview.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-moc_zmarblecontroldialog.$(OBJEXT):  \
+qt/qt_libbitcoinqt_a-moc_zmarcocontroldialog.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-paymentrequest.pb.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-qrc_marble.$(OBJEXT): qt/$(am__dirstamp) \
+qt/qt_libbitcoinqt_a-qrc_marco.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-qrc_marble_locale.$(OBJEXT): qt/$(am__dirstamp) \
+qt/qt_libbitcoinqt_a-qrc_marco_locale.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
 
 qt/libbitcoinqt.a: $(qt_libbitcoinqt_a_OBJECTS) $(qt_libbitcoinqt_a_DEPENDENCIES) $(EXTRA_qt_libbitcoinqt_a_DEPENDENCIES) qt/$(am__dirstamp)
@@ -2978,22 +2978,22 @@ clean-binPROGRAMS:
 	echo " rm -f" $$list; \
 	rm -f $$list
 
-marble-cli$(EXEEXT): $(marble_cli_OBJECTS) $(marble_cli_DEPENDENCIES) $(EXTRA_marble_cli_DEPENDENCIES) 
-	@rm -f marble-cli$(EXEEXT)
-	$(AM_V_CXXLD)$(marble_cli_LINK) $(marble_cli_OBJECTS) $(marble_cli_LDADD) $(LIBS)
+marco-cli$(EXEEXT): $(marco_cli_OBJECTS) $(marco_cli_DEPENDENCIES) $(EXTRA_marco_cli_DEPENDENCIES) 
+	@rm -f marco-cli$(EXEEXT)
+	$(AM_V_CXXLD)$(marco_cli_LINK) $(marco_cli_OBJECTS) $(marco_cli_LDADD) $(LIBS)
 
-marble-tx$(EXEEXT): $(marble_tx_OBJECTS) $(marble_tx_DEPENDENCIES) $(EXTRA_marble_tx_DEPENDENCIES) 
-	@rm -f marble-tx$(EXEEXT)
-	$(AM_V_CXXLD)$(marble_tx_LINK) $(marble_tx_OBJECTS) $(marble_tx_LDADD) $(LIBS)
+marco-tx$(EXEEXT): $(marco_tx_OBJECTS) $(marco_tx_DEPENDENCIES) $(EXTRA_marco_tx_DEPENDENCIES) 
+	@rm -f marco-tx$(EXEEXT)
+	$(AM_V_CXXLD)$(marco_tx_LINK) $(marco_tx_OBJECTS) $(marco_tx_LDADD) $(LIBS)
 
-marbled$(EXEEXT): $(marbled_OBJECTS) $(marbled_DEPENDENCIES) $(EXTRA_marbled_DEPENDENCIES) 
-	@rm -f marbled$(EXEEXT)
-	$(AM_V_CXXLD)$(marbled_LINK) $(marbled_OBJECTS) $(marbled_LDADD) $(LIBS)
-qt/qt_marble_qt-marble.$(OBJEXT): qt/$(am__dirstamp) \
+marcod$(EXEEXT): $(marcod_OBJECTS) $(marcod_DEPENDENCIES) $(EXTRA_marcod_DEPENDENCIES) 
+	@rm -f marcod$(EXEEXT)
+	$(AM_V_CXXLD)$(marcod_LINK) $(marcod_OBJECTS) $(marcod_LDADD) $(LIBS)
+qt/qt_marco_qt-marco.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_marble_qt-macdockiconhandler.$(OBJEXT): qt/$(am__dirstamp) \
+qt/qt_marco_qt-macdockiconhandler.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_marble_qt-macnotificationhandler.$(OBJEXT): qt/$(am__dirstamp) \
+qt/qt_marco_qt-macnotificationhandler.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
 qt/res/$(am__dirstamp):
 	@$(MKDIR_P) qt/res
@@ -3001,130 +3001,130 @@ qt/res/$(am__dirstamp):
 qt/res/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) qt/res/$(DEPDIR)
 	@: > qt/res/$(DEPDIR)/$(am__dirstamp)
-qt/res/marble-qt-res.$(OBJEXT): qt/res/$(am__dirstamp) \
+qt/res/marco-qt-res.$(OBJEXT): qt/res/$(am__dirstamp) \
 	qt/res/$(DEPDIR)/$(am__dirstamp)
 
-qt/marble-qt$(EXEEXT): $(qt_marble_qt_OBJECTS) $(qt_marble_qt_DEPENDENCIES) $(EXTRA_qt_marble_qt_DEPENDENCIES) qt/$(am__dirstamp)
-	@rm -f qt/marble-qt$(EXEEXT)
-	$(AM_V_OBJCXXLD)$(qt_marble_qt_LINK) $(qt_marble_qt_OBJECTS) $(qt_marble_qt_LDADD) $(LIBS)
+qt/marco-qt$(EXEEXT): $(qt_marco_qt_OBJECTS) $(qt_marco_qt_DEPENDENCIES) $(EXTRA_qt_marco_qt_DEPENDENCIES) qt/$(am__dirstamp)
+	@rm -f qt/marco-qt$(EXEEXT)
+	$(AM_V_OBJCXXLD)$(qt_marco_qt_LINK) $(qt_marco_qt_OBJECTS) $(qt_marco_qt_LDADD) $(LIBS)
 qt/test/$(am__dirstamp):
 	@$(MKDIR_P) qt/test
 	@: > qt/test/$(am__dirstamp)
 qt/test/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) qt/test/$(DEPDIR)
 	@: > qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_marble_qt-test_main.$(OBJEXT):  \
+qt/test/qt_test_test_marco_qt-test_main.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_marble_qt-uritests.$(OBJEXT):  \
+qt/test/qt_test_test_marco_qt-uritests.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_marble_qt-paymentservertests.$(OBJEXT):  \
+qt/test/qt_test_test_marco_qt-paymentservertests.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_marble_qt-moc_uritests.$(OBJEXT):  \
+qt/test/qt_test_test_marco_qt-moc_uritests.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_marble_qt-moc_paymentservertests.$(OBJEXT):  \
+qt/test/qt_test_test_marco_qt-moc_paymentservertests.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
 
-qt/test/test_marble-qt$(EXEEXT): $(qt_test_test_marble_qt_OBJECTS) $(qt_test_test_marble_qt_DEPENDENCIES) $(EXTRA_qt_test_test_marble_qt_DEPENDENCIES) qt/test/$(am__dirstamp)
-	@rm -f qt/test/test_marble-qt$(EXEEXT)
-	$(AM_V_CXXLD)$(qt_test_test_marble_qt_LINK) $(qt_test_test_marble_qt_OBJECTS) $(qt_test_test_marble_qt_LDADD) $(LIBS)
+qt/test/test_marco-qt$(EXEEXT): $(qt_test_test_marco_qt_OBJECTS) $(qt_test_test_marco_qt_DEPENDENCIES) $(EXTRA_qt_test_test_marco_qt_DEPENDENCIES) qt/test/$(am__dirstamp)
+	@rm -f qt/test/test_marco-qt$(EXEEXT)
+	$(AM_V_CXXLD)$(qt_test_test_marco_qt_LINK) $(qt_test_test_marco_qt_OBJECTS) $(qt_test_test_marco_qt_LDADD) $(LIBS)
 test/$(am__dirstamp):
 	@$(MKDIR_P) test
 	@: > test/$(am__dirstamp)
 test/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) test/$(DEPDIR)
 	@: > test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-zerocoin_implementation_tests.$(OBJEXT):  \
+test/test_test_marco-zerocoin_implementation_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-zerocoin_denomination_tests.$(OBJEXT):  \
+test/test_test_marco-zerocoin_denomination_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-zerocoin_transactions_tests.$(OBJEXT):  \
+test/test_test_marco-zerocoin_transactions_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-benchmark_zerocoin.$(OBJEXT):  \
+test/test_test_marco-benchmark_zerocoin.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-tutorial_zerocoin.$(OBJEXT):  \
+test/test_test_marco-tutorial_zerocoin.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-libzerocoin_tests.$(OBJEXT):  \
+test/test_test_marco-libzerocoin_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-allocator_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-allocator_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-base32_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-base32_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-base58_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-base58_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-base64_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-base64_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-checkblock_tests.$(OBJEXT):  \
+test/test_test_marco-checkblock_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-Checkpoints_tests.$(OBJEXT):  \
+test/test_test_marco-Checkpoints_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-coins_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-coins_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-compress_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-compress_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-crypto_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-crypto_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-DoS_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-DoS_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-getarg_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-getarg_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-hash_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-hash_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-key_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-key_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-main_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-main_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-mempool_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-mempool_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-mruset_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-mruset_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-multisig_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-multisig_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-netbase_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-netbase_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-pmt_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-pmt_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-rpc_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-rpc_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-sanity_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-sanity_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-script_P2SH_tests.$(OBJEXT):  \
+test/test_test_marco-script_P2SH_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-script_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-script_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-scriptnum_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-scriptnum_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-serialize_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-serialize_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-sighash_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-sighash_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-sigopcount_tests.$(OBJEXT):  \
+test/test_test_marco-sigopcount_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-skiplist_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-skiplist_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-test_marble.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-test_marco.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-timedata_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-timedata_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-torcontrol_tests.$(OBJEXT):  \
+test/test_test_marco-torcontrol_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-transaction_tests.$(OBJEXT):  \
+test/test_test_marco-transaction_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-uint256_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-uint256_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-univalue_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-univalue_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-util_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-util_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-accounting_tests.$(OBJEXT):  \
+test/test_test_marco-accounting_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-wallet_tests.$(OBJEXT): test/$(am__dirstamp) \
+test/test_test_marco-wallet_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_marble-rpc_wallet_tests.$(OBJEXT):  \
+test/test_test_marco-rpc_wallet_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
 
-test/test_marble$(EXEEXT): $(test_test_marble_OBJECTS) $(test_test_marble_DEPENDENCIES) $(EXTRA_test_test_marble_DEPENDENCIES) test/$(am__dirstamp)
-	@rm -f test/test_marble$(EXEEXT)
-	$(AM_V_CXXLD)$(test_test_marble_LINK) $(test_test_marble_OBJECTS) $(test_test_marble_LDADD) $(LIBS)
+test/test_marco$(EXEEXT): $(test_test_marco_OBJECTS) $(test_test_marco_DEPENDENCIES) $(EXTRA_test_test_marco_DEPENDENCIES) test/$(am__dirstamp)
+	@rm -f test/test_marco$(EXEEXT)
+	$(AM_V_CXXLD)$(test_test_marco_LINK) $(test_test_marco_OBJECTS) $(test_test_marco_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -3235,9 +3235,9 @@ include ./$(DEPDIR)/libbitcoinconsensus_la-hash.Plo
 include ./$(DEPDIR)/libbitcoinconsensus_la-pubkey.Plo
 include ./$(DEPDIR)/libbitcoinconsensus_la-uint256.Plo
 include ./$(DEPDIR)/libbitcoinconsensus_la-utilstrencodings.Plo
-include ./$(DEPDIR)/marble_cli-marble-cli.Po
-include ./$(DEPDIR)/marble_tx-marble-tx.Po
-include ./$(DEPDIR)/marbled-marbled.Po
+include ./$(DEPDIR)/marco_cli-marco-cli.Po
+include ./$(DEPDIR)/marco_tx-marco-tx.Po
+include ./$(DEPDIR)/marcod-marcod.Po
 include compat/$(DEPDIR)/libbitcoin_util_a-glibc_compat.Po
 include compat/$(DEPDIR)/libbitcoin_util_a-glibc_sanity.Po
 include compat/$(DEPDIR)/libbitcoin_util_a-glibcxx_compat.Po
@@ -3360,7 +3360,7 @@ include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_utilitydialog.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_walletframe.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_walletmodel.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_walletview.Po
-include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarblecontroldialog.Po
+include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarcocontroldialog.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-multisenddialog.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-multisigdialog.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-networkstyle.Po
@@ -3376,8 +3376,8 @@ include qt/$(DEPDIR)/qt_libbitcoinqt_a-paymentserver.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-peertablemodel.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-platformstyle.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-privacydialog.Po
-include qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble.Po
-include qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble_locale.Po
+include qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco.Po
+include qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco_locale.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-qvalidatedlineedit.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-qvaluecombobox.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-receivecoinsdialog.Po
@@ -3401,15 +3401,15 @@ include qt/$(DEPDIR)/qt_libbitcoinqt_a-walletmodel.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-walletmodeltransaction.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-walletview.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-winshutdownmonitor.Po
-include qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarblecontroldialog.Po
-include qt/$(DEPDIR)/qt_marble_qt-macdockiconhandler.Po
-include qt/$(DEPDIR)/qt_marble_qt-macnotificationhandler.Po
-include qt/$(DEPDIR)/qt_marble_qt-marble.Po
-include qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_paymentservertests.Po
-include qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_uritests.Po
-include qt/test/$(DEPDIR)/qt_test_test_marble_qt-paymentservertests.Po
-include qt/test/$(DEPDIR)/qt_test_test_marble_qt-test_main.Po
-include qt/test/$(DEPDIR)/qt_test_test_marble_qt-uritests.Po
+include qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarcocontroldialog.Po
+include qt/$(DEPDIR)/qt_marco_qt-macdockiconhandler.Po
+include qt/$(DEPDIR)/qt_marco_qt-macnotificationhandler.Po
+include qt/$(DEPDIR)/qt_marco_qt-marco.Po
+include qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_paymentservertests.Po
+include qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_uritests.Po
+include qt/test/$(DEPDIR)/qt_test_test_marco_qt-paymentservertests.Po
+include qt/test/$(DEPDIR)/qt_test_test_marco_qt-test_main.Po
+include qt/test/$(DEPDIR)/qt_test_test_marco_qt-uritests.Po
 include script/$(DEPDIR)/libbitcoin_common_a-interpreter.Po
 include script/$(DEPDIR)/libbitcoin_common_a-script.Po
 include script/$(DEPDIR)/libbitcoin_common_a-script_error.Po
@@ -3419,50 +3419,50 @@ include script/$(DEPDIR)/libbitcoin_server_a-sigcache.Po
 include script/$(DEPDIR)/libbitcoinconsensus_la-bitcoinconsensus.Plo
 include script/$(DEPDIR)/libbitcoinconsensus_la-interpreter.Plo
 include script/$(DEPDIR)/libbitcoinconsensus_la-script.Plo
-include test/$(DEPDIR)/test_test_marble-Checkpoints_tests.Po
-include test/$(DEPDIR)/test_test_marble-DoS_tests.Po
-include test/$(DEPDIR)/test_test_marble-accounting_tests.Po
-include test/$(DEPDIR)/test_test_marble-allocator_tests.Po
-include test/$(DEPDIR)/test_test_marble-base32_tests.Po
-include test/$(DEPDIR)/test_test_marble-base58_tests.Po
-include test/$(DEPDIR)/test_test_marble-base64_tests.Po
-include test/$(DEPDIR)/test_test_marble-benchmark_zerocoin.Po
-include test/$(DEPDIR)/test_test_marble-checkblock_tests.Po
-include test/$(DEPDIR)/test_test_marble-coins_tests.Po
-include test/$(DEPDIR)/test_test_marble-compress_tests.Po
-include test/$(DEPDIR)/test_test_marble-crypto_tests.Po
-include test/$(DEPDIR)/test_test_marble-getarg_tests.Po
-include test/$(DEPDIR)/test_test_marble-hash_tests.Po
-include test/$(DEPDIR)/test_test_marble-key_tests.Po
-include test/$(DEPDIR)/test_test_marble-libzerocoin_tests.Po
-include test/$(DEPDIR)/test_test_marble-main_tests.Po
-include test/$(DEPDIR)/test_test_marble-mempool_tests.Po
-include test/$(DEPDIR)/test_test_marble-mruset_tests.Po
-include test/$(DEPDIR)/test_test_marble-multisig_tests.Po
-include test/$(DEPDIR)/test_test_marble-netbase_tests.Po
-include test/$(DEPDIR)/test_test_marble-pmt_tests.Po
-include test/$(DEPDIR)/test_test_marble-rpc_tests.Po
-include test/$(DEPDIR)/test_test_marble-rpc_wallet_tests.Po
-include test/$(DEPDIR)/test_test_marble-sanity_tests.Po
-include test/$(DEPDIR)/test_test_marble-script_P2SH_tests.Po
-include test/$(DEPDIR)/test_test_marble-script_tests.Po
-include test/$(DEPDIR)/test_test_marble-scriptnum_tests.Po
-include test/$(DEPDIR)/test_test_marble-serialize_tests.Po
-include test/$(DEPDIR)/test_test_marble-sighash_tests.Po
-include test/$(DEPDIR)/test_test_marble-sigopcount_tests.Po
-include test/$(DEPDIR)/test_test_marble-skiplist_tests.Po
-include test/$(DEPDIR)/test_test_marble-test_marble.Po
-include test/$(DEPDIR)/test_test_marble-timedata_tests.Po
-include test/$(DEPDIR)/test_test_marble-torcontrol_tests.Po
-include test/$(DEPDIR)/test_test_marble-transaction_tests.Po
-include test/$(DEPDIR)/test_test_marble-tutorial_zerocoin.Po
-include test/$(DEPDIR)/test_test_marble-uint256_tests.Po
-include test/$(DEPDIR)/test_test_marble-univalue_tests.Po
-include test/$(DEPDIR)/test_test_marble-util_tests.Po
-include test/$(DEPDIR)/test_test_marble-wallet_tests.Po
-include test/$(DEPDIR)/test_test_marble-zerocoin_denomination_tests.Po
-include test/$(DEPDIR)/test_test_marble-zerocoin_implementation_tests.Po
-include test/$(DEPDIR)/test_test_marble-zerocoin_transactions_tests.Po
+include test/$(DEPDIR)/test_test_marco-Checkpoints_tests.Po
+include test/$(DEPDIR)/test_test_marco-DoS_tests.Po
+include test/$(DEPDIR)/test_test_marco-accounting_tests.Po
+include test/$(DEPDIR)/test_test_marco-allocator_tests.Po
+include test/$(DEPDIR)/test_test_marco-base32_tests.Po
+include test/$(DEPDIR)/test_test_marco-base58_tests.Po
+include test/$(DEPDIR)/test_test_marco-base64_tests.Po
+include test/$(DEPDIR)/test_test_marco-benchmark_zerocoin.Po
+include test/$(DEPDIR)/test_test_marco-checkblock_tests.Po
+include test/$(DEPDIR)/test_test_marco-coins_tests.Po
+include test/$(DEPDIR)/test_test_marco-compress_tests.Po
+include test/$(DEPDIR)/test_test_marco-crypto_tests.Po
+include test/$(DEPDIR)/test_test_marco-getarg_tests.Po
+include test/$(DEPDIR)/test_test_marco-hash_tests.Po
+include test/$(DEPDIR)/test_test_marco-key_tests.Po
+include test/$(DEPDIR)/test_test_marco-libzerocoin_tests.Po
+include test/$(DEPDIR)/test_test_marco-main_tests.Po
+include test/$(DEPDIR)/test_test_marco-mempool_tests.Po
+include test/$(DEPDIR)/test_test_marco-mruset_tests.Po
+include test/$(DEPDIR)/test_test_marco-multisig_tests.Po
+include test/$(DEPDIR)/test_test_marco-netbase_tests.Po
+include test/$(DEPDIR)/test_test_marco-pmt_tests.Po
+include test/$(DEPDIR)/test_test_marco-rpc_tests.Po
+include test/$(DEPDIR)/test_test_marco-rpc_wallet_tests.Po
+include test/$(DEPDIR)/test_test_marco-sanity_tests.Po
+include test/$(DEPDIR)/test_test_marco-script_P2SH_tests.Po
+include test/$(DEPDIR)/test_test_marco-script_tests.Po
+include test/$(DEPDIR)/test_test_marco-scriptnum_tests.Po
+include test/$(DEPDIR)/test_test_marco-serialize_tests.Po
+include test/$(DEPDIR)/test_test_marco-sighash_tests.Po
+include test/$(DEPDIR)/test_test_marco-sigopcount_tests.Po
+include test/$(DEPDIR)/test_test_marco-skiplist_tests.Po
+include test/$(DEPDIR)/test_test_marco-test_marco.Po
+include test/$(DEPDIR)/test_test_marco-timedata_tests.Po
+include test/$(DEPDIR)/test_test_marco-torcontrol_tests.Po
+include test/$(DEPDIR)/test_test_marco-transaction_tests.Po
+include test/$(DEPDIR)/test_test_marco-tutorial_zerocoin.Po
+include test/$(DEPDIR)/test_test_marco-uint256_tests.Po
+include test/$(DEPDIR)/test_test_marco-univalue_tests.Po
+include test/$(DEPDIR)/test_test_marco-util_tests.Po
+include test/$(DEPDIR)/test_test_marco-wallet_tests.Po
+include test/$(DEPDIR)/test_test_marco-zerocoin_denomination_tests.Po
+include test/$(DEPDIR)/test_test_marco-zerocoin_implementation_tests.Po
+include test/$(DEPDIR)/test_test_marco-zerocoin_transactions_tests.Po
 include univalue/$(DEPDIR)/univalue.Po
 include univalue/$(DEPDIR)/univalue_read.Po
 include univalue/$(DEPDIR)/univalue_write.Po
@@ -6052,19 +6052,19 @@ qt/qt_libbitcoinqt_a-walletview.obj: qt/walletview.cpp
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-walletview.obj `if test -f 'qt/walletview.cpp'; then $(CYGPATH_W) 'qt/walletview.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/walletview.cpp'; fi`
 
-qt/qt_libbitcoinqt_a-zmarblecontroldialog.o: qt/zmarblecontroldialog.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zmarblecontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarblecontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zmarblecontroldialog.o `test -f 'qt/zmarblecontroldialog.cpp' || echo '$(srcdir)/'`qt/zmarblecontroldialog.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarblecontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarblecontroldialog.Po
-#	$(AM_V_CXX)source='qt/zmarblecontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zmarblecontroldialog.o' libtool=no \
+qt/qt_libbitcoinqt_a-zmarcocontroldialog.o: qt/zmarcocontroldialog.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zmarcocontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarcocontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zmarcocontroldialog.o `test -f 'qt/zmarcocontroldialog.cpp' || echo '$(srcdir)/'`qt/zmarcocontroldialog.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarcocontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarcocontroldialog.Po
+#	$(AM_V_CXX)source='qt/zmarcocontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zmarcocontroldialog.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zmarblecontroldialog.o `test -f 'qt/zmarblecontroldialog.cpp' || echo '$(srcdir)/'`qt/zmarblecontroldialog.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zmarcocontroldialog.o `test -f 'qt/zmarcocontroldialog.cpp' || echo '$(srcdir)/'`qt/zmarcocontroldialog.cpp
 
-qt/qt_libbitcoinqt_a-zmarblecontroldialog.obj: qt/zmarblecontroldialog.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zmarblecontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarblecontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zmarblecontroldialog.obj `if test -f 'qt/zmarblecontroldialog.cpp'; then $(CYGPATH_W) 'qt/zmarblecontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zmarblecontroldialog.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarblecontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarblecontroldialog.Po
-#	$(AM_V_CXX)source='qt/zmarblecontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zmarblecontroldialog.obj' libtool=no \
+qt/qt_libbitcoinqt_a-zmarcocontroldialog.obj: qt/zmarcocontroldialog.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zmarcocontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarcocontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zmarcocontroldialog.obj `if test -f 'qt/zmarcocontroldialog.cpp'; then $(CYGPATH_W) 'qt/zmarcocontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zmarcocontroldialog.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarcocontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zmarcocontroldialog.Po
+#	$(AM_V_CXX)source='qt/zmarcocontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zmarcocontroldialog.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zmarblecontroldialog.obj `if test -f 'qt/zmarblecontroldialog.cpp'; then $(CYGPATH_W) 'qt/zmarblecontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zmarblecontroldialog.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zmarcocontroldialog.obj `if test -f 'qt/zmarcocontroldialog.cpp'; then $(CYGPATH_W) 'qt/zmarcocontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zmarcocontroldialog.cpp'; fi`
 
 qt/qt_libbitcoinqt_a-moc_addressbookpage.o: qt/moc_addressbookpage.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_addressbookpage.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_addressbookpage.Tpo -c -o qt/qt_libbitcoinqt_a-moc_addressbookpage.o `test -f 'qt/moc_addressbookpage.cpp' || echo '$(srcdir)/'`qt/moc_addressbookpage.cpp
@@ -6766,19 +6766,19 @@ qt/qt_libbitcoinqt_a-moc_walletview.obj: qt/moc_walletview.cpp
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_walletview.obj `if test -f 'qt/moc_walletview.cpp'; then $(CYGPATH_W) 'qt/moc_walletview.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_walletview.cpp'; fi`
 
-qt/qt_libbitcoinqt_a-moc_zmarblecontroldialog.o: qt/moc_zmarblecontroldialog.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zmarblecontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarblecontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zmarblecontroldialog.o `test -f 'qt/moc_zmarblecontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zmarblecontroldialog.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarblecontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarblecontroldialog.Po
-#	$(AM_V_CXX)source='qt/moc_zmarblecontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zmarblecontroldialog.o' libtool=no \
+qt/qt_libbitcoinqt_a-moc_zmarcocontroldialog.o: qt/moc_zmarcocontroldialog.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zmarcocontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarcocontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zmarcocontroldialog.o `test -f 'qt/moc_zmarcocontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zmarcocontroldialog.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarcocontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarcocontroldialog.Po
+#	$(AM_V_CXX)source='qt/moc_zmarcocontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zmarcocontroldialog.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zmarblecontroldialog.o `test -f 'qt/moc_zmarblecontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zmarblecontroldialog.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zmarcocontroldialog.o `test -f 'qt/moc_zmarcocontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zmarcocontroldialog.cpp
 
-qt/qt_libbitcoinqt_a-moc_zmarblecontroldialog.obj: qt/moc_zmarblecontroldialog.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zmarblecontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarblecontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zmarblecontroldialog.obj `if test -f 'qt/moc_zmarblecontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zmarblecontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zmarblecontroldialog.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarblecontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarblecontroldialog.Po
-#	$(AM_V_CXX)source='qt/moc_zmarblecontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zmarblecontroldialog.obj' libtool=no \
+qt/qt_libbitcoinqt_a-moc_zmarcocontroldialog.obj: qt/moc_zmarcocontroldialog.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zmarcocontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarcocontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zmarcocontroldialog.obj `if test -f 'qt/moc_zmarcocontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zmarcocontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zmarcocontroldialog.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarcocontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmarcocontroldialog.Po
+#	$(AM_V_CXX)source='qt/moc_zmarcocontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zmarcocontroldialog.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zmarblecontroldialog.obj `if test -f 'qt/moc_zmarblecontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zmarblecontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zmarblecontroldialog.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zmarcocontroldialog.obj `if test -f 'qt/moc_zmarcocontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zmarcocontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zmarcocontroldialog.cpp'; fi`
 
 qt/qt_libbitcoinqt_a-paymentrequest.pb.o: qt/paymentrequest.pb.cc
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-paymentrequest.pb.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-paymentrequest.pb.Tpo -c -o qt/qt_libbitcoinqt_a-paymentrequest.pb.o `test -f 'qt/paymentrequest.pb.cc' || echo '$(srcdir)/'`qt/paymentrequest.pb.cc
@@ -6794,33 +6794,33 @@ qt/qt_libbitcoinqt_a-paymentrequest.pb.obj: qt/paymentrequest.pb.cc
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-paymentrequest.pb.obj `if test -f 'qt/paymentrequest.pb.cc'; then $(CYGPATH_W) 'qt/paymentrequest.pb.cc'; else $(CYGPATH_W) '$(srcdir)/qt/paymentrequest.pb.cc'; fi`
 
-qt/qt_libbitcoinqt_a-qrc_marble.o: qt/qrc_marble.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_marble.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_marble.o `test -f 'qt/qrc_marble.cpp' || echo '$(srcdir)/'`qt/qrc_marble.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble.Po
-#	$(AM_V_CXX)source='qt/qrc_marble.cpp' object='qt/qt_libbitcoinqt_a-qrc_marble.o' libtool=no \
+qt/qt_libbitcoinqt_a-qrc_marco.o: qt/qrc_marco.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_marco.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_marco.o `test -f 'qt/qrc_marco.cpp' || echo '$(srcdir)/'`qt/qrc_marco.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco.Po
+#	$(AM_V_CXX)source='qt/qrc_marco.cpp' object='qt/qt_libbitcoinqt_a-qrc_marco.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_marble.o `test -f 'qt/qrc_marble.cpp' || echo '$(srcdir)/'`qt/qrc_marble.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_marco.o `test -f 'qt/qrc_marco.cpp' || echo '$(srcdir)/'`qt/qrc_marco.cpp
 
-qt/qt_libbitcoinqt_a-qrc_marble.obj: qt/qrc_marble.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_marble.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_marble.obj `if test -f 'qt/qrc_marble.cpp'; then $(CYGPATH_W) 'qt/qrc_marble.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_marble.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble.Po
-#	$(AM_V_CXX)source='qt/qrc_marble.cpp' object='qt/qt_libbitcoinqt_a-qrc_marble.obj' libtool=no \
+qt/qt_libbitcoinqt_a-qrc_marco.obj: qt/qrc_marco.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_marco.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_marco.obj `if test -f 'qt/qrc_marco.cpp'; then $(CYGPATH_W) 'qt/qrc_marco.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_marco.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco.Po
+#	$(AM_V_CXX)source='qt/qrc_marco.cpp' object='qt/qt_libbitcoinqt_a-qrc_marco.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_marble.obj `if test -f 'qt/qrc_marble.cpp'; then $(CYGPATH_W) 'qt/qrc_marble.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_marble.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_marco.obj `if test -f 'qt/qrc_marco.cpp'; then $(CYGPATH_W) 'qt/qrc_marco.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_marco.cpp'; fi`
 
-qt/qt_libbitcoinqt_a-qrc_marble_locale.o: qt/qrc_marble_locale.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_marble_locale.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble_locale.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_marble_locale.o `test -f 'qt/qrc_marble_locale.cpp' || echo '$(srcdir)/'`qt/qrc_marble_locale.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble_locale.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble_locale.Po
-#	$(AM_V_CXX)source='qt/qrc_marble_locale.cpp' object='qt/qt_libbitcoinqt_a-qrc_marble_locale.o' libtool=no \
+qt/qt_libbitcoinqt_a-qrc_marco_locale.o: qt/qrc_marco_locale.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_marco_locale.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco_locale.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_marco_locale.o `test -f 'qt/qrc_marco_locale.cpp' || echo '$(srcdir)/'`qt/qrc_marco_locale.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco_locale.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco_locale.Po
+#	$(AM_V_CXX)source='qt/qrc_marco_locale.cpp' object='qt/qt_libbitcoinqt_a-qrc_marco_locale.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_marble_locale.o `test -f 'qt/qrc_marble_locale.cpp' || echo '$(srcdir)/'`qt/qrc_marble_locale.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_marco_locale.o `test -f 'qt/qrc_marco_locale.cpp' || echo '$(srcdir)/'`qt/qrc_marco_locale.cpp
 
-qt/qt_libbitcoinqt_a-qrc_marble_locale.obj: qt/qrc_marble_locale.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_marble_locale.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble_locale.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_marble_locale.obj `if test -f 'qt/qrc_marble_locale.cpp'; then $(CYGPATH_W) 'qt/qrc_marble_locale.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_marble_locale.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble_locale.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marble_locale.Po
-#	$(AM_V_CXX)source='qt/qrc_marble_locale.cpp' object='qt/qt_libbitcoinqt_a-qrc_marble_locale.obj' libtool=no \
+qt/qt_libbitcoinqt_a-qrc_marco_locale.obj: qt/qrc_marco_locale.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_marco_locale.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco_locale.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_marco_locale.obj `if test -f 'qt/qrc_marco_locale.cpp'; then $(CYGPATH_W) 'qt/qrc_marco_locale.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_marco_locale.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco_locale.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_marco_locale.Po
+#	$(AM_V_CXX)source='qt/qrc_marco_locale.cpp' object='qt/qt_libbitcoinqt_a-qrc_marco_locale.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_marble_locale.obj `if test -f 'qt/qrc_marble_locale.cpp'; then $(CYGPATH_W) 'qt/qrc_marble_locale.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_marble_locale.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_marco_locale.obj `if test -f 'qt/qrc_marco_locale.cpp'; then $(CYGPATH_W) 'qt/qrc_marco_locale.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_marco_locale.cpp'; fi`
 
 libbitcoinconsensus_la-allocators.lo: allocators.cpp
 	$(AM_V_CXX)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoinconsensus_la_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT libbitcoinconsensus_la-allocators.lo -MD -MP -MF $(DEPDIR)/libbitcoinconsensus_la-allocators.Tpo -c -o libbitcoinconsensus_la-allocators.lo `test -f 'allocators.cpp' || echo '$(srcdir)/'`allocators.cpp
@@ -6955,747 +6955,747 @@ compat/libbitcoinconsensus_la-glibcxx_compat.lo: compat/glibcxx_compat.cpp
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoinconsensus_la_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o compat/libbitcoinconsensus_la-glibcxx_compat.lo `test -f 'compat/glibcxx_compat.cpp' || echo '$(srcdir)/'`compat/glibcxx_compat.cpp
 
-marble_cli-marble-cli.o: marble-cli.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marble_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT marble_cli-marble-cli.o -MD -MP -MF $(DEPDIR)/marble_cli-marble-cli.Tpo -c -o marble_cli-marble-cli.o `test -f 'marble-cli.cpp' || echo '$(srcdir)/'`marble-cli.cpp
-	$(AM_V_at)$(am__mv) $(DEPDIR)/marble_cli-marble-cli.Tpo $(DEPDIR)/marble_cli-marble-cli.Po
-#	$(AM_V_CXX)source='marble-cli.cpp' object='marble_cli-marble-cli.o' libtool=no \
+marco_cli-marco-cli.o: marco-cli.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marco_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT marco_cli-marco-cli.o -MD -MP -MF $(DEPDIR)/marco_cli-marco-cli.Tpo -c -o marco_cli-marco-cli.o `test -f 'marco-cli.cpp' || echo '$(srcdir)/'`marco-cli.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/marco_cli-marco-cli.Tpo $(DEPDIR)/marco_cli-marco-cli.Po
+#	$(AM_V_CXX)source='marco-cli.cpp' object='marco_cli-marco-cli.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marble_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o marble_cli-marble-cli.o `test -f 'marble-cli.cpp' || echo '$(srcdir)/'`marble-cli.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marco_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o marco_cli-marco-cli.o `test -f 'marco-cli.cpp' || echo '$(srcdir)/'`marco-cli.cpp
 
-marble_cli-marble-cli.obj: marble-cli.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marble_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT marble_cli-marble-cli.obj -MD -MP -MF $(DEPDIR)/marble_cli-marble-cli.Tpo -c -o marble_cli-marble-cli.obj `if test -f 'marble-cli.cpp'; then $(CYGPATH_W) 'marble-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/marble-cli.cpp'; fi`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/marble_cli-marble-cli.Tpo $(DEPDIR)/marble_cli-marble-cli.Po
-#	$(AM_V_CXX)source='marble-cli.cpp' object='marble_cli-marble-cli.obj' libtool=no \
+marco_cli-marco-cli.obj: marco-cli.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marco_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT marco_cli-marco-cli.obj -MD -MP -MF $(DEPDIR)/marco_cli-marco-cli.Tpo -c -o marco_cli-marco-cli.obj `if test -f 'marco-cli.cpp'; then $(CYGPATH_W) 'marco-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/marco-cli.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/marco_cli-marco-cli.Tpo $(DEPDIR)/marco_cli-marco-cli.Po
+#	$(AM_V_CXX)source='marco-cli.cpp' object='marco_cli-marco-cli.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marble_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o marble_cli-marble-cli.obj `if test -f 'marble-cli.cpp'; then $(CYGPATH_W) 'marble-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/marble-cli.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marco_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o marco_cli-marco-cli.obj `if test -f 'marco-cli.cpp'; then $(CYGPATH_W) 'marco-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/marco-cli.cpp'; fi`
 
-marble_tx-marble-tx.o: marble-tx.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marble_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT marble_tx-marble-tx.o -MD -MP -MF $(DEPDIR)/marble_tx-marble-tx.Tpo -c -o marble_tx-marble-tx.o `test -f 'marble-tx.cpp' || echo '$(srcdir)/'`marble-tx.cpp
-	$(AM_V_at)$(am__mv) $(DEPDIR)/marble_tx-marble-tx.Tpo $(DEPDIR)/marble_tx-marble-tx.Po
-#	$(AM_V_CXX)source='marble-tx.cpp' object='marble_tx-marble-tx.o' libtool=no \
+marco_tx-marco-tx.o: marco-tx.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marco_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT marco_tx-marco-tx.o -MD -MP -MF $(DEPDIR)/marco_tx-marco-tx.Tpo -c -o marco_tx-marco-tx.o `test -f 'marco-tx.cpp' || echo '$(srcdir)/'`marco-tx.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/marco_tx-marco-tx.Tpo $(DEPDIR)/marco_tx-marco-tx.Po
+#	$(AM_V_CXX)source='marco-tx.cpp' object='marco_tx-marco-tx.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marble_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o marble_tx-marble-tx.o `test -f 'marble-tx.cpp' || echo '$(srcdir)/'`marble-tx.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marco_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o marco_tx-marco-tx.o `test -f 'marco-tx.cpp' || echo '$(srcdir)/'`marco-tx.cpp
 
-marble_tx-marble-tx.obj: marble-tx.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marble_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT marble_tx-marble-tx.obj -MD -MP -MF $(DEPDIR)/marble_tx-marble-tx.Tpo -c -o marble_tx-marble-tx.obj `if test -f 'marble-tx.cpp'; then $(CYGPATH_W) 'marble-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/marble-tx.cpp'; fi`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/marble_tx-marble-tx.Tpo $(DEPDIR)/marble_tx-marble-tx.Po
-#	$(AM_V_CXX)source='marble-tx.cpp' object='marble_tx-marble-tx.obj' libtool=no \
+marco_tx-marco-tx.obj: marco-tx.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marco_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT marco_tx-marco-tx.obj -MD -MP -MF $(DEPDIR)/marco_tx-marco-tx.Tpo -c -o marco_tx-marco-tx.obj `if test -f 'marco-tx.cpp'; then $(CYGPATH_W) 'marco-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/marco-tx.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/marco_tx-marco-tx.Tpo $(DEPDIR)/marco_tx-marco-tx.Po
+#	$(AM_V_CXX)source='marco-tx.cpp' object='marco_tx-marco-tx.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marble_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o marble_tx-marble-tx.obj `if test -f 'marble-tx.cpp'; then $(CYGPATH_W) 'marble-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/marble-tx.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marco_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o marco_tx-marco-tx.obj `if test -f 'marco-tx.cpp'; then $(CYGPATH_W) 'marco-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/marco-tx.cpp'; fi`
 
-marbled-marbled.o: marbled.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marbled_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT marbled-marbled.o -MD -MP -MF $(DEPDIR)/marbled-marbled.Tpo -c -o marbled-marbled.o `test -f 'marbled.cpp' || echo '$(srcdir)/'`marbled.cpp
-	$(AM_V_at)$(am__mv) $(DEPDIR)/marbled-marbled.Tpo $(DEPDIR)/marbled-marbled.Po
-#	$(AM_V_CXX)source='marbled.cpp' object='marbled-marbled.o' libtool=no \
+marcod-marcod.o: marcod.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marcod_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT marcod-marcod.o -MD -MP -MF $(DEPDIR)/marcod-marcod.Tpo -c -o marcod-marcod.o `test -f 'marcod.cpp' || echo '$(srcdir)/'`marcod.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/marcod-marcod.Tpo $(DEPDIR)/marcod-marcod.Po
+#	$(AM_V_CXX)source='marcod.cpp' object='marcod-marcod.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marbled_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o marbled-marbled.o `test -f 'marbled.cpp' || echo '$(srcdir)/'`marbled.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marcod_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o marcod-marcod.o `test -f 'marcod.cpp' || echo '$(srcdir)/'`marcod.cpp
 
-marbled-marbled.obj: marbled.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marbled_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT marbled-marbled.obj -MD -MP -MF $(DEPDIR)/marbled-marbled.Tpo -c -o marbled-marbled.obj `if test -f 'marbled.cpp'; then $(CYGPATH_W) 'marbled.cpp'; else $(CYGPATH_W) '$(srcdir)/marbled.cpp'; fi`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/marbled-marbled.Tpo $(DEPDIR)/marbled-marbled.Po
-#	$(AM_V_CXX)source='marbled.cpp' object='marbled-marbled.obj' libtool=no \
+marcod-marcod.obj: marcod.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marcod_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT marcod-marcod.obj -MD -MP -MF $(DEPDIR)/marcod-marcod.Tpo -c -o marcod-marcod.obj `if test -f 'marcod.cpp'; then $(CYGPATH_W) 'marcod.cpp'; else $(CYGPATH_W) '$(srcdir)/marcod.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/marcod-marcod.Tpo $(DEPDIR)/marcod-marcod.Po
+#	$(AM_V_CXX)source='marcod.cpp' object='marcod-marcod.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marbled_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o marbled-marbled.obj `if test -f 'marbled.cpp'; then $(CYGPATH_W) 'marbled.cpp'; else $(CYGPATH_W) '$(srcdir)/marbled.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(marcod_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o marcod-marcod.obj `if test -f 'marcod.cpp'; then $(CYGPATH_W) 'marcod.cpp'; else $(CYGPATH_W) '$(srcdir)/marcod.cpp'; fi`
 
-qt/qt_marble_qt-marble.o: qt/marble.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_marble_qt-marble.o -MD -MP -MF qt/$(DEPDIR)/qt_marble_qt-marble.Tpo -c -o qt/qt_marble_qt-marble.o `test -f 'qt/marble.cpp' || echo '$(srcdir)/'`qt/marble.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_marble_qt-marble.Tpo qt/$(DEPDIR)/qt_marble_qt-marble.Po
-#	$(AM_V_CXX)source='qt/marble.cpp' object='qt/qt_marble_qt-marble.o' libtool=no \
+qt/qt_marco_qt-marco.o: qt/marco.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_marco_qt-marco.o -MD -MP -MF qt/$(DEPDIR)/qt_marco_qt-marco.Tpo -c -o qt/qt_marco_qt-marco.o `test -f 'qt/marco.cpp' || echo '$(srcdir)/'`qt/marco.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_marco_qt-marco.Tpo qt/$(DEPDIR)/qt_marco_qt-marco.Po
+#	$(AM_V_CXX)source='qt/marco.cpp' object='qt/qt_marco_qt-marco.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_marble_qt-marble.o `test -f 'qt/marble.cpp' || echo '$(srcdir)/'`qt/marble.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_marco_qt-marco.o `test -f 'qt/marco.cpp' || echo '$(srcdir)/'`qt/marco.cpp
 
-qt/qt_marble_qt-marble.obj: qt/marble.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_marble_qt-marble.obj -MD -MP -MF qt/$(DEPDIR)/qt_marble_qt-marble.Tpo -c -o qt/qt_marble_qt-marble.obj `if test -f 'qt/marble.cpp'; then $(CYGPATH_W) 'qt/marble.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/marble.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_marble_qt-marble.Tpo qt/$(DEPDIR)/qt_marble_qt-marble.Po
-#	$(AM_V_CXX)source='qt/marble.cpp' object='qt/qt_marble_qt-marble.obj' libtool=no \
+qt/qt_marco_qt-marco.obj: qt/marco.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_marco_qt-marco.obj -MD -MP -MF qt/$(DEPDIR)/qt_marco_qt-marco.Tpo -c -o qt/qt_marco_qt-marco.obj `if test -f 'qt/marco.cpp'; then $(CYGPATH_W) 'qt/marco.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/marco.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_marco_qt-marco.Tpo qt/$(DEPDIR)/qt_marco_qt-marco.Po
+#	$(AM_V_CXX)source='qt/marco.cpp' object='qt/qt_marco_qt-marco.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_marble_qt-marble.obj `if test -f 'qt/marble.cpp'; then $(CYGPATH_W) 'qt/marble.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/marble.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_marco_qt-marco.obj `if test -f 'qt/marco.cpp'; then $(CYGPATH_W) 'qt/marco.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/marco.cpp'; fi`
 
-qt/test/qt_test_test_marble_qt-test_main.o: qt/test/test_main.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marble_qt-test_main.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marble_qt-test_main.Tpo -c -o qt/test/qt_test_test_marble_qt-test_main.o `test -f 'qt/test/test_main.cpp' || echo '$(srcdir)/'`qt/test/test_main.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marble_qt-test_main.Tpo qt/test/$(DEPDIR)/qt_test_test_marble_qt-test_main.Po
-#	$(AM_V_CXX)source='qt/test/test_main.cpp' object='qt/test/qt_test_test_marble_qt-test_main.o' libtool=no \
+qt/test/qt_test_test_marco_qt-test_main.o: qt/test/test_main.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marco_qt-test_main.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marco_qt-test_main.Tpo -c -o qt/test/qt_test_test_marco_qt-test_main.o `test -f 'qt/test/test_main.cpp' || echo '$(srcdir)/'`qt/test/test_main.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marco_qt-test_main.Tpo qt/test/$(DEPDIR)/qt_test_test_marco_qt-test_main.Po
+#	$(AM_V_CXX)source='qt/test/test_main.cpp' object='qt/test/qt_test_test_marco_qt-test_main.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marble_qt-test_main.o `test -f 'qt/test/test_main.cpp' || echo '$(srcdir)/'`qt/test/test_main.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marco_qt-test_main.o `test -f 'qt/test/test_main.cpp' || echo '$(srcdir)/'`qt/test/test_main.cpp
 
-qt/test/qt_test_test_marble_qt-test_main.obj: qt/test/test_main.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marble_qt-test_main.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marble_qt-test_main.Tpo -c -o qt/test/qt_test_test_marble_qt-test_main.obj `if test -f 'qt/test/test_main.cpp'; then $(CYGPATH_W) 'qt/test/test_main.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/test_main.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marble_qt-test_main.Tpo qt/test/$(DEPDIR)/qt_test_test_marble_qt-test_main.Po
-#	$(AM_V_CXX)source='qt/test/test_main.cpp' object='qt/test/qt_test_test_marble_qt-test_main.obj' libtool=no \
+qt/test/qt_test_test_marco_qt-test_main.obj: qt/test/test_main.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marco_qt-test_main.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marco_qt-test_main.Tpo -c -o qt/test/qt_test_test_marco_qt-test_main.obj `if test -f 'qt/test/test_main.cpp'; then $(CYGPATH_W) 'qt/test/test_main.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/test_main.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marco_qt-test_main.Tpo qt/test/$(DEPDIR)/qt_test_test_marco_qt-test_main.Po
+#	$(AM_V_CXX)source='qt/test/test_main.cpp' object='qt/test/qt_test_test_marco_qt-test_main.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marble_qt-test_main.obj `if test -f 'qt/test/test_main.cpp'; then $(CYGPATH_W) 'qt/test/test_main.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/test_main.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marco_qt-test_main.obj `if test -f 'qt/test/test_main.cpp'; then $(CYGPATH_W) 'qt/test/test_main.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/test_main.cpp'; fi`
 
-qt/test/qt_test_test_marble_qt-uritests.o: qt/test/uritests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marble_qt-uritests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marble_qt-uritests.Tpo -c -o qt/test/qt_test_test_marble_qt-uritests.o `test -f 'qt/test/uritests.cpp' || echo '$(srcdir)/'`qt/test/uritests.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marble_qt-uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_marble_qt-uritests.Po
-#	$(AM_V_CXX)source='qt/test/uritests.cpp' object='qt/test/qt_test_test_marble_qt-uritests.o' libtool=no \
+qt/test/qt_test_test_marco_qt-uritests.o: qt/test/uritests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marco_qt-uritests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marco_qt-uritests.Tpo -c -o qt/test/qt_test_test_marco_qt-uritests.o `test -f 'qt/test/uritests.cpp' || echo '$(srcdir)/'`qt/test/uritests.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marco_qt-uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_marco_qt-uritests.Po
+#	$(AM_V_CXX)source='qt/test/uritests.cpp' object='qt/test/qt_test_test_marco_qt-uritests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marble_qt-uritests.o `test -f 'qt/test/uritests.cpp' || echo '$(srcdir)/'`qt/test/uritests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marco_qt-uritests.o `test -f 'qt/test/uritests.cpp' || echo '$(srcdir)/'`qt/test/uritests.cpp
 
-qt/test/qt_test_test_marble_qt-uritests.obj: qt/test/uritests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marble_qt-uritests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marble_qt-uritests.Tpo -c -o qt/test/qt_test_test_marble_qt-uritests.obj `if test -f 'qt/test/uritests.cpp'; then $(CYGPATH_W) 'qt/test/uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/uritests.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marble_qt-uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_marble_qt-uritests.Po
-#	$(AM_V_CXX)source='qt/test/uritests.cpp' object='qt/test/qt_test_test_marble_qt-uritests.obj' libtool=no \
+qt/test/qt_test_test_marco_qt-uritests.obj: qt/test/uritests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marco_qt-uritests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marco_qt-uritests.Tpo -c -o qt/test/qt_test_test_marco_qt-uritests.obj `if test -f 'qt/test/uritests.cpp'; then $(CYGPATH_W) 'qt/test/uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/uritests.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marco_qt-uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_marco_qt-uritests.Po
+#	$(AM_V_CXX)source='qt/test/uritests.cpp' object='qt/test/qt_test_test_marco_qt-uritests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marble_qt-uritests.obj `if test -f 'qt/test/uritests.cpp'; then $(CYGPATH_W) 'qt/test/uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/uritests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marco_qt-uritests.obj `if test -f 'qt/test/uritests.cpp'; then $(CYGPATH_W) 'qt/test/uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/uritests.cpp'; fi`
 
-qt/test/qt_test_test_marble_qt-paymentservertests.o: qt/test/paymentservertests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marble_qt-paymentservertests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marble_qt-paymentservertests.Tpo -c -o qt/test/qt_test_test_marble_qt-paymentservertests.o `test -f 'qt/test/paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/paymentservertests.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marble_qt-paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_marble_qt-paymentservertests.Po
-#	$(AM_V_CXX)source='qt/test/paymentservertests.cpp' object='qt/test/qt_test_test_marble_qt-paymentservertests.o' libtool=no \
+qt/test/qt_test_test_marco_qt-paymentservertests.o: qt/test/paymentservertests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marco_qt-paymentservertests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marco_qt-paymentservertests.Tpo -c -o qt/test/qt_test_test_marco_qt-paymentservertests.o `test -f 'qt/test/paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/paymentservertests.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marco_qt-paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_marco_qt-paymentservertests.Po
+#	$(AM_V_CXX)source='qt/test/paymentservertests.cpp' object='qt/test/qt_test_test_marco_qt-paymentservertests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marble_qt-paymentservertests.o `test -f 'qt/test/paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/paymentservertests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marco_qt-paymentservertests.o `test -f 'qt/test/paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/paymentservertests.cpp
 
-qt/test/qt_test_test_marble_qt-paymentservertests.obj: qt/test/paymentservertests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marble_qt-paymentservertests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marble_qt-paymentservertests.Tpo -c -o qt/test/qt_test_test_marble_qt-paymentservertests.obj `if test -f 'qt/test/paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/paymentservertests.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marble_qt-paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_marble_qt-paymentservertests.Po
-#	$(AM_V_CXX)source='qt/test/paymentservertests.cpp' object='qt/test/qt_test_test_marble_qt-paymentservertests.obj' libtool=no \
+qt/test/qt_test_test_marco_qt-paymentservertests.obj: qt/test/paymentservertests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marco_qt-paymentservertests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marco_qt-paymentservertests.Tpo -c -o qt/test/qt_test_test_marco_qt-paymentservertests.obj `if test -f 'qt/test/paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/paymentservertests.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marco_qt-paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_marco_qt-paymentservertests.Po
+#	$(AM_V_CXX)source='qt/test/paymentservertests.cpp' object='qt/test/qt_test_test_marco_qt-paymentservertests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marble_qt-paymentservertests.obj `if test -f 'qt/test/paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/paymentservertests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marco_qt-paymentservertests.obj `if test -f 'qt/test/paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/paymentservertests.cpp'; fi`
 
-qt/test/qt_test_test_marble_qt-moc_uritests.o: qt/test/moc_uritests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marble_qt-moc_uritests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_uritests.Tpo -c -o qt/test/qt_test_test_marble_qt-moc_uritests.o `test -f 'qt/test/moc_uritests.cpp' || echo '$(srcdir)/'`qt/test/moc_uritests.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_uritests.Po
-#	$(AM_V_CXX)source='qt/test/moc_uritests.cpp' object='qt/test/qt_test_test_marble_qt-moc_uritests.o' libtool=no \
+qt/test/qt_test_test_marco_qt-moc_uritests.o: qt/test/moc_uritests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marco_qt-moc_uritests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_uritests.Tpo -c -o qt/test/qt_test_test_marco_qt-moc_uritests.o `test -f 'qt/test/moc_uritests.cpp' || echo '$(srcdir)/'`qt/test/moc_uritests.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_uritests.Po
+#	$(AM_V_CXX)source='qt/test/moc_uritests.cpp' object='qt/test/qt_test_test_marco_qt-moc_uritests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marble_qt-moc_uritests.o `test -f 'qt/test/moc_uritests.cpp' || echo '$(srcdir)/'`qt/test/moc_uritests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marco_qt-moc_uritests.o `test -f 'qt/test/moc_uritests.cpp' || echo '$(srcdir)/'`qt/test/moc_uritests.cpp
 
-qt/test/qt_test_test_marble_qt-moc_uritests.obj: qt/test/moc_uritests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marble_qt-moc_uritests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_uritests.Tpo -c -o qt/test/qt_test_test_marble_qt-moc_uritests.obj `if test -f 'qt/test/moc_uritests.cpp'; then $(CYGPATH_W) 'qt/test/moc_uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_uritests.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_uritests.Po
-#	$(AM_V_CXX)source='qt/test/moc_uritests.cpp' object='qt/test/qt_test_test_marble_qt-moc_uritests.obj' libtool=no \
+qt/test/qt_test_test_marco_qt-moc_uritests.obj: qt/test/moc_uritests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marco_qt-moc_uritests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_uritests.Tpo -c -o qt/test/qt_test_test_marco_qt-moc_uritests.obj `if test -f 'qt/test/moc_uritests.cpp'; then $(CYGPATH_W) 'qt/test/moc_uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_uritests.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_uritests.Po
+#	$(AM_V_CXX)source='qt/test/moc_uritests.cpp' object='qt/test/qt_test_test_marco_qt-moc_uritests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marble_qt-moc_uritests.obj `if test -f 'qt/test/moc_uritests.cpp'; then $(CYGPATH_W) 'qt/test/moc_uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_uritests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marco_qt-moc_uritests.obj `if test -f 'qt/test/moc_uritests.cpp'; then $(CYGPATH_W) 'qt/test/moc_uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_uritests.cpp'; fi`
 
-qt/test/qt_test_test_marble_qt-moc_paymentservertests.o: qt/test/moc_paymentservertests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marble_qt-moc_paymentservertests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_paymentservertests.Tpo -c -o qt/test/qt_test_test_marble_qt-moc_paymentservertests.o `test -f 'qt/test/moc_paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/moc_paymentservertests.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_paymentservertests.Po
-#	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_marble_qt-moc_paymentservertests.o' libtool=no \
+qt/test/qt_test_test_marco_qt-moc_paymentservertests.o: qt/test/moc_paymentservertests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marco_qt-moc_paymentservertests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_paymentservertests.Tpo -c -o qt/test/qt_test_test_marco_qt-moc_paymentservertests.o `test -f 'qt/test/moc_paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/moc_paymentservertests.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_paymentservertests.Po
+#	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_marco_qt-moc_paymentservertests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marble_qt-moc_paymentservertests.o `test -f 'qt/test/moc_paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/moc_paymentservertests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marco_qt-moc_paymentservertests.o `test -f 'qt/test/moc_paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/moc_paymentservertests.cpp
 
-qt/test/qt_test_test_marble_qt-moc_paymentservertests.obj: qt/test/moc_paymentservertests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marble_qt-moc_paymentservertests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_paymentservertests.Tpo -c -o qt/test/qt_test_test_marble_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_marble_qt-moc_paymentservertests.Po
-#	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_marble_qt-moc_paymentservertests.obj' libtool=no \
+qt/test/qt_test_test_marco_qt-moc_paymentservertests.obj: qt/test/moc_paymentservertests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_marco_qt-moc_paymentservertests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_paymentservertests.Tpo -c -o qt/test/qt_test_test_marco_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_marco_qt-moc_paymentservertests.Po
+#	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_marco_qt-moc_paymentservertests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marble_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_marco_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
 
-test/test_test_marble-zerocoin_implementation_tests.o: test/zerocoin_implementation_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-zerocoin_implementation_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-zerocoin_implementation_tests.Tpo -c -o test/test_test_marble-zerocoin_implementation_tests.o `test -f 'test/zerocoin_implementation_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_implementation_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-zerocoin_implementation_tests.Tpo test/$(DEPDIR)/test_test_marble-zerocoin_implementation_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_implementation_tests.cpp' object='test/test_test_marble-zerocoin_implementation_tests.o' libtool=no \
+test/test_test_marco-zerocoin_implementation_tests.o: test/zerocoin_implementation_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-zerocoin_implementation_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-zerocoin_implementation_tests.Tpo -c -o test/test_test_marco-zerocoin_implementation_tests.o `test -f 'test/zerocoin_implementation_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_implementation_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-zerocoin_implementation_tests.Tpo test/$(DEPDIR)/test_test_marco-zerocoin_implementation_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_implementation_tests.cpp' object='test/test_test_marco-zerocoin_implementation_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-zerocoin_implementation_tests.o `test -f 'test/zerocoin_implementation_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_implementation_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-zerocoin_implementation_tests.o `test -f 'test/zerocoin_implementation_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_implementation_tests.cpp
 
-test/test_test_marble-zerocoin_implementation_tests.obj: test/zerocoin_implementation_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-zerocoin_implementation_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-zerocoin_implementation_tests.Tpo -c -o test/test_test_marble-zerocoin_implementation_tests.obj `if test -f 'test/zerocoin_implementation_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_implementation_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_implementation_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-zerocoin_implementation_tests.Tpo test/$(DEPDIR)/test_test_marble-zerocoin_implementation_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_implementation_tests.cpp' object='test/test_test_marble-zerocoin_implementation_tests.obj' libtool=no \
+test/test_test_marco-zerocoin_implementation_tests.obj: test/zerocoin_implementation_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-zerocoin_implementation_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-zerocoin_implementation_tests.Tpo -c -o test/test_test_marco-zerocoin_implementation_tests.obj `if test -f 'test/zerocoin_implementation_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_implementation_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_implementation_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-zerocoin_implementation_tests.Tpo test/$(DEPDIR)/test_test_marco-zerocoin_implementation_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_implementation_tests.cpp' object='test/test_test_marco-zerocoin_implementation_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-zerocoin_implementation_tests.obj `if test -f 'test/zerocoin_implementation_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_implementation_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_implementation_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-zerocoin_implementation_tests.obj `if test -f 'test/zerocoin_implementation_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_implementation_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_implementation_tests.cpp'; fi`
 
-test/test_test_marble-zerocoin_denomination_tests.o: test/zerocoin_denomination_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-zerocoin_denomination_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-zerocoin_denomination_tests.Tpo -c -o test/test_test_marble-zerocoin_denomination_tests.o `test -f 'test/zerocoin_denomination_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_denomination_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-zerocoin_denomination_tests.Tpo test/$(DEPDIR)/test_test_marble-zerocoin_denomination_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_denomination_tests.cpp' object='test/test_test_marble-zerocoin_denomination_tests.o' libtool=no \
+test/test_test_marco-zerocoin_denomination_tests.o: test/zerocoin_denomination_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-zerocoin_denomination_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-zerocoin_denomination_tests.Tpo -c -o test/test_test_marco-zerocoin_denomination_tests.o `test -f 'test/zerocoin_denomination_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_denomination_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-zerocoin_denomination_tests.Tpo test/$(DEPDIR)/test_test_marco-zerocoin_denomination_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_denomination_tests.cpp' object='test/test_test_marco-zerocoin_denomination_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-zerocoin_denomination_tests.o `test -f 'test/zerocoin_denomination_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_denomination_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-zerocoin_denomination_tests.o `test -f 'test/zerocoin_denomination_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_denomination_tests.cpp
 
-test/test_test_marble-zerocoin_denomination_tests.obj: test/zerocoin_denomination_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-zerocoin_denomination_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-zerocoin_denomination_tests.Tpo -c -o test/test_test_marble-zerocoin_denomination_tests.obj `if test -f 'test/zerocoin_denomination_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_denomination_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_denomination_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-zerocoin_denomination_tests.Tpo test/$(DEPDIR)/test_test_marble-zerocoin_denomination_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_denomination_tests.cpp' object='test/test_test_marble-zerocoin_denomination_tests.obj' libtool=no \
+test/test_test_marco-zerocoin_denomination_tests.obj: test/zerocoin_denomination_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-zerocoin_denomination_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-zerocoin_denomination_tests.Tpo -c -o test/test_test_marco-zerocoin_denomination_tests.obj `if test -f 'test/zerocoin_denomination_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_denomination_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_denomination_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-zerocoin_denomination_tests.Tpo test/$(DEPDIR)/test_test_marco-zerocoin_denomination_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_denomination_tests.cpp' object='test/test_test_marco-zerocoin_denomination_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-zerocoin_denomination_tests.obj `if test -f 'test/zerocoin_denomination_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_denomination_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_denomination_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-zerocoin_denomination_tests.obj `if test -f 'test/zerocoin_denomination_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_denomination_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_denomination_tests.cpp'; fi`
 
-test/test_test_marble-zerocoin_transactions_tests.o: test/zerocoin_transactions_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-zerocoin_transactions_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-zerocoin_transactions_tests.Tpo -c -o test/test_test_marble-zerocoin_transactions_tests.o `test -f 'test/zerocoin_transactions_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_transactions_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-zerocoin_transactions_tests.Tpo test/$(DEPDIR)/test_test_marble-zerocoin_transactions_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_transactions_tests.cpp' object='test/test_test_marble-zerocoin_transactions_tests.o' libtool=no \
+test/test_test_marco-zerocoin_transactions_tests.o: test/zerocoin_transactions_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-zerocoin_transactions_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-zerocoin_transactions_tests.Tpo -c -o test/test_test_marco-zerocoin_transactions_tests.o `test -f 'test/zerocoin_transactions_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_transactions_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-zerocoin_transactions_tests.Tpo test/$(DEPDIR)/test_test_marco-zerocoin_transactions_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_transactions_tests.cpp' object='test/test_test_marco-zerocoin_transactions_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-zerocoin_transactions_tests.o `test -f 'test/zerocoin_transactions_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_transactions_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-zerocoin_transactions_tests.o `test -f 'test/zerocoin_transactions_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_transactions_tests.cpp
 
-test/test_test_marble-zerocoin_transactions_tests.obj: test/zerocoin_transactions_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-zerocoin_transactions_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-zerocoin_transactions_tests.Tpo -c -o test/test_test_marble-zerocoin_transactions_tests.obj `if test -f 'test/zerocoin_transactions_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_transactions_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_transactions_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-zerocoin_transactions_tests.Tpo test/$(DEPDIR)/test_test_marble-zerocoin_transactions_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_transactions_tests.cpp' object='test/test_test_marble-zerocoin_transactions_tests.obj' libtool=no \
+test/test_test_marco-zerocoin_transactions_tests.obj: test/zerocoin_transactions_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-zerocoin_transactions_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-zerocoin_transactions_tests.Tpo -c -o test/test_test_marco-zerocoin_transactions_tests.obj `if test -f 'test/zerocoin_transactions_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_transactions_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_transactions_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-zerocoin_transactions_tests.Tpo test/$(DEPDIR)/test_test_marco-zerocoin_transactions_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_transactions_tests.cpp' object='test/test_test_marco-zerocoin_transactions_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-zerocoin_transactions_tests.obj `if test -f 'test/zerocoin_transactions_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_transactions_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_transactions_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-zerocoin_transactions_tests.obj `if test -f 'test/zerocoin_transactions_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_transactions_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_transactions_tests.cpp'; fi`
 
-test/test_test_marble-benchmark_zerocoin.o: test/benchmark_zerocoin.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-benchmark_zerocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-benchmark_zerocoin.Tpo -c -o test/test_test_marble-benchmark_zerocoin.o `test -f 'test/benchmark_zerocoin.cpp' || echo '$(srcdir)/'`test/benchmark_zerocoin.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-benchmark_zerocoin.Tpo test/$(DEPDIR)/test_test_marble-benchmark_zerocoin.Po
-#	$(AM_V_CXX)source='test/benchmark_zerocoin.cpp' object='test/test_test_marble-benchmark_zerocoin.o' libtool=no \
+test/test_test_marco-benchmark_zerocoin.o: test/benchmark_zerocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-benchmark_zerocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-benchmark_zerocoin.Tpo -c -o test/test_test_marco-benchmark_zerocoin.o `test -f 'test/benchmark_zerocoin.cpp' || echo '$(srcdir)/'`test/benchmark_zerocoin.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-benchmark_zerocoin.Tpo test/$(DEPDIR)/test_test_marco-benchmark_zerocoin.Po
+#	$(AM_V_CXX)source='test/benchmark_zerocoin.cpp' object='test/test_test_marco-benchmark_zerocoin.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-benchmark_zerocoin.o `test -f 'test/benchmark_zerocoin.cpp' || echo '$(srcdir)/'`test/benchmark_zerocoin.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-benchmark_zerocoin.o `test -f 'test/benchmark_zerocoin.cpp' || echo '$(srcdir)/'`test/benchmark_zerocoin.cpp
 
-test/test_test_marble-benchmark_zerocoin.obj: test/benchmark_zerocoin.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-benchmark_zerocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-benchmark_zerocoin.Tpo -c -o test/test_test_marble-benchmark_zerocoin.obj `if test -f 'test/benchmark_zerocoin.cpp'; then $(CYGPATH_W) 'test/benchmark_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/benchmark_zerocoin.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-benchmark_zerocoin.Tpo test/$(DEPDIR)/test_test_marble-benchmark_zerocoin.Po
-#	$(AM_V_CXX)source='test/benchmark_zerocoin.cpp' object='test/test_test_marble-benchmark_zerocoin.obj' libtool=no \
+test/test_test_marco-benchmark_zerocoin.obj: test/benchmark_zerocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-benchmark_zerocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-benchmark_zerocoin.Tpo -c -o test/test_test_marco-benchmark_zerocoin.obj `if test -f 'test/benchmark_zerocoin.cpp'; then $(CYGPATH_W) 'test/benchmark_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/benchmark_zerocoin.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-benchmark_zerocoin.Tpo test/$(DEPDIR)/test_test_marco-benchmark_zerocoin.Po
+#	$(AM_V_CXX)source='test/benchmark_zerocoin.cpp' object='test/test_test_marco-benchmark_zerocoin.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-benchmark_zerocoin.obj `if test -f 'test/benchmark_zerocoin.cpp'; then $(CYGPATH_W) 'test/benchmark_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/benchmark_zerocoin.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-benchmark_zerocoin.obj `if test -f 'test/benchmark_zerocoin.cpp'; then $(CYGPATH_W) 'test/benchmark_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/benchmark_zerocoin.cpp'; fi`
 
-test/test_test_marble-tutorial_zerocoin.o: test/tutorial_zerocoin.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-tutorial_zerocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-tutorial_zerocoin.Tpo -c -o test/test_test_marble-tutorial_zerocoin.o `test -f 'test/tutorial_zerocoin.cpp' || echo '$(srcdir)/'`test/tutorial_zerocoin.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-tutorial_zerocoin.Tpo test/$(DEPDIR)/test_test_marble-tutorial_zerocoin.Po
-#	$(AM_V_CXX)source='test/tutorial_zerocoin.cpp' object='test/test_test_marble-tutorial_zerocoin.o' libtool=no \
+test/test_test_marco-tutorial_zerocoin.o: test/tutorial_zerocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-tutorial_zerocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-tutorial_zerocoin.Tpo -c -o test/test_test_marco-tutorial_zerocoin.o `test -f 'test/tutorial_zerocoin.cpp' || echo '$(srcdir)/'`test/tutorial_zerocoin.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-tutorial_zerocoin.Tpo test/$(DEPDIR)/test_test_marco-tutorial_zerocoin.Po
+#	$(AM_V_CXX)source='test/tutorial_zerocoin.cpp' object='test/test_test_marco-tutorial_zerocoin.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-tutorial_zerocoin.o `test -f 'test/tutorial_zerocoin.cpp' || echo '$(srcdir)/'`test/tutorial_zerocoin.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-tutorial_zerocoin.o `test -f 'test/tutorial_zerocoin.cpp' || echo '$(srcdir)/'`test/tutorial_zerocoin.cpp
 
-test/test_test_marble-tutorial_zerocoin.obj: test/tutorial_zerocoin.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-tutorial_zerocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-tutorial_zerocoin.Tpo -c -o test/test_test_marble-tutorial_zerocoin.obj `if test -f 'test/tutorial_zerocoin.cpp'; then $(CYGPATH_W) 'test/tutorial_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/tutorial_zerocoin.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-tutorial_zerocoin.Tpo test/$(DEPDIR)/test_test_marble-tutorial_zerocoin.Po
-#	$(AM_V_CXX)source='test/tutorial_zerocoin.cpp' object='test/test_test_marble-tutorial_zerocoin.obj' libtool=no \
+test/test_test_marco-tutorial_zerocoin.obj: test/tutorial_zerocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-tutorial_zerocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-tutorial_zerocoin.Tpo -c -o test/test_test_marco-tutorial_zerocoin.obj `if test -f 'test/tutorial_zerocoin.cpp'; then $(CYGPATH_W) 'test/tutorial_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/tutorial_zerocoin.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-tutorial_zerocoin.Tpo test/$(DEPDIR)/test_test_marco-tutorial_zerocoin.Po
+#	$(AM_V_CXX)source='test/tutorial_zerocoin.cpp' object='test/test_test_marco-tutorial_zerocoin.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-tutorial_zerocoin.obj `if test -f 'test/tutorial_zerocoin.cpp'; then $(CYGPATH_W) 'test/tutorial_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/tutorial_zerocoin.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-tutorial_zerocoin.obj `if test -f 'test/tutorial_zerocoin.cpp'; then $(CYGPATH_W) 'test/tutorial_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/tutorial_zerocoin.cpp'; fi`
 
-test/test_test_marble-libzerocoin_tests.o: test/libzerocoin_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-libzerocoin_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-libzerocoin_tests.Tpo -c -o test/test_test_marble-libzerocoin_tests.o `test -f 'test/libzerocoin_tests.cpp' || echo '$(srcdir)/'`test/libzerocoin_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-libzerocoin_tests.Tpo test/$(DEPDIR)/test_test_marble-libzerocoin_tests.Po
-#	$(AM_V_CXX)source='test/libzerocoin_tests.cpp' object='test/test_test_marble-libzerocoin_tests.o' libtool=no \
+test/test_test_marco-libzerocoin_tests.o: test/libzerocoin_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-libzerocoin_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-libzerocoin_tests.Tpo -c -o test/test_test_marco-libzerocoin_tests.o `test -f 'test/libzerocoin_tests.cpp' || echo '$(srcdir)/'`test/libzerocoin_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-libzerocoin_tests.Tpo test/$(DEPDIR)/test_test_marco-libzerocoin_tests.Po
+#	$(AM_V_CXX)source='test/libzerocoin_tests.cpp' object='test/test_test_marco-libzerocoin_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-libzerocoin_tests.o `test -f 'test/libzerocoin_tests.cpp' || echo '$(srcdir)/'`test/libzerocoin_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-libzerocoin_tests.o `test -f 'test/libzerocoin_tests.cpp' || echo '$(srcdir)/'`test/libzerocoin_tests.cpp
 
-test/test_test_marble-libzerocoin_tests.obj: test/libzerocoin_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-libzerocoin_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-libzerocoin_tests.Tpo -c -o test/test_test_marble-libzerocoin_tests.obj `if test -f 'test/libzerocoin_tests.cpp'; then $(CYGPATH_W) 'test/libzerocoin_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/libzerocoin_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-libzerocoin_tests.Tpo test/$(DEPDIR)/test_test_marble-libzerocoin_tests.Po
-#	$(AM_V_CXX)source='test/libzerocoin_tests.cpp' object='test/test_test_marble-libzerocoin_tests.obj' libtool=no \
+test/test_test_marco-libzerocoin_tests.obj: test/libzerocoin_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-libzerocoin_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-libzerocoin_tests.Tpo -c -o test/test_test_marco-libzerocoin_tests.obj `if test -f 'test/libzerocoin_tests.cpp'; then $(CYGPATH_W) 'test/libzerocoin_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/libzerocoin_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-libzerocoin_tests.Tpo test/$(DEPDIR)/test_test_marco-libzerocoin_tests.Po
+#	$(AM_V_CXX)source='test/libzerocoin_tests.cpp' object='test/test_test_marco-libzerocoin_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-libzerocoin_tests.obj `if test -f 'test/libzerocoin_tests.cpp'; then $(CYGPATH_W) 'test/libzerocoin_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/libzerocoin_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-libzerocoin_tests.obj `if test -f 'test/libzerocoin_tests.cpp'; then $(CYGPATH_W) 'test/libzerocoin_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/libzerocoin_tests.cpp'; fi`
 
-test/test_test_marble-allocator_tests.o: test/allocator_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-allocator_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-allocator_tests.Tpo -c -o test/test_test_marble-allocator_tests.o `test -f 'test/allocator_tests.cpp' || echo '$(srcdir)/'`test/allocator_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-allocator_tests.Tpo test/$(DEPDIR)/test_test_marble-allocator_tests.Po
-#	$(AM_V_CXX)source='test/allocator_tests.cpp' object='test/test_test_marble-allocator_tests.o' libtool=no \
+test/test_test_marco-allocator_tests.o: test/allocator_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-allocator_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-allocator_tests.Tpo -c -o test/test_test_marco-allocator_tests.o `test -f 'test/allocator_tests.cpp' || echo '$(srcdir)/'`test/allocator_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-allocator_tests.Tpo test/$(DEPDIR)/test_test_marco-allocator_tests.Po
+#	$(AM_V_CXX)source='test/allocator_tests.cpp' object='test/test_test_marco-allocator_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-allocator_tests.o `test -f 'test/allocator_tests.cpp' || echo '$(srcdir)/'`test/allocator_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-allocator_tests.o `test -f 'test/allocator_tests.cpp' || echo '$(srcdir)/'`test/allocator_tests.cpp
 
-test/test_test_marble-allocator_tests.obj: test/allocator_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-allocator_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-allocator_tests.Tpo -c -o test/test_test_marble-allocator_tests.obj `if test -f 'test/allocator_tests.cpp'; then $(CYGPATH_W) 'test/allocator_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/allocator_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-allocator_tests.Tpo test/$(DEPDIR)/test_test_marble-allocator_tests.Po
-#	$(AM_V_CXX)source='test/allocator_tests.cpp' object='test/test_test_marble-allocator_tests.obj' libtool=no \
+test/test_test_marco-allocator_tests.obj: test/allocator_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-allocator_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-allocator_tests.Tpo -c -o test/test_test_marco-allocator_tests.obj `if test -f 'test/allocator_tests.cpp'; then $(CYGPATH_W) 'test/allocator_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/allocator_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-allocator_tests.Tpo test/$(DEPDIR)/test_test_marco-allocator_tests.Po
+#	$(AM_V_CXX)source='test/allocator_tests.cpp' object='test/test_test_marco-allocator_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-allocator_tests.obj `if test -f 'test/allocator_tests.cpp'; then $(CYGPATH_W) 'test/allocator_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/allocator_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-allocator_tests.obj `if test -f 'test/allocator_tests.cpp'; then $(CYGPATH_W) 'test/allocator_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/allocator_tests.cpp'; fi`
 
-test/test_test_marble-base32_tests.o: test/base32_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-base32_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-base32_tests.Tpo -c -o test/test_test_marble-base32_tests.o `test -f 'test/base32_tests.cpp' || echo '$(srcdir)/'`test/base32_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-base32_tests.Tpo test/$(DEPDIR)/test_test_marble-base32_tests.Po
-#	$(AM_V_CXX)source='test/base32_tests.cpp' object='test/test_test_marble-base32_tests.o' libtool=no \
+test/test_test_marco-base32_tests.o: test/base32_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-base32_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-base32_tests.Tpo -c -o test/test_test_marco-base32_tests.o `test -f 'test/base32_tests.cpp' || echo '$(srcdir)/'`test/base32_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-base32_tests.Tpo test/$(DEPDIR)/test_test_marco-base32_tests.Po
+#	$(AM_V_CXX)source='test/base32_tests.cpp' object='test/test_test_marco-base32_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-base32_tests.o `test -f 'test/base32_tests.cpp' || echo '$(srcdir)/'`test/base32_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-base32_tests.o `test -f 'test/base32_tests.cpp' || echo '$(srcdir)/'`test/base32_tests.cpp
 
-test/test_test_marble-base32_tests.obj: test/base32_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-base32_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-base32_tests.Tpo -c -o test/test_test_marble-base32_tests.obj `if test -f 'test/base32_tests.cpp'; then $(CYGPATH_W) 'test/base32_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base32_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-base32_tests.Tpo test/$(DEPDIR)/test_test_marble-base32_tests.Po
-#	$(AM_V_CXX)source='test/base32_tests.cpp' object='test/test_test_marble-base32_tests.obj' libtool=no \
+test/test_test_marco-base32_tests.obj: test/base32_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-base32_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-base32_tests.Tpo -c -o test/test_test_marco-base32_tests.obj `if test -f 'test/base32_tests.cpp'; then $(CYGPATH_W) 'test/base32_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base32_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-base32_tests.Tpo test/$(DEPDIR)/test_test_marco-base32_tests.Po
+#	$(AM_V_CXX)source='test/base32_tests.cpp' object='test/test_test_marco-base32_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-base32_tests.obj `if test -f 'test/base32_tests.cpp'; then $(CYGPATH_W) 'test/base32_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base32_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-base32_tests.obj `if test -f 'test/base32_tests.cpp'; then $(CYGPATH_W) 'test/base32_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base32_tests.cpp'; fi`
 
-test/test_test_marble-base58_tests.o: test/base58_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-base58_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-base58_tests.Tpo -c -o test/test_test_marble-base58_tests.o `test -f 'test/base58_tests.cpp' || echo '$(srcdir)/'`test/base58_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-base58_tests.Tpo test/$(DEPDIR)/test_test_marble-base58_tests.Po
-#	$(AM_V_CXX)source='test/base58_tests.cpp' object='test/test_test_marble-base58_tests.o' libtool=no \
+test/test_test_marco-base58_tests.o: test/base58_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-base58_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-base58_tests.Tpo -c -o test/test_test_marco-base58_tests.o `test -f 'test/base58_tests.cpp' || echo '$(srcdir)/'`test/base58_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-base58_tests.Tpo test/$(DEPDIR)/test_test_marco-base58_tests.Po
+#	$(AM_V_CXX)source='test/base58_tests.cpp' object='test/test_test_marco-base58_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-base58_tests.o `test -f 'test/base58_tests.cpp' || echo '$(srcdir)/'`test/base58_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-base58_tests.o `test -f 'test/base58_tests.cpp' || echo '$(srcdir)/'`test/base58_tests.cpp
 
-test/test_test_marble-base58_tests.obj: test/base58_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-base58_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-base58_tests.Tpo -c -o test/test_test_marble-base58_tests.obj `if test -f 'test/base58_tests.cpp'; then $(CYGPATH_W) 'test/base58_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base58_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-base58_tests.Tpo test/$(DEPDIR)/test_test_marble-base58_tests.Po
-#	$(AM_V_CXX)source='test/base58_tests.cpp' object='test/test_test_marble-base58_tests.obj' libtool=no \
+test/test_test_marco-base58_tests.obj: test/base58_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-base58_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-base58_tests.Tpo -c -o test/test_test_marco-base58_tests.obj `if test -f 'test/base58_tests.cpp'; then $(CYGPATH_W) 'test/base58_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base58_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-base58_tests.Tpo test/$(DEPDIR)/test_test_marco-base58_tests.Po
+#	$(AM_V_CXX)source='test/base58_tests.cpp' object='test/test_test_marco-base58_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-base58_tests.obj `if test -f 'test/base58_tests.cpp'; then $(CYGPATH_W) 'test/base58_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base58_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-base58_tests.obj `if test -f 'test/base58_tests.cpp'; then $(CYGPATH_W) 'test/base58_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base58_tests.cpp'; fi`
 
-test/test_test_marble-base64_tests.o: test/base64_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-base64_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-base64_tests.Tpo -c -o test/test_test_marble-base64_tests.o `test -f 'test/base64_tests.cpp' || echo '$(srcdir)/'`test/base64_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-base64_tests.Tpo test/$(DEPDIR)/test_test_marble-base64_tests.Po
-#	$(AM_V_CXX)source='test/base64_tests.cpp' object='test/test_test_marble-base64_tests.o' libtool=no \
+test/test_test_marco-base64_tests.o: test/base64_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-base64_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-base64_tests.Tpo -c -o test/test_test_marco-base64_tests.o `test -f 'test/base64_tests.cpp' || echo '$(srcdir)/'`test/base64_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-base64_tests.Tpo test/$(DEPDIR)/test_test_marco-base64_tests.Po
+#	$(AM_V_CXX)source='test/base64_tests.cpp' object='test/test_test_marco-base64_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-base64_tests.o `test -f 'test/base64_tests.cpp' || echo '$(srcdir)/'`test/base64_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-base64_tests.o `test -f 'test/base64_tests.cpp' || echo '$(srcdir)/'`test/base64_tests.cpp
 
-test/test_test_marble-base64_tests.obj: test/base64_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-base64_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-base64_tests.Tpo -c -o test/test_test_marble-base64_tests.obj `if test -f 'test/base64_tests.cpp'; then $(CYGPATH_W) 'test/base64_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base64_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-base64_tests.Tpo test/$(DEPDIR)/test_test_marble-base64_tests.Po
-#	$(AM_V_CXX)source='test/base64_tests.cpp' object='test/test_test_marble-base64_tests.obj' libtool=no \
+test/test_test_marco-base64_tests.obj: test/base64_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-base64_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-base64_tests.Tpo -c -o test/test_test_marco-base64_tests.obj `if test -f 'test/base64_tests.cpp'; then $(CYGPATH_W) 'test/base64_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base64_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-base64_tests.Tpo test/$(DEPDIR)/test_test_marco-base64_tests.Po
+#	$(AM_V_CXX)source='test/base64_tests.cpp' object='test/test_test_marco-base64_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-base64_tests.obj `if test -f 'test/base64_tests.cpp'; then $(CYGPATH_W) 'test/base64_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base64_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-base64_tests.obj `if test -f 'test/base64_tests.cpp'; then $(CYGPATH_W) 'test/base64_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base64_tests.cpp'; fi`
 
-test/test_test_marble-checkblock_tests.o: test/checkblock_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-checkblock_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-checkblock_tests.Tpo -c -o test/test_test_marble-checkblock_tests.o `test -f 'test/checkblock_tests.cpp' || echo '$(srcdir)/'`test/checkblock_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-checkblock_tests.Tpo test/$(DEPDIR)/test_test_marble-checkblock_tests.Po
-#	$(AM_V_CXX)source='test/checkblock_tests.cpp' object='test/test_test_marble-checkblock_tests.o' libtool=no \
+test/test_test_marco-checkblock_tests.o: test/checkblock_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-checkblock_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-checkblock_tests.Tpo -c -o test/test_test_marco-checkblock_tests.o `test -f 'test/checkblock_tests.cpp' || echo '$(srcdir)/'`test/checkblock_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-checkblock_tests.Tpo test/$(DEPDIR)/test_test_marco-checkblock_tests.Po
+#	$(AM_V_CXX)source='test/checkblock_tests.cpp' object='test/test_test_marco-checkblock_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-checkblock_tests.o `test -f 'test/checkblock_tests.cpp' || echo '$(srcdir)/'`test/checkblock_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-checkblock_tests.o `test -f 'test/checkblock_tests.cpp' || echo '$(srcdir)/'`test/checkblock_tests.cpp
 
-test/test_test_marble-checkblock_tests.obj: test/checkblock_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-checkblock_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-checkblock_tests.Tpo -c -o test/test_test_marble-checkblock_tests.obj `if test -f 'test/checkblock_tests.cpp'; then $(CYGPATH_W) 'test/checkblock_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/checkblock_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-checkblock_tests.Tpo test/$(DEPDIR)/test_test_marble-checkblock_tests.Po
-#	$(AM_V_CXX)source='test/checkblock_tests.cpp' object='test/test_test_marble-checkblock_tests.obj' libtool=no \
+test/test_test_marco-checkblock_tests.obj: test/checkblock_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-checkblock_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-checkblock_tests.Tpo -c -o test/test_test_marco-checkblock_tests.obj `if test -f 'test/checkblock_tests.cpp'; then $(CYGPATH_W) 'test/checkblock_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/checkblock_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-checkblock_tests.Tpo test/$(DEPDIR)/test_test_marco-checkblock_tests.Po
+#	$(AM_V_CXX)source='test/checkblock_tests.cpp' object='test/test_test_marco-checkblock_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-checkblock_tests.obj `if test -f 'test/checkblock_tests.cpp'; then $(CYGPATH_W) 'test/checkblock_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/checkblock_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-checkblock_tests.obj `if test -f 'test/checkblock_tests.cpp'; then $(CYGPATH_W) 'test/checkblock_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/checkblock_tests.cpp'; fi`
 
-test/test_test_marble-Checkpoints_tests.o: test/Checkpoints_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-Checkpoints_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-Checkpoints_tests.Tpo -c -o test/test_test_marble-Checkpoints_tests.o `test -f 'test/Checkpoints_tests.cpp' || echo '$(srcdir)/'`test/Checkpoints_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-Checkpoints_tests.Tpo test/$(DEPDIR)/test_test_marble-Checkpoints_tests.Po
-#	$(AM_V_CXX)source='test/Checkpoints_tests.cpp' object='test/test_test_marble-Checkpoints_tests.o' libtool=no \
+test/test_test_marco-Checkpoints_tests.o: test/Checkpoints_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-Checkpoints_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-Checkpoints_tests.Tpo -c -o test/test_test_marco-Checkpoints_tests.o `test -f 'test/Checkpoints_tests.cpp' || echo '$(srcdir)/'`test/Checkpoints_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-Checkpoints_tests.Tpo test/$(DEPDIR)/test_test_marco-Checkpoints_tests.Po
+#	$(AM_V_CXX)source='test/Checkpoints_tests.cpp' object='test/test_test_marco-Checkpoints_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-Checkpoints_tests.o `test -f 'test/Checkpoints_tests.cpp' || echo '$(srcdir)/'`test/Checkpoints_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-Checkpoints_tests.o `test -f 'test/Checkpoints_tests.cpp' || echo '$(srcdir)/'`test/Checkpoints_tests.cpp
 
-test/test_test_marble-Checkpoints_tests.obj: test/Checkpoints_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-Checkpoints_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-Checkpoints_tests.Tpo -c -o test/test_test_marble-Checkpoints_tests.obj `if test -f 'test/Checkpoints_tests.cpp'; then $(CYGPATH_W) 'test/Checkpoints_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/Checkpoints_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-Checkpoints_tests.Tpo test/$(DEPDIR)/test_test_marble-Checkpoints_tests.Po
-#	$(AM_V_CXX)source='test/Checkpoints_tests.cpp' object='test/test_test_marble-Checkpoints_tests.obj' libtool=no \
+test/test_test_marco-Checkpoints_tests.obj: test/Checkpoints_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-Checkpoints_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-Checkpoints_tests.Tpo -c -o test/test_test_marco-Checkpoints_tests.obj `if test -f 'test/Checkpoints_tests.cpp'; then $(CYGPATH_W) 'test/Checkpoints_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/Checkpoints_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-Checkpoints_tests.Tpo test/$(DEPDIR)/test_test_marco-Checkpoints_tests.Po
+#	$(AM_V_CXX)source='test/Checkpoints_tests.cpp' object='test/test_test_marco-Checkpoints_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-Checkpoints_tests.obj `if test -f 'test/Checkpoints_tests.cpp'; then $(CYGPATH_W) 'test/Checkpoints_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/Checkpoints_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-Checkpoints_tests.obj `if test -f 'test/Checkpoints_tests.cpp'; then $(CYGPATH_W) 'test/Checkpoints_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/Checkpoints_tests.cpp'; fi`
 
-test/test_test_marble-coins_tests.o: test/coins_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-coins_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-coins_tests.Tpo -c -o test/test_test_marble-coins_tests.o `test -f 'test/coins_tests.cpp' || echo '$(srcdir)/'`test/coins_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-coins_tests.Tpo test/$(DEPDIR)/test_test_marble-coins_tests.Po
-#	$(AM_V_CXX)source='test/coins_tests.cpp' object='test/test_test_marble-coins_tests.o' libtool=no \
+test/test_test_marco-coins_tests.o: test/coins_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-coins_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-coins_tests.Tpo -c -o test/test_test_marco-coins_tests.o `test -f 'test/coins_tests.cpp' || echo '$(srcdir)/'`test/coins_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-coins_tests.Tpo test/$(DEPDIR)/test_test_marco-coins_tests.Po
+#	$(AM_V_CXX)source='test/coins_tests.cpp' object='test/test_test_marco-coins_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-coins_tests.o `test -f 'test/coins_tests.cpp' || echo '$(srcdir)/'`test/coins_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-coins_tests.o `test -f 'test/coins_tests.cpp' || echo '$(srcdir)/'`test/coins_tests.cpp
 
-test/test_test_marble-coins_tests.obj: test/coins_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-coins_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-coins_tests.Tpo -c -o test/test_test_marble-coins_tests.obj `if test -f 'test/coins_tests.cpp'; then $(CYGPATH_W) 'test/coins_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/coins_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-coins_tests.Tpo test/$(DEPDIR)/test_test_marble-coins_tests.Po
-#	$(AM_V_CXX)source='test/coins_tests.cpp' object='test/test_test_marble-coins_tests.obj' libtool=no \
+test/test_test_marco-coins_tests.obj: test/coins_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-coins_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-coins_tests.Tpo -c -o test/test_test_marco-coins_tests.obj `if test -f 'test/coins_tests.cpp'; then $(CYGPATH_W) 'test/coins_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/coins_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-coins_tests.Tpo test/$(DEPDIR)/test_test_marco-coins_tests.Po
+#	$(AM_V_CXX)source='test/coins_tests.cpp' object='test/test_test_marco-coins_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-coins_tests.obj `if test -f 'test/coins_tests.cpp'; then $(CYGPATH_W) 'test/coins_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/coins_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-coins_tests.obj `if test -f 'test/coins_tests.cpp'; then $(CYGPATH_W) 'test/coins_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/coins_tests.cpp'; fi`
 
-test/test_test_marble-compress_tests.o: test/compress_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-compress_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-compress_tests.Tpo -c -o test/test_test_marble-compress_tests.o `test -f 'test/compress_tests.cpp' || echo '$(srcdir)/'`test/compress_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-compress_tests.Tpo test/$(DEPDIR)/test_test_marble-compress_tests.Po
-#	$(AM_V_CXX)source='test/compress_tests.cpp' object='test/test_test_marble-compress_tests.o' libtool=no \
+test/test_test_marco-compress_tests.o: test/compress_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-compress_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-compress_tests.Tpo -c -o test/test_test_marco-compress_tests.o `test -f 'test/compress_tests.cpp' || echo '$(srcdir)/'`test/compress_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-compress_tests.Tpo test/$(DEPDIR)/test_test_marco-compress_tests.Po
+#	$(AM_V_CXX)source='test/compress_tests.cpp' object='test/test_test_marco-compress_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-compress_tests.o `test -f 'test/compress_tests.cpp' || echo '$(srcdir)/'`test/compress_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-compress_tests.o `test -f 'test/compress_tests.cpp' || echo '$(srcdir)/'`test/compress_tests.cpp
 
-test/test_test_marble-compress_tests.obj: test/compress_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-compress_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-compress_tests.Tpo -c -o test/test_test_marble-compress_tests.obj `if test -f 'test/compress_tests.cpp'; then $(CYGPATH_W) 'test/compress_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/compress_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-compress_tests.Tpo test/$(DEPDIR)/test_test_marble-compress_tests.Po
-#	$(AM_V_CXX)source='test/compress_tests.cpp' object='test/test_test_marble-compress_tests.obj' libtool=no \
+test/test_test_marco-compress_tests.obj: test/compress_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-compress_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-compress_tests.Tpo -c -o test/test_test_marco-compress_tests.obj `if test -f 'test/compress_tests.cpp'; then $(CYGPATH_W) 'test/compress_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/compress_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-compress_tests.Tpo test/$(DEPDIR)/test_test_marco-compress_tests.Po
+#	$(AM_V_CXX)source='test/compress_tests.cpp' object='test/test_test_marco-compress_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-compress_tests.obj `if test -f 'test/compress_tests.cpp'; then $(CYGPATH_W) 'test/compress_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/compress_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-compress_tests.obj `if test -f 'test/compress_tests.cpp'; then $(CYGPATH_W) 'test/compress_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/compress_tests.cpp'; fi`
 
-test/test_test_marble-crypto_tests.o: test/crypto_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-crypto_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-crypto_tests.Tpo -c -o test/test_test_marble-crypto_tests.o `test -f 'test/crypto_tests.cpp' || echo '$(srcdir)/'`test/crypto_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-crypto_tests.Tpo test/$(DEPDIR)/test_test_marble-crypto_tests.Po
-#	$(AM_V_CXX)source='test/crypto_tests.cpp' object='test/test_test_marble-crypto_tests.o' libtool=no \
+test/test_test_marco-crypto_tests.o: test/crypto_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-crypto_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-crypto_tests.Tpo -c -o test/test_test_marco-crypto_tests.o `test -f 'test/crypto_tests.cpp' || echo '$(srcdir)/'`test/crypto_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-crypto_tests.Tpo test/$(DEPDIR)/test_test_marco-crypto_tests.Po
+#	$(AM_V_CXX)source='test/crypto_tests.cpp' object='test/test_test_marco-crypto_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-crypto_tests.o `test -f 'test/crypto_tests.cpp' || echo '$(srcdir)/'`test/crypto_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-crypto_tests.o `test -f 'test/crypto_tests.cpp' || echo '$(srcdir)/'`test/crypto_tests.cpp
 
-test/test_test_marble-crypto_tests.obj: test/crypto_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-crypto_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-crypto_tests.Tpo -c -o test/test_test_marble-crypto_tests.obj `if test -f 'test/crypto_tests.cpp'; then $(CYGPATH_W) 'test/crypto_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/crypto_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-crypto_tests.Tpo test/$(DEPDIR)/test_test_marble-crypto_tests.Po
-#	$(AM_V_CXX)source='test/crypto_tests.cpp' object='test/test_test_marble-crypto_tests.obj' libtool=no \
+test/test_test_marco-crypto_tests.obj: test/crypto_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-crypto_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-crypto_tests.Tpo -c -o test/test_test_marco-crypto_tests.obj `if test -f 'test/crypto_tests.cpp'; then $(CYGPATH_W) 'test/crypto_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/crypto_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-crypto_tests.Tpo test/$(DEPDIR)/test_test_marco-crypto_tests.Po
+#	$(AM_V_CXX)source='test/crypto_tests.cpp' object='test/test_test_marco-crypto_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-crypto_tests.obj `if test -f 'test/crypto_tests.cpp'; then $(CYGPATH_W) 'test/crypto_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/crypto_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-crypto_tests.obj `if test -f 'test/crypto_tests.cpp'; then $(CYGPATH_W) 'test/crypto_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/crypto_tests.cpp'; fi`
 
-test/test_test_marble-DoS_tests.o: test/DoS_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-DoS_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-DoS_tests.Tpo -c -o test/test_test_marble-DoS_tests.o `test -f 'test/DoS_tests.cpp' || echo '$(srcdir)/'`test/DoS_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-DoS_tests.Tpo test/$(DEPDIR)/test_test_marble-DoS_tests.Po
-#	$(AM_V_CXX)source='test/DoS_tests.cpp' object='test/test_test_marble-DoS_tests.o' libtool=no \
+test/test_test_marco-DoS_tests.o: test/DoS_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-DoS_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-DoS_tests.Tpo -c -o test/test_test_marco-DoS_tests.o `test -f 'test/DoS_tests.cpp' || echo '$(srcdir)/'`test/DoS_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-DoS_tests.Tpo test/$(DEPDIR)/test_test_marco-DoS_tests.Po
+#	$(AM_V_CXX)source='test/DoS_tests.cpp' object='test/test_test_marco-DoS_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-DoS_tests.o `test -f 'test/DoS_tests.cpp' || echo '$(srcdir)/'`test/DoS_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-DoS_tests.o `test -f 'test/DoS_tests.cpp' || echo '$(srcdir)/'`test/DoS_tests.cpp
 
-test/test_test_marble-DoS_tests.obj: test/DoS_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-DoS_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-DoS_tests.Tpo -c -o test/test_test_marble-DoS_tests.obj `if test -f 'test/DoS_tests.cpp'; then $(CYGPATH_W) 'test/DoS_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/DoS_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-DoS_tests.Tpo test/$(DEPDIR)/test_test_marble-DoS_tests.Po
-#	$(AM_V_CXX)source='test/DoS_tests.cpp' object='test/test_test_marble-DoS_tests.obj' libtool=no \
+test/test_test_marco-DoS_tests.obj: test/DoS_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-DoS_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-DoS_tests.Tpo -c -o test/test_test_marco-DoS_tests.obj `if test -f 'test/DoS_tests.cpp'; then $(CYGPATH_W) 'test/DoS_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/DoS_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-DoS_tests.Tpo test/$(DEPDIR)/test_test_marco-DoS_tests.Po
+#	$(AM_V_CXX)source='test/DoS_tests.cpp' object='test/test_test_marco-DoS_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-DoS_tests.obj `if test -f 'test/DoS_tests.cpp'; then $(CYGPATH_W) 'test/DoS_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/DoS_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-DoS_tests.obj `if test -f 'test/DoS_tests.cpp'; then $(CYGPATH_W) 'test/DoS_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/DoS_tests.cpp'; fi`
 
-test/test_test_marble-getarg_tests.o: test/getarg_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-getarg_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-getarg_tests.Tpo -c -o test/test_test_marble-getarg_tests.o `test -f 'test/getarg_tests.cpp' || echo '$(srcdir)/'`test/getarg_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-getarg_tests.Tpo test/$(DEPDIR)/test_test_marble-getarg_tests.Po
-#	$(AM_V_CXX)source='test/getarg_tests.cpp' object='test/test_test_marble-getarg_tests.o' libtool=no \
+test/test_test_marco-getarg_tests.o: test/getarg_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-getarg_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-getarg_tests.Tpo -c -o test/test_test_marco-getarg_tests.o `test -f 'test/getarg_tests.cpp' || echo '$(srcdir)/'`test/getarg_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-getarg_tests.Tpo test/$(DEPDIR)/test_test_marco-getarg_tests.Po
+#	$(AM_V_CXX)source='test/getarg_tests.cpp' object='test/test_test_marco-getarg_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-getarg_tests.o `test -f 'test/getarg_tests.cpp' || echo '$(srcdir)/'`test/getarg_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-getarg_tests.o `test -f 'test/getarg_tests.cpp' || echo '$(srcdir)/'`test/getarg_tests.cpp
 
-test/test_test_marble-getarg_tests.obj: test/getarg_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-getarg_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-getarg_tests.Tpo -c -o test/test_test_marble-getarg_tests.obj `if test -f 'test/getarg_tests.cpp'; then $(CYGPATH_W) 'test/getarg_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/getarg_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-getarg_tests.Tpo test/$(DEPDIR)/test_test_marble-getarg_tests.Po
-#	$(AM_V_CXX)source='test/getarg_tests.cpp' object='test/test_test_marble-getarg_tests.obj' libtool=no \
+test/test_test_marco-getarg_tests.obj: test/getarg_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-getarg_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-getarg_tests.Tpo -c -o test/test_test_marco-getarg_tests.obj `if test -f 'test/getarg_tests.cpp'; then $(CYGPATH_W) 'test/getarg_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/getarg_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-getarg_tests.Tpo test/$(DEPDIR)/test_test_marco-getarg_tests.Po
+#	$(AM_V_CXX)source='test/getarg_tests.cpp' object='test/test_test_marco-getarg_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-getarg_tests.obj `if test -f 'test/getarg_tests.cpp'; then $(CYGPATH_W) 'test/getarg_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/getarg_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-getarg_tests.obj `if test -f 'test/getarg_tests.cpp'; then $(CYGPATH_W) 'test/getarg_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/getarg_tests.cpp'; fi`
 
-test/test_test_marble-hash_tests.o: test/hash_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-hash_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-hash_tests.Tpo -c -o test/test_test_marble-hash_tests.o `test -f 'test/hash_tests.cpp' || echo '$(srcdir)/'`test/hash_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-hash_tests.Tpo test/$(DEPDIR)/test_test_marble-hash_tests.Po
-#	$(AM_V_CXX)source='test/hash_tests.cpp' object='test/test_test_marble-hash_tests.o' libtool=no \
+test/test_test_marco-hash_tests.o: test/hash_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-hash_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-hash_tests.Tpo -c -o test/test_test_marco-hash_tests.o `test -f 'test/hash_tests.cpp' || echo '$(srcdir)/'`test/hash_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-hash_tests.Tpo test/$(DEPDIR)/test_test_marco-hash_tests.Po
+#	$(AM_V_CXX)source='test/hash_tests.cpp' object='test/test_test_marco-hash_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-hash_tests.o `test -f 'test/hash_tests.cpp' || echo '$(srcdir)/'`test/hash_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-hash_tests.o `test -f 'test/hash_tests.cpp' || echo '$(srcdir)/'`test/hash_tests.cpp
 
-test/test_test_marble-hash_tests.obj: test/hash_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-hash_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-hash_tests.Tpo -c -o test/test_test_marble-hash_tests.obj `if test -f 'test/hash_tests.cpp'; then $(CYGPATH_W) 'test/hash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/hash_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-hash_tests.Tpo test/$(DEPDIR)/test_test_marble-hash_tests.Po
-#	$(AM_V_CXX)source='test/hash_tests.cpp' object='test/test_test_marble-hash_tests.obj' libtool=no \
+test/test_test_marco-hash_tests.obj: test/hash_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-hash_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-hash_tests.Tpo -c -o test/test_test_marco-hash_tests.obj `if test -f 'test/hash_tests.cpp'; then $(CYGPATH_W) 'test/hash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/hash_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-hash_tests.Tpo test/$(DEPDIR)/test_test_marco-hash_tests.Po
+#	$(AM_V_CXX)source='test/hash_tests.cpp' object='test/test_test_marco-hash_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-hash_tests.obj `if test -f 'test/hash_tests.cpp'; then $(CYGPATH_W) 'test/hash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/hash_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-hash_tests.obj `if test -f 'test/hash_tests.cpp'; then $(CYGPATH_W) 'test/hash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/hash_tests.cpp'; fi`
 
-test/test_test_marble-key_tests.o: test/key_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-key_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-key_tests.Tpo -c -o test/test_test_marble-key_tests.o `test -f 'test/key_tests.cpp' || echo '$(srcdir)/'`test/key_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-key_tests.Tpo test/$(DEPDIR)/test_test_marble-key_tests.Po
-#	$(AM_V_CXX)source='test/key_tests.cpp' object='test/test_test_marble-key_tests.o' libtool=no \
+test/test_test_marco-key_tests.o: test/key_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-key_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-key_tests.Tpo -c -o test/test_test_marco-key_tests.o `test -f 'test/key_tests.cpp' || echo '$(srcdir)/'`test/key_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-key_tests.Tpo test/$(DEPDIR)/test_test_marco-key_tests.Po
+#	$(AM_V_CXX)source='test/key_tests.cpp' object='test/test_test_marco-key_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-key_tests.o `test -f 'test/key_tests.cpp' || echo '$(srcdir)/'`test/key_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-key_tests.o `test -f 'test/key_tests.cpp' || echo '$(srcdir)/'`test/key_tests.cpp
 
-test/test_test_marble-key_tests.obj: test/key_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-key_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-key_tests.Tpo -c -o test/test_test_marble-key_tests.obj `if test -f 'test/key_tests.cpp'; then $(CYGPATH_W) 'test/key_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/key_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-key_tests.Tpo test/$(DEPDIR)/test_test_marble-key_tests.Po
-#	$(AM_V_CXX)source='test/key_tests.cpp' object='test/test_test_marble-key_tests.obj' libtool=no \
+test/test_test_marco-key_tests.obj: test/key_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-key_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-key_tests.Tpo -c -o test/test_test_marco-key_tests.obj `if test -f 'test/key_tests.cpp'; then $(CYGPATH_W) 'test/key_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/key_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-key_tests.Tpo test/$(DEPDIR)/test_test_marco-key_tests.Po
+#	$(AM_V_CXX)source='test/key_tests.cpp' object='test/test_test_marco-key_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-key_tests.obj `if test -f 'test/key_tests.cpp'; then $(CYGPATH_W) 'test/key_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/key_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-key_tests.obj `if test -f 'test/key_tests.cpp'; then $(CYGPATH_W) 'test/key_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/key_tests.cpp'; fi`
 
-test/test_test_marble-main_tests.o: test/main_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-main_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-main_tests.Tpo -c -o test/test_test_marble-main_tests.o `test -f 'test/main_tests.cpp' || echo '$(srcdir)/'`test/main_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-main_tests.Tpo test/$(DEPDIR)/test_test_marble-main_tests.Po
-#	$(AM_V_CXX)source='test/main_tests.cpp' object='test/test_test_marble-main_tests.o' libtool=no \
+test/test_test_marco-main_tests.o: test/main_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-main_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-main_tests.Tpo -c -o test/test_test_marco-main_tests.o `test -f 'test/main_tests.cpp' || echo '$(srcdir)/'`test/main_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-main_tests.Tpo test/$(DEPDIR)/test_test_marco-main_tests.Po
+#	$(AM_V_CXX)source='test/main_tests.cpp' object='test/test_test_marco-main_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-main_tests.o `test -f 'test/main_tests.cpp' || echo '$(srcdir)/'`test/main_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-main_tests.o `test -f 'test/main_tests.cpp' || echo '$(srcdir)/'`test/main_tests.cpp
 
-test/test_test_marble-main_tests.obj: test/main_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-main_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-main_tests.Tpo -c -o test/test_test_marble-main_tests.obj `if test -f 'test/main_tests.cpp'; then $(CYGPATH_W) 'test/main_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/main_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-main_tests.Tpo test/$(DEPDIR)/test_test_marble-main_tests.Po
-#	$(AM_V_CXX)source='test/main_tests.cpp' object='test/test_test_marble-main_tests.obj' libtool=no \
+test/test_test_marco-main_tests.obj: test/main_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-main_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-main_tests.Tpo -c -o test/test_test_marco-main_tests.obj `if test -f 'test/main_tests.cpp'; then $(CYGPATH_W) 'test/main_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/main_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-main_tests.Tpo test/$(DEPDIR)/test_test_marco-main_tests.Po
+#	$(AM_V_CXX)source='test/main_tests.cpp' object='test/test_test_marco-main_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-main_tests.obj `if test -f 'test/main_tests.cpp'; then $(CYGPATH_W) 'test/main_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/main_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-main_tests.obj `if test -f 'test/main_tests.cpp'; then $(CYGPATH_W) 'test/main_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/main_tests.cpp'; fi`
 
-test/test_test_marble-mempool_tests.o: test/mempool_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-mempool_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-mempool_tests.Tpo -c -o test/test_test_marble-mempool_tests.o `test -f 'test/mempool_tests.cpp' || echo '$(srcdir)/'`test/mempool_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-mempool_tests.Tpo test/$(DEPDIR)/test_test_marble-mempool_tests.Po
-#	$(AM_V_CXX)source='test/mempool_tests.cpp' object='test/test_test_marble-mempool_tests.o' libtool=no \
+test/test_test_marco-mempool_tests.o: test/mempool_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-mempool_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-mempool_tests.Tpo -c -o test/test_test_marco-mempool_tests.o `test -f 'test/mempool_tests.cpp' || echo '$(srcdir)/'`test/mempool_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-mempool_tests.Tpo test/$(DEPDIR)/test_test_marco-mempool_tests.Po
+#	$(AM_V_CXX)source='test/mempool_tests.cpp' object='test/test_test_marco-mempool_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-mempool_tests.o `test -f 'test/mempool_tests.cpp' || echo '$(srcdir)/'`test/mempool_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-mempool_tests.o `test -f 'test/mempool_tests.cpp' || echo '$(srcdir)/'`test/mempool_tests.cpp
 
-test/test_test_marble-mempool_tests.obj: test/mempool_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-mempool_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-mempool_tests.Tpo -c -o test/test_test_marble-mempool_tests.obj `if test -f 'test/mempool_tests.cpp'; then $(CYGPATH_W) 'test/mempool_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mempool_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-mempool_tests.Tpo test/$(DEPDIR)/test_test_marble-mempool_tests.Po
-#	$(AM_V_CXX)source='test/mempool_tests.cpp' object='test/test_test_marble-mempool_tests.obj' libtool=no \
+test/test_test_marco-mempool_tests.obj: test/mempool_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-mempool_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-mempool_tests.Tpo -c -o test/test_test_marco-mempool_tests.obj `if test -f 'test/mempool_tests.cpp'; then $(CYGPATH_W) 'test/mempool_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mempool_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-mempool_tests.Tpo test/$(DEPDIR)/test_test_marco-mempool_tests.Po
+#	$(AM_V_CXX)source='test/mempool_tests.cpp' object='test/test_test_marco-mempool_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-mempool_tests.obj `if test -f 'test/mempool_tests.cpp'; then $(CYGPATH_W) 'test/mempool_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mempool_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-mempool_tests.obj `if test -f 'test/mempool_tests.cpp'; then $(CYGPATH_W) 'test/mempool_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mempool_tests.cpp'; fi`
 
-test/test_test_marble-mruset_tests.o: test/mruset_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-mruset_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-mruset_tests.Tpo -c -o test/test_test_marble-mruset_tests.o `test -f 'test/mruset_tests.cpp' || echo '$(srcdir)/'`test/mruset_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-mruset_tests.Tpo test/$(DEPDIR)/test_test_marble-mruset_tests.Po
-#	$(AM_V_CXX)source='test/mruset_tests.cpp' object='test/test_test_marble-mruset_tests.o' libtool=no \
+test/test_test_marco-mruset_tests.o: test/mruset_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-mruset_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-mruset_tests.Tpo -c -o test/test_test_marco-mruset_tests.o `test -f 'test/mruset_tests.cpp' || echo '$(srcdir)/'`test/mruset_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-mruset_tests.Tpo test/$(DEPDIR)/test_test_marco-mruset_tests.Po
+#	$(AM_V_CXX)source='test/mruset_tests.cpp' object='test/test_test_marco-mruset_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-mruset_tests.o `test -f 'test/mruset_tests.cpp' || echo '$(srcdir)/'`test/mruset_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-mruset_tests.o `test -f 'test/mruset_tests.cpp' || echo '$(srcdir)/'`test/mruset_tests.cpp
 
-test/test_test_marble-mruset_tests.obj: test/mruset_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-mruset_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-mruset_tests.Tpo -c -o test/test_test_marble-mruset_tests.obj `if test -f 'test/mruset_tests.cpp'; then $(CYGPATH_W) 'test/mruset_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mruset_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-mruset_tests.Tpo test/$(DEPDIR)/test_test_marble-mruset_tests.Po
-#	$(AM_V_CXX)source='test/mruset_tests.cpp' object='test/test_test_marble-mruset_tests.obj' libtool=no \
+test/test_test_marco-mruset_tests.obj: test/mruset_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-mruset_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-mruset_tests.Tpo -c -o test/test_test_marco-mruset_tests.obj `if test -f 'test/mruset_tests.cpp'; then $(CYGPATH_W) 'test/mruset_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mruset_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-mruset_tests.Tpo test/$(DEPDIR)/test_test_marco-mruset_tests.Po
+#	$(AM_V_CXX)source='test/mruset_tests.cpp' object='test/test_test_marco-mruset_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-mruset_tests.obj `if test -f 'test/mruset_tests.cpp'; then $(CYGPATH_W) 'test/mruset_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mruset_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-mruset_tests.obj `if test -f 'test/mruset_tests.cpp'; then $(CYGPATH_W) 'test/mruset_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mruset_tests.cpp'; fi`
 
-test/test_test_marble-multisig_tests.o: test/multisig_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-multisig_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-multisig_tests.Tpo -c -o test/test_test_marble-multisig_tests.o `test -f 'test/multisig_tests.cpp' || echo '$(srcdir)/'`test/multisig_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-multisig_tests.Tpo test/$(DEPDIR)/test_test_marble-multisig_tests.Po
-#	$(AM_V_CXX)source='test/multisig_tests.cpp' object='test/test_test_marble-multisig_tests.o' libtool=no \
+test/test_test_marco-multisig_tests.o: test/multisig_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-multisig_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-multisig_tests.Tpo -c -o test/test_test_marco-multisig_tests.o `test -f 'test/multisig_tests.cpp' || echo '$(srcdir)/'`test/multisig_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-multisig_tests.Tpo test/$(DEPDIR)/test_test_marco-multisig_tests.Po
+#	$(AM_V_CXX)source='test/multisig_tests.cpp' object='test/test_test_marco-multisig_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-multisig_tests.o `test -f 'test/multisig_tests.cpp' || echo '$(srcdir)/'`test/multisig_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-multisig_tests.o `test -f 'test/multisig_tests.cpp' || echo '$(srcdir)/'`test/multisig_tests.cpp
 
-test/test_test_marble-multisig_tests.obj: test/multisig_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-multisig_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-multisig_tests.Tpo -c -o test/test_test_marble-multisig_tests.obj `if test -f 'test/multisig_tests.cpp'; then $(CYGPATH_W) 'test/multisig_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/multisig_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-multisig_tests.Tpo test/$(DEPDIR)/test_test_marble-multisig_tests.Po
-#	$(AM_V_CXX)source='test/multisig_tests.cpp' object='test/test_test_marble-multisig_tests.obj' libtool=no \
+test/test_test_marco-multisig_tests.obj: test/multisig_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-multisig_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-multisig_tests.Tpo -c -o test/test_test_marco-multisig_tests.obj `if test -f 'test/multisig_tests.cpp'; then $(CYGPATH_W) 'test/multisig_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/multisig_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-multisig_tests.Tpo test/$(DEPDIR)/test_test_marco-multisig_tests.Po
+#	$(AM_V_CXX)source='test/multisig_tests.cpp' object='test/test_test_marco-multisig_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-multisig_tests.obj `if test -f 'test/multisig_tests.cpp'; then $(CYGPATH_W) 'test/multisig_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/multisig_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-multisig_tests.obj `if test -f 'test/multisig_tests.cpp'; then $(CYGPATH_W) 'test/multisig_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/multisig_tests.cpp'; fi`
 
-test/test_test_marble-netbase_tests.o: test/netbase_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-netbase_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-netbase_tests.Tpo -c -o test/test_test_marble-netbase_tests.o `test -f 'test/netbase_tests.cpp' || echo '$(srcdir)/'`test/netbase_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-netbase_tests.Tpo test/$(DEPDIR)/test_test_marble-netbase_tests.Po
-#	$(AM_V_CXX)source='test/netbase_tests.cpp' object='test/test_test_marble-netbase_tests.o' libtool=no \
+test/test_test_marco-netbase_tests.o: test/netbase_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-netbase_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-netbase_tests.Tpo -c -o test/test_test_marco-netbase_tests.o `test -f 'test/netbase_tests.cpp' || echo '$(srcdir)/'`test/netbase_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-netbase_tests.Tpo test/$(DEPDIR)/test_test_marco-netbase_tests.Po
+#	$(AM_V_CXX)source='test/netbase_tests.cpp' object='test/test_test_marco-netbase_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-netbase_tests.o `test -f 'test/netbase_tests.cpp' || echo '$(srcdir)/'`test/netbase_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-netbase_tests.o `test -f 'test/netbase_tests.cpp' || echo '$(srcdir)/'`test/netbase_tests.cpp
 
-test/test_test_marble-netbase_tests.obj: test/netbase_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-netbase_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-netbase_tests.Tpo -c -o test/test_test_marble-netbase_tests.obj `if test -f 'test/netbase_tests.cpp'; then $(CYGPATH_W) 'test/netbase_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/netbase_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-netbase_tests.Tpo test/$(DEPDIR)/test_test_marble-netbase_tests.Po
-#	$(AM_V_CXX)source='test/netbase_tests.cpp' object='test/test_test_marble-netbase_tests.obj' libtool=no \
+test/test_test_marco-netbase_tests.obj: test/netbase_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-netbase_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-netbase_tests.Tpo -c -o test/test_test_marco-netbase_tests.obj `if test -f 'test/netbase_tests.cpp'; then $(CYGPATH_W) 'test/netbase_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/netbase_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-netbase_tests.Tpo test/$(DEPDIR)/test_test_marco-netbase_tests.Po
+#	$(AM_V_CXX)source='test/netbase_tests.cpp' object='test/test_test_marco-netbase_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-netbase_tests.obj `if test -f 'test/netbase_tests.cpp'; then $(CYGPATH_W) 'test/netbase_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/netbase_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-netbase_tests.obj `if test -f 'test/netbase_tests.cpp'; then $(CYGPATH_W) 'test/netbase_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/netbase_tests.cpp'; fi`
 
-test/test_test_marble-pmt_tests.o: test/pmt_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-pmt_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-pmt_tests.Tpo -c -o test/test_test_marble-pmt_tests.o `test -f 'test/pmt_tests.cpp' || echo '$(srcdir)/'`test/pmt_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-pmt_tests.Tpo test/$(DEPDIR)/test_test_marble-pmt_tests.Po
-#	$(AM_V_CXX)source='test/pmt_tests.cpp' object='test/test_test_marble-pmt_tests.o' libtool=no \
+test/test_test_marco-pmt_tests.o: test/pmt_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-pmt_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-pmt_tests.Tpo -c -o test/test_test_marco-pmt_tests.o `test -f 'test/pmt_tests.cpp' || echo '$(srcdir)/'`test/pmt_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-pmt_tests.Tpo test/$(DEPDIR)/test_test_marco-pmt_tests.Po
+#	$(AM_V_CXX)source='test/pmt_tests.cpp' object='test/test_test_marco-pmt_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-pmt_tests.o `test -f 'test/pmt_tests.cpp' || echo '$(srcdir)/'`test/pmt_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-pmt_tests.o `test -f 'test/pmt_tests.cpp' || echo '$(srcdir)/'`test/pmt_tests.cpp
 
-test/test_test_marble-pmt_tests.obj: test/pmt_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-pmt_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-pmt_tests.Tpo -c -o test/test_test_marble-pmt_tests.obj `if test -f 'test/pmt_tests.cpp'; then $(CYGPATH_W) 'test/pmt_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/pmt_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-pmt_tests.Tpo test/$(DEPDIR)/test_test_marble-pmt_tests.Po
-#	$(AM_V_CXX)source='test/pmt_tests.cpp' object='test/test_test_marble-pmt_tests.obj' libtool=no \
+test/test_test_marco-pmt_tests.obj: test/pmt_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-pmt_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-pmt_tests.Tpo -c -o test/test_test_marco-pmt_tests.obj `if test -f 'test/pmt_tests.cpp'; then $(CYGPATH_W) 'test/pmt_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/pmt_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-pmt_tests.Tpo test/$(DEPDIR)/test_test_marco-pmt_tests.Po
+#	$(AM_V_CXX)source='test/pmt_tests.cpp' object='test/test_test_marco-pmt_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-pmt_tests.obj `if test -f 'test/pmt_tests.cpp'; then $(CYGPATH_W) 'test/pmt_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/pmt_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-pmt_tests.obj `if test -f 'test/pmt_tests.cpp'; then $(CYGPATH_W) 'test/pmt_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/pmt_tests.cpp'; fi`
 
-test/test_test_marble-rpc_tests.o: test/rpc_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-rpc_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-rpc_tests.Tpo -c -o test/test_test_marble-rpc_tests.o `test -f 'test/rpc_tests.cpp' || echo '$(srcdir)/'`test/rpc_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-rpc_tests.Tpo test/$(DEPDIR)/test_test_marble-rpc_tests.Po
-#	$(AM_V_CXX)source='test/rpc_tests.cpp' object='test/test_test_marble-rpc_tests.o' libtool=no \
+test/test_test_marco-rpc_tests.o: test/rpc_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-rpc_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-rpc_tests.Tpo -c -o test/test_test_marco-rpc_tests.o `test -f 'test/rpc_tests.cpp' || echo '$(srcdir)/'`test/rpc_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-rpc_tests.Tpo test/$(DEPDIR)/test_test_marco-rpc_tests.Po
+#	$(AM_V_CXX)source='test/rpc_tests.cpp' object='test/test_test_marco-rpc_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-rpc_tests.o `test -f 'test/rpc_tests.cpp' || echo '$(srcdir)/'`test/rpc_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-rpc_tests.o `test -f 'test/rpc_tests.cpp' || echo '$(srcdir)/'`test/rpc_tests.cpp
 
-test/test_test_marble-rpc_tests.obj: test/rpc_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-rpc_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-rpc_tests.Tpo -c -o test/test_test_marble-rpc_tests.obj `if test -f 'test/rpc_tests.cpp'; then $(CYGPATH_W) 'test/rpc_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-rpc_tests.Tpo test/$(DEPDIR)/test_test_marble-rpc_tests.Po
-#	$(AM_V_CXX)source='test/rpc_tests.cpp' object='test/test_test_marble-rpc_tests.obj' libtool=no \
+test/test_test_marco-rpc_tests.obj: test/rpc_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-rpc_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-rpc_tests.Tpo -c -o test/test_test_marco-rpc_tests.obj `if test -f 'test/rpc_tests.cpp'; then $(CYGPATH_W) 'test/rpc_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-rpc_tests.Tpo test/$(DEPDIR)/test_test_marco-rpc_tests.Po
+#	$(AM_V_CXX)source='test/rpc_tests.cpp' object='test/test_test_marco-rpc_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-rpc_tests.obj `if test -f 'test/rpc_tests.cpp'; then $(CYGPATH_W) 'test/rpc_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-rpc_tests.obj `if test -f 'test/rpc_tests.cpp'; then $(CYGPATH_W) 'test/rpc_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_tests.cpp'; fi`
 
-test/test_test_marble-sanity_tests.o: test/sanity_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-sanity_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-sanity_tests.Tpo -c -o test/test_test_marble-sanity_tests.o `test -f 'test/sanity_tests.cpp' || echo '$(srcdir)/'`test/sanity_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-sanity_tests.Tpo test/$(DEPDIR)/test_test_marble-sanity_tests.Po
-#	$(AM_V_CXX)source='test/sanity_tests.cpp' object='test/test_test_marble-sanity_tests.o' libtool=no \
+test/test_test_marco-sanity_tests.o: test/sanity_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-sanity_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-sanity_tests.Tpo -c -o test/test_test_marco-sanity_tests.o `test -f 'test/sanity_tests.cpp' || echo '$(srcdir)/'`test/sanity_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-sanity_tests.Tpo test/$(DEPDIR)/test_test_marco-sanity_tests.Po
+#	$(AM_V_CXX)source='test/sanity_tests.cpp' object='test/test_test_marco-sanity_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-sanity_tests.o `test -f 'test/sanity_tests.cpp' || echo '$(srcdir)/'`test/sanity_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-sanity_tests.o `test -f 'test/sanity_tests.cpp' || echo '$(srcdir)/'`test/sanity_tests.cpp
 
-test/test_test_marble-sanity_tests.obj: test/sanity_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-sanity_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-sanity_tests.Tpo -c -o test/test_test_marble-sanity_tests.obj `if test -f 'test/sanity_tests.cpp'; then $(CYGPATH_W) 'test/sanity_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sanity_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-sanity_tests.Tpo test/$(DEPDIR)/test_test_marble-sanity_tests.Po
-#	$(AM_V_CXX)source='test/sanity_tests.cpp' object='test/test_test_marble-sanity_tests.obj' libtool=no \
+test/test_test_marco-sanity_tests.obj: test/sanity_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-sanity_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-sanity_tests.Tpo -c -o test/test_test_marco-sanity_tests.obj `if test -f 'test/sanity_tests.cpp'; then $(CYGPATH_W) 'test/sanity_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sanity_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-sanity_tests.Tpo test/$(DEPDIR)/test_test_marco-sanity_tests.Po
+#	$(AM_V_CXX)source='test/sanity_tests.cpp' object='test/test_test_marco-sanity_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-sanity_tests.obj `if test -f 'test/sanity_tests.cpp'; then $(CYGPATH_W) 'test/sanity_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sanity_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-sanity_tests.obj `if test -f 'test/sanity_tests.cpp'; then $(CYGPATH_W) 'test/sanity_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sanity_tests.cpp'; fi`
 
-test/test_test_marble-script_P2SH_tests.o: test/script_P2SH_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-script_P2SH_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-script_P2SH_tests.Tpo -c -o test/test_test_marble-script_P2SH_tests.o `test -f 'test/script_P2SH_tests.cpp' || echo '$(srcdir)/'`test/script_P2SH_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-script_P2SH_tests.Tpo test/$(DEPDIR)/test_test_marble-script_P2SH_tests.Po
-#	$(AM_V_CXX)source='test/script_P2SH_tests.cpp' object='test/test_test_marble-script_P2SH_tests.o' libtool=no \
+test/test_test_marco-script_P2SH_tests.o: test/script_P2SH_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-script_P2SH_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-script_P2SH_tests.Tpo -c -o test/test_test_marco-script_P2SH_tests.o `test -f 'test/script_P2SH_tests.cpp' || echo '$(srcdir)/'`test/script_P2SH_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-script_P2SH_tests.Tpo test/$(DEPDIR)/test_test_marco-script_P2SH_tests.Po
+#	$(AM_V_CXX)source='test/script_P2SH_tests.cpp' object='test/test_test_marco-script_P2SH_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-script_P2SH_tests.o `test -f 'test/script_P2SH_tests.cpp' || echo '$(srcdir)/'`test/script_P2SH_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-script_P2SH_tests.o `test -f 'test/script_P2SH_tests.cpp' || echo '$(srcdir)/'`test/script_P2SH_tests.cpp
 
-test/test_test_marble-script_P2SH_tests.obj: test/script_P2SH_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-script_P2SH_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-script_P2SH_tests.Tpo -c -o test/test_test_marble-script_P2SH_tests.obj `if test -f 'test/script_P2SH_tests.cpp'; then $(CYGPATH_W) 'test/script_P2SH_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_P2SH_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-script_P2SH_tests.Tpo test/$(DEPDIR)/test_test_marble-script_P2SH_tests.Po
-#	$(AM_V_CXX)source='test/script_P2SH_tests.cpp' object='test/test_test_marble-script_P2SH_tests.obj' libtool=no \
+test/test_test_marco-script_P2SH_tests.obj: test/script_P2SH_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-script_P2SH_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-script_P2SH_tests.Tpo -c -o test/test_test_marco-script_P2SH_tests.obj `if test -f 'test/script_P2SH_tests.cpp'; then $(CYGPATH_W) 'test/script_P2SH_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_P2SH_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-script_P2SH_tests.Tpo test/$(DEPDIR)/test_test_marco-script_P2SH_tests.Po
+#	$(AM_V_CXX)source='test/script_P2SH_tests.cpp' object='test/test_test_marco-script_P2SH_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-script_P2SH_tests.obj `if test -f 'test/script_P2SH_tests.cpp'; then $(CYGPATH_W) 'test/script_P2SH_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_P2SH_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-script_P2SH_tests.obj `if test -f 'test/script_P2SH_tests.cpp'; then $(CYGPATH_W) 'test/script_P2SH_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_P2SH_tests.cpp'; fi`
 
-test/test_test_marble-script_tests.o: test/script_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-script_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-script_tests.Tpo -c -o test/test_test_marble-script_tests.o `test -f 'test/script_tests.cpp' || echo '$(srcdir)/'`test/script_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-script_tests.Tpo test/$(DEPDIR)/test_test_marble-script_tests.Po
-#	$(AM_V_CXX)source='test/script_tests.cpp' object='test/test_test_marble-script_tests.o' libtool=no \
+test/test_test_marco-script_tests.o: test/script_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-script_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-script_tests.Tpo -c -o test/test_test_marco-script_tests.o `test -f 'test/script_tests.cpp' || echo '$(srcdir)/'`test/script_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-script_tests.Tpo test/$(DEPDIR)/test_test_marco-script_tests.Po
+#	$(AM_V_CXX)source='test/script_tests.cpp' object='test/test_test_marco-script_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-script_tests.o `test -f 'test/script_tests.cpp' || echo '$(srcdir)/'`test/script_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-script_tests.o `test -f 'test/script_tests.cpp' || echo '$(srcdir)/'`test/script_tests.cpp
 
-test/test_test_marble-script_tests.obj: test/script_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-script_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-script_tests.Tpo -c -o test/test_test_marble-script_tests.obj `if test -f 'test/script_tests.cpp'; then $(CYGPATH_W) 'test/script_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-script_tests.Tpo test/$(DEPDIR)/test_test_marble-script_tests.Po
-#	$(AM_V_CXX)source='test/script_tests.cpp' object='test/test_test_marble-script_tests.obj' libtool=no \
+test/test_test_marco-script_tests.obj: test/script_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-script_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-script_tests.Tpo -c -o test/test_test_marco-script_tests.obj `if test -f 'test/script_tests.cpp'; then $(CYGPATH_W) 'test/script_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-script_tests.Tpo test/$(DEPDIR)/test_test_marco-script_tests.Po
+#	$(AM_V_CXX)source='test/script_tests.cpp' object='test/test_test_marco-script_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-script_tests.obj `if test -f 'test/script_tests.cpp'; then $(CYGPATH_W) 'test/script_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-script_tests.obj `if test -f 'test/script_tests.cpp'; then $(CYGPATH_W) 'test/script_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_tests.cpp'; fi`
 
-test/test_test_marble-scriptnum_tests.o: test/scriptnum_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-scriptnum_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-scriptnum_tests.Tpo -c -o test/test_test_marble-scriptnum_tests.o `test -f 'test/scriptnum_tests.cpp' || echo '$(srcdir)/'`test/scriptnum_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-scriptnum_tests.Tpo test/$(DEPDIR)/test_test_marble-scriptnum_tests.Po
-#	$(AM_V_CXX)source='test/scriptnum_tests.cpp' object='test/test_test_marble-scriptnum_tests.o' libtool=no \
+test/test_test_marco-scriptnum_tests.o: test/scriptnum_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-scriptnum_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-scriptnum_tests.Tpo -c -o test/test_test_marco-scriptnum_tests.o `test -f 'test/scriptnum_tests.cpp' || echo '$(srcdir)/'`test/scriptnum_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-scriptnum_tests.Tpo test/$(DEPDIR)/test_test_marco-scriptnum_tests.Po
+#	$(AM_V_CXX)source='test/scriptnum_tests.cpp' object='test/test_test_marco-scriptnum_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-scriptnum_tests.o `test -f 'test/scriptnum_tests.cpp' || echo '$(srcdir)/'`test/scriptnum_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-scriptnum_tests.o `test -f 'test/scriptnum_tests.cpp' || echo '$(srcdir)/'`test/scriptnum_tests.cpp
 
-test/test_test_marble-scriptnum_tests.obj: test/scriptnum_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-scriptnum_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-scriptnum_tests.Tpo -c -o test/test_test_marble-scriptnum_tests.obj `if test -f 'test/scriptnum_tests.cpp'; then $(CYGPATH_W) 'test/scriptnum_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/scriptnum_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-scriptnum_tests.Tpo test/$(DEPDIR)/test_test_marble-scriptnum_tests.Po
-#	$(AM_V_CXX)source='test/scriptnum_tests.cpp' object='test/test_test_marble-scriptnum_tests.obj' libtool=no \
+test/test_test_marco-scriptnum_tests.obj: test/scriptnum_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-scriptnum_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-scriptnum_tests.Tpo -c -o test/test_test_marco-scriptnum_tests.obj `if test -f 'test/scriptnum_tests.cpp'; then $(CYGPATH_W) 'test/scriptnum_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/scriptnum_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-scriptnum_tests.Tpo test/$(DEPDIR)/test_test_marco-scriptnum_tests.Po
+#	$(AM_V_CXX)source='test/scriptnum_tests.cpp' object='test/test_test_marco-scriptnum_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-scriptnum_tests.obj `if test -f 'test/scriptnum_tests.cpp'; then $(CYGPATH_W) 'test/scriptnum_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/scriptnum_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-scriptnum_tests.obj `if test -f 'test/scriptnum_tests.cpp'; then $(CYGPATH_W) 'test/scriptnum_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/scriptnum_tests.cpp'; fi`
 
-test/test_test_marble-serialize_tests.o: test/serialize_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-serialize_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-serialize_tests.Tpo -c -o test/test_test_marble-serialize_tests.o `test -f 'test/serialize_tests.cpp' || echo '$(srcdir)/'`test/serialize_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-serialize_tests.Tpo test/$(DEPDIR)/test_test_marble-serialize_tests.Po
-#	$(AM_V_CXX)source='test/serialize_tests.cpp' object='test/test_test_marble-serialize_tests.o' libtool=no \
+test/test_test_marco-serialize_tests.o: test/serialize_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-serialize_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-serialize_tests.Tpo -c -o test/test_test_marco-serialize_tests.o `test -f 'test/serialize_tests.cpp' || echo '$(srcdir)/'`test/serialize_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-serialize_tests.Tpo test/$(DEPDIR)/test_test_marco-serialize_tests.Po
+#	$(AM_V_CXX)source='test/serialize_tests.cpp' object='test/test_test_marco-serialize_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-serialize_tests.o `test -f 'test/serialize_tests.cpp' || echo '$(srcdir)/'`test/serialize_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-serialize_tests.o `test -f 'test/serialize_tests.cpp' || echo '$(srcdir)/'`test/serialize_tests.cpp
 
-test/test_test_marble-serialize_tests.obj: test/serialize_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-serialize_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-serialize_tests.Tpo -c -o test/test_test_marble-serialize_tests.obj `if test -f 'test/serialize_tests.cpp'; then $(CYGPATH_W) 'test/serialize_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/serialize_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-serialize_tests.Tpo test/$(DEPDIR)/test_test_marble-serialize_tests.Po
-#	$(AM_V_CXX)source='test/serialize_tests.cpp' object='test/test_test_marble-serialize_tests.obj' libtool=no \
+test/test_test_marco-serialize_tests.obj: test/serialize_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-serialize_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-serialize_tests.Tpo -c -o test/test_test_marco-serialize_tests.obj `if test -f 'test/serialize_tests.cpp'; then $(CYGPATH_W) 'test/serialize_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/serialize_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-serialize_tests.Tpo test/$(DEPDIR)/test_test_marco-serialize_tests.Po
+#	$(AM_V_CXX)source='test/serialize_tests.cpp' object='test/test_test_marco-serialize_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-serialize_tests.obj `if test -f 'test/serialize_tests.cpp'; then $(CYGPATH_W) 'test/serialize_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/serialize_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-serialize_tests.obj `if test -f 'test/serialize_tests.cpp'; then $(CYGPATH_W) 'test/serialize_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/serialize_tests.cpp'; fi`
 
-test/test_test_marble-sighash_tests.o: test/sighash_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-sighash_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-sighash_tests.Tpo -c -o test/test_test_marble-sighash_tests.o `test -f 'test/sighash_tests.cpp' || echo '$(srcdir)/'`test/sighash_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-sighash_tests.Tpo test/$(DEPDIR)/test_test_marble-sighash_tests.Po
-#	$(AM_V_CXX)source='test/sighash_tests.cpp' object='test/test_test_marble-sighash_tests.o' libtool=no \
+test/test_test_marco-sighash_tests.o: test/sighash_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-sighash_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-sighash_tests.Tpo -c -o test/test_test_marco-sighash_tests.o `test -f 'test/sighash_tests.cpp' || echo '$(srcdir)/'`test/sighash_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-sighash_tests.Tpo test/$(DEPDIR)/test_test_marco-sighash_tests.Po
+#	$(AM_V_CXX)source='test/sighash_tests.cpp' object='test/test_test_marco-sighash_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-sighash_tests.o `test -f 'test/sighash_tests.cpp' || echo '$(srcdir)/'`test/sighash_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-sighash_tests.o `test -f 'test/sighash_tests.cpp' || echo '$(srcdir)/'`test/sighash_tests.cpp
 
-test/test_test_marble-sighash_tests.obj: test/sighash_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-sighash_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-sighash_tests.Tpo -c -o test/test_test_marble-sighash_tests.obj `if test -f 'test/sighash_tests.cpp'; then $(CYGPATH_W) 'test/sighash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sighash_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-sighash_tests.Tpo test/$(DEPDIR)/test_test_marble-sighash_tests.Po
-#	$(AM_V_CXX)source='test/sighash_tests.cpp' object='test/test_test_marble-sighash_tests.obj' libtool=no \
+test/test_test_marco-sighash_tests.obj: test/sighash_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-sighash_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-sighash_tests.Tpo -c -o test/test_test_marco-sighash_tests.obj `if test -f 'test/sighash_tests.cpp'; then $(CYGPATH_W) 'test/sighash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sighash_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-sighash_tests.Tpo test/$(DEPDIR)/test_test_marco-sighash_tests.Po
+#	$(AM_V_CXX)source='test/sighash_tests.cpp' object='test/test_test_marco-sighash_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-sighash_tests.obj `if test -f 'test/sighash_tests.cpp'; then $(CYGPATH_W) 'test/sighash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sighash_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-sighash_tests.obj `if test -f 'test/sighash_tests.cpp'; then $(CYGPATH_W) 'test/sighash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sighash_tests.cpp'; fi`
 
-test/test_test_marble-sigopcount_tests.o: test/sigopcount_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-sigopcount_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-sigopcount_tests.Tpo -c -o test/test_test_marble-sigopcount_tests.o `test -f 'test/sigopcount_tests.cpp' || echo '$(srcdir)/'`test/sigopcount_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-sigopcount_tests.Tpo test/$(DEPDIR)/test_test_marble-sigopcount_tests.Po
-#	$(AM_V_CXX)source='test/sigopcount_tests.cpp' object='test/test_test_marble-sigopcount_tests.o' libtool=no \
+test/test_test_marco-sigopcount_tests.o: test/sigopcount_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-sigopcount_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-sigopcount_tests.Tpo -c -o test/test_test_marco-sigopcount_tests.o `test -f 'test/sigopcount_tests.cpp' || echo '$(srcdir)/'`test/sigopcount_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-sigopcount_tests.Tpo test/$(DEPDIR)/test_test_marco-sigopcount_tests.Po
+#	$(AM_V_CXX)source='test/sigopcount_tests.cpp' object='test/test_test_marco-sigopcount_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-sigopcount_tests.o `test -f 'test/sigopcount_tests.cpp' || echo '$(srcdir)/'`test/sigopcount_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-sigopcount_tests.o `test -f 'test/sigopcount_tests.cpp' || echo '$(srcdir)/'`test/sigopcount_tests.cpp
 
-test/test_test_marble-sigopcount_tests.obj: test/sigopcount_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-sigopcount_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-sigopcount_tests.Tpo -c -o test/test_test_marble-sigopcount_tests.obj `if test -f 'test/sigopcount_tests.cpp'; then $(CYGPATH_W) 'test/sigopcount_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sigopcount_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-sigopcount_tests.Tpo test/$(DEPDIR)/test_test_marble-sigopcount_tests.Po
-#	$(AM_V_CXX)source='test/sigopcount_tests.cpp' object='test/test_test_marble-sigopcount_tests.obj' libtool=no \
+test/test_test_marco-sigopcount_tests.obj: test/sigopcount_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-sigopcount_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-sigopcount_tests.Tpo -c -o test/test_test_marco-sigopcount_tests.obj `if test -f 'test/sigopcount_tests.cpp'; then $(CYGPATH_W) 'test/sigopcount_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sigopcount_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-sigopcount_tests.Tpo test/$(DEPDIR)/test_test_marco-sigopcount_tests.Po
+#	$(AM_V_CXX)source='test/sigopcount_tests.cpp' object='test/test_test_marco-sigopcount_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-sigopcount_tests.obj `if test -f 'test/sigopcount_tests.cpp'; then $(CYGPATH_W) 'test/sigopcount_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sigopcount_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-sigopcount_tests.obj `if test -f 'test/sigopcount_tests.cpp'; then $(CYGPATH_W) 'test/sigopcount_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sigopcount_tests.cpp'; fi`
 
-test/test_test_marble-skiplist_tests.o: test/skiplist_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-skiplist_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-skiplist_tests.Tpo -c -o test/test_test_marble-skiplist_tests.o `test -f 'test/skiplist_tests.cpp' || echo '$(srcdir)/'`test/skiplist_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-skiplist_tests.Tpo test/$(DEPDIR)/test_test_marble-skiplist_tests.Po
-#	$(AM_V_CXX)source='test/skiplist_tests.cpp' object='test/test_test_marble-skiplist_tests.o' libtool=no \
+test/test_test_marco-skiplist_tests.o: test/skiplist_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-skiplist_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-skiplist_tests.Tpo -c -o test/test_test_marco-skiplist_tests.o `test -f 'test/skiplist_tests.cpp' || echo '$(srcdir)/'`test/skiplist_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-skiplist_tests.Tpo test/$(DEPDIR)/test_test_marco-skiplist_tests.Po
+#	$(AM_V_CXX)source='test/skiplist_tests.cpp' object='test/test_test_marco-skiplist_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-skiplist_tests.o `test -f 'test/skiplist_tests.cpp' || echo '$(srcdir)/'`test/skiplist_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-skiplist_tests.o `test -f 'test/skiplist_tests.cpp' || echo '$(srcdir)/'`test/skiplist_tests.cpp
 
-test/test_test_marble-skiplist_tests.obj: test/skiplist_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-skiplist_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-skiplist_tests.Tpo -c -o test/test_test_marble-skiplist_tests.obj `if test -f 'test/skiplist_tests.cpp'; then $(CYGPATH_W) 'test/skiplist_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/skiplist_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-skiplist_tests.Tpo test/$(DEPDIR)/test_test_marble-skiplist_tests.Po
-#	$(AM_V_CXX)source='test/skiplist_tests.cpp' object='test/test_test_marble-skiplist_tests.obj' libtool=no \
+test/test_test_marco-skiplist_tests.obj: test/skiplist_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-skiplist_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-skiplist_tests.Tpo -c -o test/test_test_marco-skiplist_tests.obj `if test -f 'test/skiplist_tests.cpp'; then $(CYGPATH_W) 'test/skiplist_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/skiplist_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-skiplist_tests.Tpo test/$(DEPDIR)/test_test_marco-skiplist_tests.Po
+#	$(AM_V_CXX)source='test/skiplist_tests.cpp' object='test/test_test_marco-skiplist_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-skiplist_tests.obj `if test -f 'test/skiplist_tests.cpp'; then $(CYGPATH_W) 'test/skiplist_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/skiplist_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-skiplist_tests.obj `if test -f 'test/skiplist_tests.cpp'; then $(CYGPATH_W) 'test/skiplist_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/skiplist_tests.cpp'; fi`
 
-test/test_test_marble-test_marble.o: test/test_marble.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-test_marble.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-test_marble.Tpo -c -o test/test_test_marble-test_marble.o `test -f 'test/test_marble.cpp' || echo '$(srcdir)/'`test/test_marble.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-test_marble.Tpo test/$(DEPDIR)/test_test_marble-test_marble.Po
-#	$(AM_V_CXX)source='test/test_marble.cpp' object='test/test_test_marble-test_marble.o' libtool=no \
+test/test_test_marco-test_marco.o: test/test_marco.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-test_marco.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-test_marco.Tpo -c -o test/test_test_marco-test_marco.o `test -f 'test/test_marco.cpp' || echo '$(srcdir)/'`test/test_marco.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-test_marco.Tpo test/$(DEPDIR)/test_test_marco-test_marco.Po
+#	$(AM_V_CXX)source='test/test_marco.cpp' object='test/test_test_marco-test_marco.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-test_marble.o `test -f 'test/test_marble.cpp' || echo '$(srcdir)/'`test/test_marble.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-test_marco.o `test -f 'test/test_marco.cpp' || echo '$(srcdir)/'`test/test_marco.cpp
 
-test/test_test_marble-test_marble.obj: test/test_marble.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-test_marble.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-test_marble.Tpo -c -o test/test_test_marble-test_marble.obj `if test -f 'test/test_marble.cpp'; then $(CYGPATH_W) 'test/test_marble.cpp'; else $(CYGPATH_W) '$(srcdir)/test/test_marble.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-test_marble.Tpo test/$(DEPDIR)/test_test_marble-test_marble.Po
-#	$(AM_V_CXX)source='test/test_marble.cpp' object='test/test_test_marble-test_marble.obj' libtool=no \
+test/test_test_marco-test_marco.obj: test/test_marco.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-test_marco.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-test_marco.Tpo -c -o test/test_test_marco-test_marco.obj `if test -f 'test/test_marco.cpp'; then $(CYGPATH_W) 'test/test_marco.cpp'; else $(CYGPATH_W) '$(srcdir)/test/test_marco.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-test_marco.Tpo test/$(DEPDIR)/test_test_marco-test_marco.Po
+#	$(AM_V_CXX)source='test/test_marco.cpp' object='test/test_test_marco-test_marco.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-test_marble.obj `if test -f 'test/test_marble.cpp'; then $(CYGPATH_W) 'test/test_marble.cpp'; else $(CYGPATH_W) '$(srcdir)/test/test_marble.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-test_marco.obj `if test -f 'test/test_marco.cpp'; then $(CYGPATH_W) 'test/test_marco.cpp'; else $(CYGPATH_W) '$(srcdir)/test/test_marco.cpp'; fi`
 
-test/test_test_marble-timedata_tests.o: test/timedata_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-timedata_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-timedata_tests.Tpo -c -o test/test_test_marble-timedata_tests.o `test -f 'test/timedata_tests.cpp' || echo '$(srcdir)/'`test/timedata_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-timedata_tests.Tpo test/$(DEPDIR)/test_test_marble-timedata_tests.Po
-#	$(AM_V_CXX)source='test/timedata_tests.cpp' object='test/test_test_marble-timedata_tests.o' libtool=no \
+test/test_test_marco-timedata_tests.o: test/timedata_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-timedata_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-timedata_tests.Tpo -c -o test/test_test_marco-timedata_tests.o `test -f 'test/timedata_tests.cpp' || echo '$(srcdir)/'`test/timedata_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-timedata_tests.Tpo test/$(DEPDIR)/test_test_marco-timedata_tests.Po
+#	$(AM_V_CXX)source='test/timedata_tests.cpp' object='test/test_test_marco-timedata_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-timedata_tests.o `test -f 'test/timedata_tests.cpp' || echo '$(srcdir)/'`test/timedata_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-timedata_tests.o `test -f 'test/timedata_tests.cpp' || echo '$(srcdir)/'`test/timedata_tests.cpp
 
-test/test_test_marble-timedata_tests.obj: test/timedata_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-timedata_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-timedata_tests.Tpo -c -o test/test_test_marble-timedata_tests.obj `if test -f 'test/timedata_tests.cpp'; then $(CYGPATH_W) 'test/timedata_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/timedata_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-timedata_tests.Tpo test/$(DEPDIR)/test_test_marble-timedata_tests.Po
-#	$(AM_V_CXX)source='test/timedata_tests.cpp' object='test/test_test_marble-timedata_tests.obj' libtool=no \
+test/test_test_marco-timedata_tests.obj: test/timedata_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-timedata_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-timedata_tests.Tpo -c -o test/test_test_marco-timedata_tests.obj `if test -f 'test/timedata_tests.cpp'; then $(CYGPATH_W) 'test/timedata_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/timedata_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-timedata_tests.Tpo test/$(DEPDIR)/test_test_marco-timedata_tests.Po
+#	$(AM_V_CXX)source='test/timedata_tests.cpp' object='test/test_test_marco-timedata_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-timedata_tests.obj `if test -f 'test/timedata_tests.cpp'; then $(CYGPATH_W) 'test/timedata_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/timedata_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-timedata_tests.obj `if test -f 'test/timedata_tests.cpp'; then $(CYGPATH_W) 'test/timedata_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/timedata_tests.cpp'; fi`
 
-test/test_test_marble-torcontrol_tests.o: test/torcontrol_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-torcontrol_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-torcontrol_tests.Tpo -c -o test/test_test_marble-torcontrol_tests.o `test -f 'test/torcontrol_tests.cpp' || echo '$(srcdir)/'`test/torcontrol_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-torcontrol_tests.Tpo test/$(DEPDIR)/test_test_marble-torcontrol_tests.Po
-#	$(AM_V_CXX)source='test/torcontrol_tests.cpp' object='test/test_test_marble-torcontrol_tests.o' libtool=no \
+test/test_test_marco-torcontrol_tests.o: test/torcontrol_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-torcontrol_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-torcontrol_tests.Tpo -c -o test/test_test_marco-torcontrol_tests.o `test -f 'test/torcontrol_tests.cpp' || echo '$(srcdir)/'`test/torcontrol_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-torcontrol_tests.Tpo test/$(DEPDIR)/test_test_marco-torcontrol_tests.Po
+#	$(AM_V_CXX)source='test/torcontrol_tests.cpp' object='test/test_test_marco-torcontrol_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-torcontrol_tests.o `test -f 'test/torcontrol_tests.cpp' || echo '$(srcdir)/'`test/torcontrol_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-torcontrol_tests.o `test -f 'test/torcontrol_tests.cpp' || echo '$(srcdir)/'`test/torcontrol_tests.cpp
 
-test/test_test_marble-torcontrol_tests.obj: test/torcontrol_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-torcontrol_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-torcontrol_tests.Tpo -c -o test/test_test_marble-torcontrol_tests.obj `if test -f 'test/torcontrol_tests.cpp'; then $(CYGPATH_W) 'test/torcontrol_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/torcontrol_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-torcontrol_tests.Tpo test/$(DEPDIR)/test_test_marble-torcontrol_tests.Po
-#	$(AM_V_CXX)source='test/torcontrol_tests.cpp' object='test/test_test_marble-torcontrol_tests.obj' libtool=no \
+test/test_test_marco-torcontrol_tests.obj: test/torcontrol_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-torcontrol_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-torcontrol_tests.Tpo -c -o test/test_test_marco-torcontrol_tests.obj `if test -f 'test/torcontrol_tests.cpp'; then $(CYGPATH_W) 'test/torcontrol_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/torcontrol_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-torcontrol_tests.Tpo test/$(DEPDIR)/test_test_marco-torcontrol_tests.Po
+#	$(AM_V_CXX)source='test/torcontrol_tests.cpp' object='test/test_test_marco-torcontrol_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-torcontrol_tests.obj `if test -f 'test/torcontrol_tests.cpp'; then $(CYGPATH_W) 'test/torcontrol_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/torcontrol_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-torcontrol_tests.obj `if test -f 'test/torcontrol_tests.cpp'; then $(CYGPATH_W) 'test/torcontrol_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/torcontrol_tests.cpp'; fi`
 
-test/test_test_marble-transaction_tests.o: test/transaction_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-transaction_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-transaction_tests.Tpo -c -o test/test_test_marble-transaction_tests.o `test -f 'test/transaction_tests.cpp' || echo '$(srcdir)/'`test/transaction_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-transaction_tests.Tpo test/$(DEPDIR)/test_test_marble-transaction_tests.Po
-#	$(AM_V_CXX)source='test/transaction_tests.cpp' object='test/test_test_marble-transaction_tests.o' libtool=no \
+test/test_test_marco-transaction_tests.o: test/transaction_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-transaction_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-transaction_tests.Tpo -c -o test/test_test_marco-transaction_tests.o `test -f 'test/transaction_tests.cpp' || echo '$(srcdir)/'`test/transaction_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-transaction_tests.Tpo test/$(DEPDIR)/test_test_marco-transaction_tests.Po
+#	$(AM_V_CXX)source='test/transaction_tests.cpp' object='test/test_test_marco-transaction_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-transaction_tests.o `test -f 'test/transaction_tests.cpp' || echo '$(srcdir)/'`test/transaction_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-transaction_tests.o `test -f 'test/transaction_tests.cpp' || echo '$(srcdir)/'`test/transaction_tests.cpp
 
-test/test_test_marble-transaction_tests.obj: test/transaction_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-transaction_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-transaction_tests.Tpo -c -o test/test_test_marble-transaction_tests.obj `if test -f 'test/transaction_tests.cpp'; then $(CYGPATH_W) 'test/transaction_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/transaction_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-transaction_tests.Tpo test/$(DEPDIR)/test_test_marble-transaction_tests.Po
-#	$(AM_V_CXX)source='test/transaction_tests.cpp' object='test/test_test_marble-transaction_tests.obj' libtool=no \
+test/test_test_marco-transaction_tests.obj: test/transaction_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-transaction_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-transaction_tests.Tpo -c -o test/test_test_marco-transaction_tests.obj `if test -f 'test/transaction_tests.cpp'; then $(CYGPATH_W) 'test/transaction_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/transaction_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-transaction_tests.Tpo test/$(DEPDIR)/test_test_marco-transaction_tests.Po
+#	$(AM_V_CXX)source='test/transaction_tests.cpp' object='test/test_test_marco-transaction_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-transaction_tests.obj `if test -f 'test/transaction_tests.cpp'; then $(CYGPATH_W) 'test/transaction_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/transaction_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-transaction_tests.obj `if test -f 'test/transaction_tests.cpp'; then $(CYGPATH_W) 'test/transaction_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/transaction_tests.cpp'; fi`
 
-test/test_test_marble-uint256_tests.o: test/uint256_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-uint256_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-uint256_tests.Tpo -c -o test/test_test_marble-uint256_tests.o `test -f 'test/uint256_tests.cpp' || echo '$(srcdir)/'`test/uint256_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-uint256_tests.Tpo test/$(DEPDIR)/test_test_marble-uint256_tests.Po
-#	$(AM_V_CXX)source='test/uint256_tests.cpp' object='test/test_test_marble-uint256_tests.o' libtool=no \
+test/test_test_marco-uint256_tests.o: test/uint256_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-uint256_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-uint256_tests.Tpo -c -o test/test_test_marco-uint256_tests.o `test -f 'test/uint256_tests.cpp' || echo '$(srcdir)/'`test/uint256_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-uint256_tests.Tpo test/$(DEPDIR)/test_test_marco-uint256_tests.Po
+#	$(AM_V_CXX)source='test/uint256_tests.cpp' object='test/test_test_marco-uint256_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-uint256_tests.o `test -f 'test/uint256_tests.cpp' || echo '$(srcdir)/'`test/uint256_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-uint256_tests.o `test -f 'test/uint256_tests.cpp' || echo '$(srcdir)/'`test/uint256_tests.cpp
 
-test/test_test_marble-uint256_tests.obj: test/uint256_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-uint256_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-uint256_tests.Tpo -c -o test/test_test_marble-uint256_tests.obj `if test -f 'test/uint256_tests.cpp'; then $(CYGPATH_W) 'test/uint256_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/uint256_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-uint256_tests.Tpo test/$(DEPDIR)/test_test_marble-uint256_tests.Po
-#	$(AM_V_CXX)source='test/uint256_tests.cpp' object='test/test_test_marble-uint256_tests.obj' libtool=no \
+test/test_test_marco-uint256_tests.obj: test/uint256_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-uint256_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-uint256_tests.Tpo -c -o test/test_test_marco-uint256_tests.obj `if test -f 'test/uint256_tests.cpp'; then $(CYGPATH_W) 'test/uint256_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/uint256_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-uint256_tests.Tpo test/$(DEPDIR)/test_test_marco-uint256_tests.Po
+#	$(AM_V_CXX)source='test/uint256_tests.cpp' object='test/test_test_marco-uint256_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-uint256_tests.obj `if test -f 'test/uint256_tests.cpp'; then $(CYGPATH_W) 'test/uint256_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/uint256_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-uint256_tests.obj `if test -f 'test/uint256_tests.cpp'; then $(CYGPATH_W) 'test/uint256_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/uint256_tests.cpp'; fi`
 
-test/test_test_marble-univalue_tests.o: test/univalue_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-univalue_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-univalue_tests.Tpo -c -o test/test_test_marble-univalue_tests.o `test -f 'test/univalue_tests.cpp' || echo '$(srcdir)/'`test/univalue_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-univalue_tests.Tpo test/$(DEPDIR)/test_test_marble-univalue_tests.Po
-#	$(AM_V_CXX)source='test/univalue_tests.cpp' object='test/test_test_marble-univalue_tests.o' libtool=no \
+test/test_test_marco-univalue_tests.o: test/univalue_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-univalue_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-univalue_tests.Tpo -c -o test/test_test_marco-univalue_tests.o `test -f 'test/univalue_tests.cpp' || echo '$(srcdir)/'`test/univalue_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-univalue_tests.Tpo test/$(DEPDIR)/test_test_marco-univalue_tests.Po
+#	$(AM_V_CXX)source='test/univalue_tests.cpp' object='test/test_test_marco-univalue_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-univalue_tests.o `test -f 'test/univalue_tests.cpp' || echo '$(srcdir)/'`test/univalue_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-univalue_tests.o `test -f 'test/univalue_tests.cpp' || echo '$(srcdir)/'`test/univalue_tests.cpp
 
-test/test_test_marble-univalue_tests.obj: test/univalue_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-univalue_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-univalue_tests.Tpo -c -o test/test_test_marble-univalue_tests.obj `if test -f 'test/univalue_tests.cpp'; then $(CYGPATH_W) 'test/univalue_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/univalue_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-univalue_tests.Tpo test/$(DEPDIR)/test_test_marble-univalue_tests.Po
-#	$(AM_V_CXX)source='test/univalue_tests.cpp' object='test/test_test_marble-univalue_tests.obj' libtool=no \
+test/test_test_marco-univalue_tests.obj: test/univalue_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-univalue_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-univalue_tests.Tpo -c -o test/test_test_marco-univalue_tests.obj `if test -f 'test/univalue_tests.cpp'; then $(CYGPATH_W) 'test/univalue_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/univalue_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-univalue_tests.Tpo test/$(DEPDIR)/test_test_marco-univalue_tests.Po
+#	$(AM_V_CXX)source='test/univalue_tests.cpp' object='test/test_test_marco-univalue_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-univalue_tests.obj `if test -f 'test/univalue_tests.cpp'; then $(CYGPATH_W) 'test/univalue_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/univalue_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-univalue_tests.obj `if test -f 'test/univalue_tests.cpp'; then $(CYGPATH_W) 'test/univalue_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/univalue_tests.cpp'; fi`
 
-test/test_test_marble-util_tests.o: test/util_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-util_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-util_tests.Tpo -c -o test/test_test_marble-util_tests.o `test -f 'test/util_tests.cpp' || echo '$(srcdir)/'`test/util_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-util_tests.Tpo test/$(DEPDIR)/test_test_marble-util_tests.Po
-#	$(AM_V_CXX)source='test/util_tests.cpp' object='test/test_test_marble-util_tests.o' libtool=no \
+test/test_test_marco-util_tests.o: test/util_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-util_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-util_tests.Tpo -c -o test/test_test_marco-util_tests.o `test -f 'test/util_tests.cpp' || echo '$(srcdir)/'`test/util_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-util_tests.Tpo test/$(DEPDIR)/test_test_marco-util_tests.Po
+#	$(AM_V_CXX)source='test/util_tests.cpp' object='test/test_test_marco-util_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-util_tests.o `test -f 'test/util_tests.cpp' || echo '$(srcdir)/'`test/util_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-util_tests.o `test -f 'test/util_tests.cpp' || echo '$(srcdir)/'`test/util_tests.cpp
 
-test/test_test_marble-util_tests.obj: test/util_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-util_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-util_tests.Tpo -c -o test/test_test_marble-util_tests.obj `if test -f 'test/util_tests.cpp'; then $(CYGPATH_W) 'test/util_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/util_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-util_tests.Tpo test/$(DEPDIR)/test_test_marble-util_tests.Po
-#	$(AM_V_CXX)source='test/util_tests.cpp' object='test/test_test_marble-util_tests.obj' libtool=no \
+test/test_test_marco-util_tests.obj: test/util_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-util_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-util_tests.Tpo -c -o test/test_test_marco-util_tests.obj `if test -f 'test/util_tests.cpp'; then $(CYGPATH_W) 'test/util_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/util_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-util_tests.Tpo test/$(DEPDIR)/test_test_marco-util_tests.Po
+#	$(AM_V_CXX)source='test/util_tests.cpp' object='test/test_test_marco-util_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-util_tests.obj `if test -f 'test/util_tests.cpp'; then $(CYGPATH_W) 'test/util_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/util_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-util_tests.obj `if test -f 'test/util_tests.cpp'; then $(CYGPATH_W) 'test/util_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/util_tests.cpp'; fi`
 
-test/test_test_marble-accounting_tests.o: test/accounting_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-accounting_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-accounting_tests.Tpo -c -o test/test_test_marble-accounting_tests.o `test -f 'test/accounting_tests.cpp' || echo '$(srcdir)/'`test/accounting_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-accounting_tests.Tpo test/$(DEPDIR)/test_test_marble-accounting_tests.Po
-#	$(AM_V_CXX)source='test/accounting_tests.cpp' object='test/test_test_marble-accounting_tests.o' libtool=no \
+test/test_test_marco-accounting_tests.o: test/accounting_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-accounting_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-accounting_tests.Tpo -c -o test/test_test_marco-accounting_tests.o `test -f 'test/accounting_tests.cpp' || echo '$(srcdir)/'`test/accounting_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-accounting_tests.Tpo test/$(DEPDIR)/test_test_marco-accounting_tests.Po
+#	$(AM_V_CXX)source='test/accounting_tests.cpp' object='test/test_test_marco-accounting_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-accounting_tests.o `test -f 'test/accounting_tests.cpp' || echo '$(srcdir)/'`test/accounting_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-accounting_tests.o `test -f 'test/accounting_tests.cpp' || echo '$(srcdir)/'`test/accounting_tests.cpp
 
-test/test_test_marble-accounting_tests.obj: test/accounting_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-accounting_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-accounting_tests.Tpo -c -o test/test_test_marble-accounting_tests.obj `if test -f 'test/accounting_tests.cpp'; then $(CYGPATH_W) 'test/accounting_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/accounting_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-accounting_tests.Tpo test/$(DEPDIR)/test_test_marble-accounting_tests.Po
-#	$(AM_V_CXX)source='test/accounting_tests.cpp' object='test/test_test_marble-accounting_tests.obj' libtool=no \
+test/test_test_marco-accounting_tests.obj: test/accounting_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-accounting_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-accounting_tests.Tpo -c -o test/test_test_marco-accounting_tests.obj `if test -f 'test/accounting_tests.cpp'; then $(CYGPATH_W) 'test/accounting_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/accounting_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-accounting_tests.Tpo test/$(DEPDIR)/test_test_marco-accounting_tests.Po
+#	$(AM_V_CXX)source='test/accounting_tests.cpp' object='test/test_test_marco-accounting_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-accounting_tests.obj `if test -f 'test/accounting_tests.cpp'; then $(CYGPATH_W) 'test/accounting_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/accounting_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-accounting_tests.obj `if test -f 'test/accounting_tests.cpp'; then $(CYGPATH_W) 'test/accounting_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/accounting_tests.cpp'; fi`
 
-test/test_test_marble-wallet_tests.o: test/wallet_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-wallet_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-wallet_tests.Tpo -c -o test/test_test_marble-wallet_tests.o `test -f 'test/wallet_tests.cpp' || echo '$(srcdir)/'`test/wallet_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-wallet_tests.Tpo test/$(DEPDIR)/test_test_marble-wallet_tests.Po
-#	$(AM_V_CXX)source='test/wallet_tests.cpp' object='test/test_test_marble-wallet_tests.o' libtool=no \
+test/test_test_marco-wallet_tests.o: test/wallet_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-wallet_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-wallet_tests.Tpo -c -o test/test_test_marco-wallet_tests.o `test -f 'test/wallet_tests.cpp' || echo '$(srcdir)/'`test/wallet_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-wallet_tests.Tpo test/$(DEPDIR)/test_test_marco-wallet_tests.Po
+#	$(AM_V_CXX)source='test/wallet_tests.cpp' object='test/test_test_marco-wallet_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-wallet_tests.o `test -f 'test/wallet_tests.cpp' || echo '$(srcdir)/'`test/wallet_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-wallet_tests.o `test -f 'test/wallet_tests.cpp' || echo '$(srcdir)/'`test/wallet_tests.cpp
 
-test/test_test_marble-wallet_tests.obj: test/wallet_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-wallet_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-wallet_tests.Tpo -c -o test/test_test_marble-wallet_tests.obj `if test -f 'test/wallet_tests.cpp'; then $(CYGPATH_W) 'test/wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/wallet_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-wallet_tests.Tpo test/$(DEPDIR)/test_test_marble-wallet_tests.Po
-#	$(AM_V_CXX)source='test/wallet_tests.cpp' object='test/test_test_marble-wallet_tests.obj' libtool=no \
+test/test_test_marco-wallet_tests.obj: test/wallet_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-wallet_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-wallet_tests.Tpo -c -o test/test_test_marco-wallet_tests.obj `if test -f 'test/wallet_tests.cpp'; then $(CYGPATH_W) 'test/wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/wallet_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-wallet_tests.Tpo test/$(DEPDIR)/test_test_marco-wallet_tests.Po
+#	$(AM_V_CXX)source='test/wallet_tests.cpp' object='test/test_test_marco-wallet_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-wallet_tests.obj `if test -f 'test/wallet_tests.cpp'; then $(CYGPATH_W) 'test/wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/wallet_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-wallet_tests.obj `if test -f 'test/wallet_tests.cpp'; then $(CYGPATH_W) 'test/wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/wallet_tests.cpp'; fi`
 
-test/test_test_marble-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-rpc_wallet_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marble-rpc_wallet_tests.Tpo -c -o test/test_test_marble-rpc_wallet_tests.o `test -f 'test/rpc_wallet_tests.cpp' || echo '$(srcdir)/'`test/rpc_wallet_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-rpc_wallet_tests.Tpo test/$(DEPDIR)/test_test_marble-rpc_wallet_tests.Po
-#	$(AM_V_CXX)source='test/rpc_wallet_tests.cpp' object='test/test_test_marble-rpc_wallet_tests.o' libtool=no \
+test/test_test_marco-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-rpc_wallet_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_marco-rpc_wallet_tests.Tpo -c -o test/test_test_marco-rpc_wallet_tests.o `test -f 'test/rpc_wallet_tests.cpp' || echo '$(srcdir)/'`test/rpc_wallet_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-rpc_wallet_tests.Tpo test/$(DEPDIR)/test_test_marco-rpc_wallet_tests.Po
+#	$(AM_V_CXX)source='test/rpc_wallet_tests.cpp' object='test/test_test_marco-rpc_wallet_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-rpc_wallet_tests.o `test -f 'test/rpc_wallet_tests.cpp' || echo '$(srcdir)/'`test/rpc_wallet_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-rpc_wallet_tests.o `test -f 'test/rpc_wallet_tests.cpp' || echo '$(srcdir)/'`test/rpc_wallet_tests.cpp
 
-test/test_test_marble-rpc_wallet_tests.obj: test/rpc_wallet_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marble-rpc_wallet_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marble-rpc_wallet_tests.Tpo -c -o test/test_test_marble-rpc_wallet_tests.obj `if test -f 'test/rpc_wallet_tests.cpp'; then $(CYGPATH_W) 'test/rpc_wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_wallet_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marble-rpc_wallet_tests.Tpo test/$(DEPDIR)/test_test_marble-rpc_wallet_tests.Po
-#	$(AM_V_CXX)source='test/rpc_wallet_tests.cpp' object='test/test_test_marble-rpc_wallet_tests.obj' libtool=no \
+test/test_test_marco-rpc_wallet_tests.obj: test/rpc_wallet_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_marco-rpc_wallet_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_marco-rpc_wallet_tests.Tpo -c -o test/test_test_marco-rpc_wallet_tests.obj `if test -f 'test/rpc_wallet_tests.cpp'; then $(CYGPATH_W) 'test/rpc_wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_wallet_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_marco-rpc_wallet_tests.Tpo test/$(DEPDIR)/test_test_marco-rpc_wallet_tests.Po
+#	$(AM_V_CXX)source='test/rpc_wallet_tests.cpp' object='test/test_test_marco-rpc_wallet_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marble_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marble-rpc_wallet_tests.obj `if test -f 'test/rpc_wallet_tests.cpp'; then $(CYGPATH_W) 'test/rpc_wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_wallet_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_marco_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_marco-rpc_wallet_tests.obj `if test -f 'test/rpc_wallet_tests.cpp'; then $(CYGPATH_W) 'test/rpc_wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_wallet_tests.cpp'; fi`
 
 .cpp.o:
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
@@ -7737,33 +7737,33 @@ test/test_test_marble-rpc_wallet_tests.obj: test/rpc_wallet_tests.cpp
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
 #	$(AM_V_OBJCXX_no)$(LTOBJCXXCOMPILE) -c -o $@ $<
 
-qt/qt_marble_qt-macdockiconhandler.o: qt/macdockiconhandler.mm
-	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_marble_qt-macdockiconhandler.o -MD -MP -MF qt/$(DEPDIR)/qt_marble_qt-macdockiconhandler.Tpo -c -o qt/qt_marble_qt-macdockiconhandler.o `test -f 'qt/macdockiconhandler.mm' || echo '$(srcdir)/'`qt/macdockiconhandler.mm
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_marble_qt-macdockiconhandler.Tpo qt/$(DEPDIR)/qt_marble_qt-macdockiconhandler.Po
-#	$(AM_V_OBJCXX)source='qt/macdockiconhandler.mm' object='qt/qt_marble_qt-macdockiconhandler.o' libtool=no \
+qt/qt_marco_qt-macdockiconhandler.o: qt/macdockiconhandler.mm
+	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_marco_qt-macdockiconhandler.o -MD -MP -MF qt/$(DEPDIR)/qt_marco_qt-macdockiconhandler.Tpo -c -o qt/qt_marco_qt-macdockiconhandler.o `test -f 'qt/macdockiconhandler.mm' || echo '$(srcdir)/'`qt/macdockiconhandler.mm
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_marco_qt-macdockiconhandler.Tpo qt/$(DEPDIR)/qt_marco_qt-macdockiconhandler.Po
+#	$(AM_V_OBJCXX)source='qt/macdockiconhandler.mm' object='qt/qt_marco_qt-macdockiconhandler.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
-#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_marble_qt-macdockiconhandler.o `test -f 'qt/macdockiconhandler.mm' || echo '$(srcdir)/'`qt/macdockiconhandler.mm
+#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_marco_qt-macdockiconhandler.o `test -f 'qt/macdockiconhandler.mm' || echo '$(srcdir)/'`qt/macdockiconhandler.mm
 
-qt/qt_marble_qt-macdockiconhandler.obj: qt/macdockiconhandler.mm
-	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_marble_qt-macdockiconhandler.obj -MD -MP -MF qt/$(DEPDIR)/qt_marble_qt-macdockiconhandler.Tpo -c -o qt/qt_marble_qt-macdockiconhandler.obj `if test -f 'qt/macdockiconhandler.mm'; then $(CYGPATH_W) 'qt/macdockiconhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macdockiconhandler.mm'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_marble_qt-macdockiconhandler.Tpo qt/$(DEPDIR)/qt_marble_qt-macdockiconhandler.Po
-#	$(AM_V_OBJCXX)source='qt/macdockiconhandler.mm' object='qt/qt_marble_qt-macdockiconhandler.obj' libtool=no \
+qt/qt_marco_qt-macdockiconhandler.obj: qt/macdockiconhandler.mm
+	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_marco_qt-macdockiconhandler.obj -MD -MP -MF qt/$(DEPDIR)/qt_marco_qt-macdockiconhandler.Tpo -c -o qt/qt_marco_qt-macdockiconhandler.obj `if test -f 'qt/macdockiconhandler.mm'; then $(CYGPATH_W) 'qt/macdockiconhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macdockiconhandler.mm'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_marco_qt-macdockiconhandler.Tpo qt/$(DEPDIR)/qt_marco_qt-macdockiconhandler.Po
+#	$(AM_V_OBJCXX)source='qt/macdockiconhandler.mm' object='qt/qt_marco_qt-macdockiconhandler.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
-#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_marble_qt-macdockiconhandler.obj `if test -f 'qt/macdockiconhandler.mm'; then $(CYGPATH_W) 'qt/macdockiconhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macdockiconhandler.mm'; fi`
+#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_marco_qt-macdockiconhandler.obj `if test -f 'qt/macdockiconhandler.mm'; then $(CYGPATH_W) 'qt/macdockiconhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macdockiconhandler.mm'; fi`
 
-qt/qt_marble_qt-macnotificationhandler.o: qt/macnotificationhandler.mm
-	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_marble_qt-macnotificationhandler.o -MD -MP -MF qt/$(DEPDIR)/qt_marble_qt-macnotificationhandler.Tpo -c -o qt/qt_marble_qt-macnotificationhandler.o `test -f 'qt/macnotificationhandler.mm' || echo '$(srcdir)/'`qt/macnotificationhandler.mm
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_marble_qt-macnotificationhandler.Tpo qt/$(DEPDIR)/qt_marble_qt-macnotificationhandler.Po
-#	$(AM_V_OBJCXX)source='qt/macnotificationhandler.mm' object='qt/qt_marble_qt-macnotificationhandler.o' libtool=no \
+qt/qt_marco_qt-macnotificationhandler.o: qt/macnotificationhandler.mm
+	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_marco_qt-macnotificationhandler.o -MD -MP -MF qt/$(DEPDIR)/qt_marco_qt-macnotificationhandler.Tpo -c -o qt/qt_marco_qt-macnotificationhandler.o `test -f 'qt/macnotificationhandler.mm' || echo '$(srcdir)/'`qt/macnotificationhandler.mm
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_marco_qt-macnotificationhandler.Tpo qt/$(DEPDIR)/qt_marco_qt-macnotificationhandler.Po
+#	$(AM_V_OBJCXX)source='qt/macnotificationhandler.mm' object='qt/qt_marco_qt-macnotificationhandler.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
-#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_marble_qt-macnotificationhandler.o `test -f 'qt/macnotificationhandler.mm' || echo '$(srcdir)/'`qt/macnotificationhandler.mm
+#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_marco_qt-macnotificationhandler.o `test -f 'qt/macnotificationhandler.mm' || echo '$(srcdir)/'`qt/macnotificationhandler.mm
 
-qt/qt_marble_qt-macnotificationhandler.obj: qt/macnotificationhandler.mm
-	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_marble_qt-macnotificationhandler.obj -MD -MP -MF qt/$(DEPDIR)/qt_marble_qt-macnotificationhandler.Tpo -c -o qt/qt_marble_qt-macnotificationhandler.obj `if test -f 'qt/macnotificationhandler.mm'; then $(CYGPATH_W) 'qt/macnotificationhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macnotificationhandler.mm'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_marble_qt-macnotificationhandler.Tpo qt/$(DEPDIR)/qt_marble_qt-macnotificationhandler.Po
-#	$(AM_V_OBJCXX)source='qt/macnotificationhandler.mm' object='qt/qt_marble_qt-macnotificationhandler.obj' libtool=no \
+qt/qt_marco_qt-macnotificationhandler.obj: qt/macnotificationhandler.mm
+	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_marco_qt-macnotificationhandler.obj -MD -MP -MF qt/$(DEPDIR)/qt_marco_qt-macnotificationhandler.Tpo -c -o qt/qt_marco_qt-macnotificationhandler.obj `if test -f 'qt/macnotificationhandler.mm'; then $(CYGPATH_W) 'qt/macnotificationhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macnotificationhandler.mm'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_marco_qt-macnotificationhandler.Tpo qt/$(DEPDIR)/qt_marco_qt-macnotificationhandler.Po
+#	$(AM_V_OBJCXX)source='qt/macnotificationhandler.mm' object='qt/qt_marco_qt-macnotificationhandler.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
-#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marble_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_marble_qt-macnotificationhandler.obj `if test -f 'qt/macnotificationhandler.mm'; then $(CYGPATH_W) 'qt/macnotificationhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macnotificationhandler.mm'; fi`
+#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_marco_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_marco_qt-macnotificationhandler.obj `if test -f 'qt/macnotificationhandler.mm'; then $(CYGPATH_W) 'qt/macnotificationhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macnotificationhandler.mm'; fi`
 
 mostlyclean-libtool:
 	-rm -f *.lo
@@ -8039,9 +8039,9 @@ recheck: all
 	        am__force_recheck=am--force-recheck \
 	        TEST_LOGS="$$log_list"; \
 	exit $$?
-test/test_marble.log: test/test_marble$(EXEEXT)
-	@p='test/test_marble$(EXEEXT)'; \
-	b='test/test_marble'; \
+test/test_marco.log: test/test_marco$(EXEEXT)
+	@p='test/test_marco$(EXEEXT)'; \
+	b='test/test_marco'; \
 	$(am__check_pre) $(LOG_DRIVER) --test-name "$$f" \
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \
@@ -8053,9 +8053,9 @@ test/bitcoin-util-test.py.log: test/bitcoin-util-test.py
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \
 	"$$tst" $(AM_TESTS_FD_REDIRECT)
-qt/test/test_marble-qt.log: qt/test/test_marble-qt$(EXEEXT)
-	@p='qt/test/test_marble-qt$(EXEEXT)'; \
-	b='qt/test/test_marble-qt'; \
+qt/test/test_marco-qt.log: qt/test/test_marco-qt$(EXEEXT)
+	@p='qt/test/test_marco-qt$(EXEEXT)'; \
+	b='qt/test/test_marco-qt'; \
 	$(am__check_pre) $(LOG_DRIVER) --test-name "$$f" \
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \
@@ -8331,13 +8331,13 @@ clean-local:
 
 $(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
 
-marble_test: $(TEST_BINARY)
+marco_test: $(TEST_BINARY)
 
-marble_test_check: $(TEST_BINARY) FORCE
+marco_test_check: $(TEST_BINARY) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
-marble_test_clean : FORCE
-	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_marble_OBJECTS) $(TEST_BINARY)
+marco_test_clean : FORCE
+	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_marco_OBJECTS) $(TEST_BINARY)
 
 check-local:
 	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check
@@ -8361,7 +8361,7 @@ check-local:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 #$(QT_MOC): $(QT_FORMS_H)
-#$(qt_libbitcoinqt_a_OBJECTS) $(qt_marble_qt_OBJECTS) : | $(QT_MOC)
+#$(qt_libbitcoinqt_a_OBJECTS) $(qt_marco_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
@@ -8370,29 +8370,29 @@ check-local:
 
 #.SECONDARY: $(QT_QM)
 
-#qt/marblestrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+#qt/marcostrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 #	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 #	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-#translate: qt/marblestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+#translate: qt/marcostrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 #	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/marble_en.ts
+#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/marco_en.ts
 
 #$(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 #	@test -f $(RCC)
 #	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name marble_locale $(@D)/$(<F) | \
+#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name marco_locale $(@D)/$(<F) | \
 #	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 #$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 #	@test -f $(RCC)
-#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name marble $< | \
+#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name marco $< | \
 #	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-#marble_qt_clean: FORCE
-#	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_marble_qt_OBJECTS) qt/marble-qt$(EXEEXT) $(LIBBITCOINQT)
+#marco_qt_clean: FORCE
+#	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_marco_qt_OBJECTS) qt/marco-qt$(EXEEXT) $(LIBBITCOINQT)
 
-#marble_qt : qt/marble-qt$(EXEEXT)
+#marco_qt : qt/marco-qt$(EXEEXT)
 
 #ui_%.h: %.ui
 #	@test -f $(UIC)
@@ -8412,13 +8412,13 @@ check-local:
 #	@$(MKDIR_P) $(@D)
 #	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@
 
-#test_marble_qt : qt/test/test_marble-qt$(EXEEXT)
+#test_marco_qt : qt/test/test_marco-qt$(EXEEXT)
 
-#test_marble_qt_check : qt/test/test_marble-qt$(EXEEXT) FORCE
+#test_marco_qt_check : qt/test/test_marco-qt$(EXEEXT) FORCE
 #	$(MAKE) check-TESTS TESTS=$^
 
-#test_marble_qt_clean: FORCE
-#	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_marble_qt_OBJECTS)
+#test_marco_qt_clean: FORCE
+#	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_marco_qt_OBJECTS)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

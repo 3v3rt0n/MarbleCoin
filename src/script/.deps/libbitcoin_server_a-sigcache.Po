@@ -175,7 +175,7 @@ script/libbitcoin_server_a-sigcache.o: script/sigcache.cpp \
  /usr/include/c++/4.8/bits/sstream.tcc serialize.h uint256.h \
  /usr/include/c++/4.8/list /usr/include/c++/4.8/bits/stl_list.h \
  /usr/include/c++/4.8/bits/list.tcc random.h util.h \
- config/marble-config.h compat.h /usr/include/arpa/inet.h \
+ config/marco-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -1282,7 +1282,7 @@ random.h:
 
 util.h:
 
-config/marble-config.h:
+config/marco-config.h:
 
 compat.h:
 

@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/marble-config.h"
+#include "config/marco-config.h"
 #endif
 
 #include <cstring>

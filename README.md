@@ -1,17 +1,17 @@
-### Marble is a fork of [PIVX](https://github.com/PIVX-Project/PIVX) that forked [Dash](https://github.com/dashpay/dash) that forked [Bitcoin](https://github.com/bitcoin/bitcoinp)
+### Marco is a fork of [PIVX](https://github.com/PIVX-Project/PIVX) that forked [Dash](https://github.com/dashpay/dash) that forked [Bitcoin](https://github.com/bitcoin/bitcoinp)
 
 
-# Marble Core integration/staging repository
+# Marco Core integration/staging repository
 
 
-Marble is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
+Marco is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
 - Anonymized transactions using zerocoin technology.
 - Fast transactions featuring guaranteed zero confirmation transactions, PIVX named it _SwiftX_.
 - Decentralized blockchain voting providing for consensus based advancement of the current Masternode
   technology used to secure the network and provide the above features, each Masternode is secured
   with a collateral of 10K MARCO.
 
-More information at [MarbleCoin.com](http://www.marblecoin.com) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php)
+More information at [MarcoCoin.com](http://www.marcocoin.com) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php)
 
 
 ### Coin Specs

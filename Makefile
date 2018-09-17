@@ -64,10 +64,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/marble
-pkgincludedir = $(includedir)/marble
-pkglibdir = $(libdir)/marble
-pkglibexecdir = $(libexecdir)/marble
+pkgdatadir = $(datadir)/marco
+pkgincludedir = $(includedir)/marco
+pkglibdir = $(libdir)/marco
+pkglibexecdir = $(libexecdir)/marco
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -85,7 +85,7 @@ host_triplet = x86_64-unknown-linux-gnu
 subdir = .
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/configure $(am__configure_deps) \
-	$(top_srcdir)/src/config/marble-config.h.in \
+	$(top_srcdir)/src/config/marco-config.h.in \
 	$(top_srcdir)/share/setup.nsi.in \
 	$(top_srcdir)/share/qt/Info.plist.in \
 	$(top_srcdir)/src/test/buildenv.py.in \
@@ -129,7 +129,7 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
  configure.lineno config.status.lineno
 mkinstalldirs = $(install_sh) -d
-CONFIG_HEADER = $(top_builddir)/src/config/marble-config.h
+CONFIG_HEADER = $(top_builddir)/src/config/marco-config.h
 CONFIG_CLEAN_FILES = share/setup.nsi share/qt/Info.plist \
 	src/test/buildenv.py qa/pull-tester/run-bitcoind-for-test.sh \
 	qa/pull-tester/tests-config.sh contrib/devtools/split-debug.sh
@@ -232,20 +232,20 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /root/Marble-src/build-aux/missing aclocal-1.14
+ACLOCAL = ${SHELL} /root/Marco-src/build-aux/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
-AUTOCONF = ${SHELL} /root/Marble-src/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /root/Marble-src/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /root/Marble-src/build-aux/missing automake-1.14
+AUTOCONF = ${SHELL} /root/Marco-src/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /root/Marco-src/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /root/Marco-src/build-aux/missing automake-1.14
 AWK = mawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
-BITCOIN_CLI_NAME = marble-cli
-BITCOIN_DAEMON_NAME = marbled
-BITCOIN_GUI_NAME = marble-qt
-BITCOIN_TX_NAME = marble-tx
+BITCOIN_CLI_NAME = marco-cli
+BITCOIN_DAEMON_NAME = marcod
+BITCOIN_GUI_NAME = marco-qt
+BITCOIN_TX_NAME = marco-tx
 BOOST_CHRONO_LIB = -lboost_chrono
 BOOST_CPPFLAGS = -pthread -I/usr/include
 BOOST_FILESYSTEM_LIB = -lboost_filesystem
@@ -328,7 +328,7 @@ LRELEASE =
 LTLIBOBJS = 
 LUPDATE = 
 MAINT = 
-MAKEINFO = ${SHELL} /root/Marble-src/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /root/Marco-src/build-aux/missing makeinfo
 MAKENSIS = 
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
@@ -346,11 +346,11 @@ OBJDUMP = objdump
 OBJEXT = o
 OTOOL = 
 OTOOL64 = 
-PACKAGE = marble
-PACKAGE_BUGREPORT = www.marble.org
-PACKAGE_NAME = Marble Core
-PACKAGE_STRING = Marble Core 1.2.1
-PACKAGE_TARNAME = marble
+PACKAGE = marco
+PACKAGE_BUGREPORT = www.marcopolocoin.io
+PACKAGE_NAME = Marco Core
+PACKAGE_STRING = Marco Core 1.2.1
+PACKAGE_TARNAME = marco
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.2.1
 PATH_SEPARATOR = :
@@ -411,10 +411,10 @@ X11XCB_LIBS =
 XGETTEXT = 
 ZMQ_CFLAGS = 
 ZMQ_LIBS = 
-abs_builddir = /root/Marble-src
-abs_srcdir = /root/Marble-src
-abs_top_builddir = /root/Marble-src
-abs_top_srcdir = /root/Marble-src
+abs_builddir = /root/Marco-src
+abs_srcdir = /root/Marco-src
+abs_top_builddir = /root/Marco-src
+abs_top_srcdir = /root/Marco-src
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -446,7 +446,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /root/Marble-src/build-aux/install-sh
+install_sh = ${SHELL} /root/Marco-src/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -501,9 +501,9 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
 COVERAGE_INFO = baseline_filtered_combined.info baseline.info block_test.info \
-  leveldb_baseline.info test_marble_filtered.info total_coverage.info \
+  leveldb_baseline.info test_marco_filtered.info total_coverage.info \
   baseline_filtered.info block_test_filtered.info \
-  leveldb_baseline_filtered.info test_marble_coverage.info test_marble.info
+  leveldb_baseline_filtered.info test_marco_coverage.info test_marco.info
 
 OSX_APP_BUILT = $(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
   $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
@@ -553,20 +553,20 @@ $(ACLOCAL_M4):  $(am__aclocal_m4_deps)
 	$(am__cd) $(srcdir) && $(ACLOCAL) $(ACLOCAL_AMFLAGS)
 $(am__aclocal_m4_deps):
 
-src/config/marble-config.h: src/config/stamp-h1
+src/config/marco-config.h: src/config/stamp-h1
 	@test -f $@ || rm -f src/config/stamp-h1
 	@test -f $@ || $(MAKE) $(AM_MAKEFLAGS) src/config/stamp-h1
 
-src/config/stamp-h1: $(top_srcdir)/src/config/marble-config.h.in $(top_builddir)/config.status
+src/config/stamp-h1: $(top_srcdir)/src/config/marco-config.h.in $(top_builddir)/config.status
 	@rm -f src/config/stamp-h1
-	cd $(top_builddir) && $(SHELL) ./config.status src/config/marble-config.h
-$(top_srcdir)/src/config/marble-config.h.in:  $(am__configure_deps) 
+	cd $(top_builddir) && $(SHELL) ./config.status src/config/marco-config.h
+$(top_srcdir)/src/config/marco-config.h.in:  $(am__configure_deps) 
 	($(am__cd) $(top_srcdir) && $(AUTOHEADER))
 	rm -f src/config/stamp-h1
 	touch $@
 
 distclean-hdr:
-	-rm -f src/config/marble-config.h src/config/stamp-h1
+	-rm -f src/config/marco-config.h src/config/stamp-h1
 share/setup.nsi: $(top_builddir)/config.status $(top_srcdir)/share/setup.nsi.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 share/qt/Info.plist: $(top_builddir)/config.status $(top_srcdir)/share/qt/Info.plist.in
@@ -1118,16 +1118,16 @@ $(BITCOIN_CLI_BIN): FORCE
 #baseline_filtered_combined.info: leveldb_baseline_filtered.info baseline_filtered.info
 #	$(LCOV) -a leveldb_baseline_filtered.info -a baseline_filtered.info -o $@
 
-#test_marble.info: baseline_filtered_combined.info
+#test_marco.info: baseline_filtered_combined.info
 #	$(MAKE) -C src/ check
-#	$(LCOV) -c -d $(abs_builddir)/src -t test_marble -o $@
+#	$(LCOV) -c -d $(abs_builddir)/src -t test_marco -o $@
 #	$(LCOV) -z -d $(abs_builddir)/src
 #	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 
-#test_marble_filtered.info: test_marble.info
+#test_marco_filtered.info: test_marco.info
 #	$(LCOV) -r $< "/usr/include/*" -o $@
 
-#block_test.info: test_marble_filtered.info
+#block_test.info: test_marco_filtered.info
 #	$(MKDIR_P) qa/tmp
 #	-@TIMEOUT=15 qa/pull-tester/run-bitcoind-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool 0
 #	$(LCOV) -c -d $(abs_builddir)/src --t BitcoinJBlockTest -o $@
@@ -1137,13 +1137,13 @@ $(BITCOIN_CLI_BIN): FORCE
 #block_test_filtered.info: block_test.info
 #	$(LCOV) -r $< "/usr/include/*" -o $@
 
-#test_marble_coverage.info: baseline_filtered_combined.info test_marble_filtered.info
-#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_marble_filtered.info -o $@
+#test_marco_coverage.info: baseline_filtered_combined.info test_marco_filtered.info
+#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_marco_filtered.info -o $@
 
-#total_coverage.info:  baseline_filtered_combined.info test_marble_filtered.info block_test_filtered.info
-#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_marble_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+#total_coverage.info:  baseline_filtered_combined.info test_marco_filtered.info block_test_filtered.info
+#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_marco_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
-#test_marble.coverage/.dirstamp:  test_marble_coverage.info
+#test_marco.coverage/.dirstamp:  test_marco_coverage.info
 #	$(GENHTML) -s $< -o $(@D)
 #	@touch $@
 
@@ -1151,12 +1151,12 @@ $(BITCOIN_CLI_BIN): FORCE
 #	$(GENHTML) -s $< -o $(@D)
 #	@touch $@
 
-#cov: test_marble.coverage/.dirstamp total.coverage/.dirstamp
+#cov: test_marco.coverage/.dirstamp total.coverage/.dirstamp
 
 .INTERMEDIATE: $(COVERAGE_INFO)
 
 clean-local:
-	rm -rf test_marble.coverage/ total.coverage/ $(OSX_APP)
+	rm -rf test_marco.coverage/ total.coverage/ $(OSX_APP)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -1,0 +1,26 @@
+# /etc/conf.d/marcod: config file for /etc/init.d/marcod
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/marco/marco.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/marcod"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/marcod.pid"
+
+# Where to write marcod data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/marcod"
+
+# User and group to own marcod process
+#BITCOIND_USER="marco"
+#BITCOIND_GROUP="marco"
+
+# Path to marcod executable
+#BITCOIND_BIN="/usr/bin/marcod"
+
+# Nice value to run marcod under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

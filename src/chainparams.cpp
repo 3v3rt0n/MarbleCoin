@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The Marble developers
+// Copyright (c) 2017 The Marco developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -106,7 +106,7 @@ public:
         pchMessageStart[3] = 0xDC;
         vAlertPubKey = ParseHex("04b2903437e50695c18c9217bc73e068d72bf361617ba440687ce5e49c7756500714dbec1e713e5e8ffd5b8501f8889ef80e992c3006c68ccfde186ee73657fa1b");
         nDefaultPort = 7788;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // Marble starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Marco starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 9999999;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
@@ -114,7 +114,7 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 32; // Retarget //
-        nTargetSpacing = 1 * 64;  // Marble: 64 Seconds
+        nTargetSpacing = 1 * 64;  // Marco: 64 Seconds
         nMaturity = 5;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 210000000 * COIN;
@@ -159,8 +159,8 @@ public:
         assert(hashGenesisBlock == uint256("0x000001331ad65c309fa652e6a7d8cca481b3fab1d88d625d619b59e4806b75bd"));
         assert(genesis.hashMerkleRoot == uint256("0x2c09dfe358520a5efc2b5def32e3277f3cac4fbbf12073cd6e1c2623b3a6f7ca"));
 
-        vSeeds.push_back(CDNSSeedData("marble.seeds.mn.zone", "marble.seeds.mn.zone"));   // DNS SEEDER
-		vSeeds.push_back(CDNSSeedData("marble.mnseeds.com", "marble.mnseeds.com"));       // DNS SEEDER
+        vSeeds.push_back(CDNSSeedData("marco.seeds.mn.zone", "marco.seeds.mn.zone"));   // DNS SEEDER
+		vSeeds.push_back(CDNSSeedData("marco.mnseeds.com", "marco.mnseeds.com"));       // DNS SEEDER
 		vSeeds.push_back(CDNSSeedData("209.250.243.131", "209.250.243.131"));         // Single node address
 		vSeeds.push_back(CDNSSeedData("209.250.241.176", "209.250.241.176"));         // Single node address
 		vSeeds.push_back(CDNSSeedData("45.77.239.108", "45.77.239.108"));             // Single node address
@@ -236,8 +236,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Marble: 1 day
-        nTargetSpacing = 1 * 60;  // Marble: 1 minute
+        nTargetTimespan = 1 * 60; // Marco: 1 day
+        nTargetSpacing = 1 * 60;  // Marco: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -264,14 +264,14 @@ public:
         vSeeds.push_back(CDNSSeedData("45.77.176.204", "45.76.226.204"));       // Single node address
 
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet marble addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet marble script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet marco addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet marco script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet marble BIP32 pubkeys start with 'DRKV'
+        // Testnet marco BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet marble BIP32 prvkeys start with 'DRKP'
+        // Testnet marco BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet marble BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet marco BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -318,8 +318,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // Marble: 1 day
-        nTargetSpacing = 1 * 60;        // Marble: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // Marco: 1 day
+        nTargetSpacing = 1 * 60;        // Marco: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1515524400;
         genesis.nBits = 0x1e0ffff0;

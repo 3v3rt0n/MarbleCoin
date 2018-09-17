@@ -14,7 +14,7 @@
 #include "sendcoinsentry.h"
 #include "walletmodel.h"
 #include "coincontrol.h"
-#include "zmarblecontroldialog.h"
+#include "zmarcocontroldialog.h"
 #include "spork.h"
 
 #include <QClipboard>
@@ -66,7 +66,7 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     ui->labelzDenom7Text->setText("Denom. with value <b>1000</b>:");
     ui->labelzDenom8Text->setText("Denom. with value <b>5000</b>:");
 
-    // Marble settings
+    // Marco settings
     QSettings settings;
     if (!settings.contains("nSecurityLevel")){
         nSecurityLevel = 42;
@@ -281,16 +281,16 @@ void PrivacyDialog::on_pushButtonSpendzMARCO_clicked()
     sendzMARCO();
 }
 
-void PrivacyDialog::on_pushButtonZMarbleControl_clicked()
+void PrivacyDialog::on_pushButtonZMarcoControl_clicked()
 {
-    ZMarbleControlDialog* zMarbleControl = new ZMarbleControlDialog(this);
-    zMarbleControl->setModel(walletModel);
-    zMarbleControl->exec();
+    ZMarcoControlDialog* zMarcoControl = new ZMarcoControlDialog(this);
+    zMarcoControl->setModel(walletModel);
+    zMarcoControl->exec();
 }
 
-void PrivacyDialog::setZMarbleControlLabels(int64_t nAmount, int nQuantity)
+void PrivacyDialog::setZMarcoControlLabels(int64_t nAmount, int nQuantity)
 {
-    ui->labelzMarbleSelected_int->setText(QString::number(nAmount));
+    ui->labelzMarcoSelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
 }
 
@@ -310,7 +310,7 @@ void PrivacyDialog::sendzMARCO()
     }
     else{
         if (!address.IsValid()) {
-            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Marble Address"), QMessageBox::Ok, QMessageBox::Ok);
+            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Marco Address"), QMessageBox::Ok, QMessageBox::Ok);
             ui->payTo->setFocus();
             return;
         }
@@ -396,10 +396,10 @@ void PrivacyDialog::sendzMARCO()
     ui->TEMintStatus->setPlainText(tr("Spending Zerocoin.\nComputationally expensive, might need several minutes depending on the selected Security Level and your hardware. \nPlease be patient..."));
     ui->TEMintStatus->repaint();
 
-    // use mints from zMarble selector if applicable
+    // use mints from zMarco selector if applicable
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZMarbleControlDialog::listSelectedMints.empty()) {
-        vMintsSelected = ZMarbleControlDialog::GetSelectedMints();
+    if (!ZMarcoControlDialog::listSelectedMints.empty()) {
+        vMintsSelected = ZMarcoControlDialog::GetSelectedMints();
     }
 
     // Spend zMARCO
@@ -434,15 +434,15 @@ void PrivacyDialog::sendzMARCO()
         return;
     }
 
-    // Clear zmarble selector in case it was used
-    ZMarbleControlDialog::listSelectedMints.clear();
+    // Clear zmarco selector in case it was used
+    ZMarcoControlDialog::listSelectedMints.clear();
 
     // Some statistics for entertainment
     QString strStats = "";
     CAmount nValueIn = 0;
     int nCount = 0;
     for (CZerocoinSpend spend : receipt.GetSpends()) {
-        strStats += tr("zMarble Spend #: ") + QString::number(nCount) + ", ";
+        strStats += tr("zMarco Spend #: ") + QString::number(nCount) + ", ";
         strStats += tr("denomination: ") + QString::number(spend.GetDenomination()) + ", ";
         strStats += tr("serial: ") + spend.GetSerial().ToString().c_str() + "\n";
         strStats += tr("Spend is 1 of : ") + QString::number(spend.GetMintCount()) + " mints in the accumulator\n";
@@ -451,13 +451,13 @@ void PrivacyDialog::sendzMARCO()
 
     CAmount nValueOut = 0;
     for (const CTxOut& txout: wtxNew.vout) {
-        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " Marble, ";
+        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " Marco, ";
         nValueOut += txout.nValue;
 
         strStats += tr("address: ");
         CTxDestination dest;
         if(txout.scriptPubKey.IsZerocoinMint())
-            strStats += tr("zMarble Mint");
+            strStats += tr("zMarco Mint");
         else if(ExtractDestination(txout.scriptPubKey, dest))
             strStats += tr(CBitcoinAddress(dest).ToString().c_str());
         strStats += "\n";

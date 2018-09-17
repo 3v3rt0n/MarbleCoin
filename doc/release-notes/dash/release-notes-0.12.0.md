@@ -100,4 +100,4 @@ AlexMomo
 snogcel
 bertlebbert
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/marble-project/marble-project-translations).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/marco-project/marco-project-translations).

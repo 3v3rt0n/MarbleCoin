@@ -1,4 +1,4 @@
-Name "Marble Core (-bit)"
+Name "Marco Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,23 +6,23 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 1.2.1
-!define COMPANY "Marble Core project"
-!define URL https://www.marble.org
+!define COMPANY "Marco Core project"
+!define URL https://www.marcopolocoin.io
 
 # MUI Symbol Definitions
-!define MUI_ICON "/root/Marble-src/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/Marble-src/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/root/Marco-src/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/Marco-src/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/root/Marble-src/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/root/Marco-src/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Marble Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\marble-qt
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Marco Core"
+!define MUI_FINISHPAGE_RUN $INSTDIR\marco-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/Marble-src/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/Marco-src/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,18 +48,18 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /root/Marble-src/marble-${VERSION}-win-setup.exe
+OutFile /root/Marco-src/marco-${VERSION}-win-setup.exe
 !if "" == "64"
-InstallDir $PROGRAMFILES64\Marble
+InstallDir $PROGRAMFILES64\Marco
 !else
-InstallDir $PROGRAMFILES\Marble
+InstallDir $PROGRAMFILES\Marco
 !endif
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion ${VERSION}.0
-VIAddVersionKey ProductName "Marble Core"
+VIAddVersionKey ProductName "Marco Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /root/Marble-src/release/marble-qt
-    File /oname=COPYING.txt /root/Marble-src/COPYING
-    File /oname=readme.txt /root/Marble-src/doc/README_windows.txt
+    File /root/Marco-src/release/marco-qt
+    File /oname=COPYING.txt /root/Marco-src/COPYING
+    File /oname=readme.txt /root/Marco-src/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /root/Marble-src/release/marbled
-    File /root/Marble-src/release/marble-cli
+    File /root/Marco-src/release/marcod
+    File /root/Marco-src/release/marco-cli
     SetOutPath $INSTDIR\doc
-    File /r /root/Marble-src/doc\*.*
+    File /r /root/Marco-src/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd
@@ -91,8 +91,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\marble-qt
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Marble Core (testnet, -bit).lnk" "$INSTDIR\marble-qt" "-testnet" "$INSTDIR\marble-qt" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\marco-qt
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Marco Core (testnet, -bit).lnk" "$INSTDIR\marco-qt" "-testnet" "$INSTDIR\marco-qt" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -103,10 +103,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "marble" "URL Protocol" ""
-    WriteRegStr HKCR "marble" "" "URL:Marble"
-    WriteRegStr HKCR "marble\DefaultIcon" "" $INSTDIR\marble-qt
-    WriteRegStr HKCR "marble\shell\open\command" "" '"$INSTDIR\marble-qt" "%1"'
+    WriteRegStr HKCR "marco" "URL Protocol" ""
+    WriteRegStr HKCR "marco" "" "URL:Marco"
+    WriteRegStr HKCR "marco\DefaultIcon" "" $INSTDIR\marco-qt
+    WriteRegStr HKCR "marco\shell\open\command" "" '"$INSTDIR\marco-qt" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -124,7 +124,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\marble-qt
+    Delete /REBOOTOK $INSTDIR\marco-qt
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -136,8 +136,8 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Marble Core (testnet, -bit).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Marble.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Marco Core (testnet, -bit).lnk"
+    Delete /REBOOTOK "$SMSTARTUP\Marco.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -145,7 +145,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "marble"
+    DeleteRegKey HKCR "marco"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

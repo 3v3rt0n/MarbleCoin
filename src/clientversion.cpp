@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both marbled and marble-qt, to make it harder for attackers to
+ * for both marcod and marco-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Marble Core");
+const std::string CLIENT_NAME("Marco Core");
 
 /**
  * Client version number

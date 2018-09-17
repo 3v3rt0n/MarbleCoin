@@ -360,7 +360,7 @@ public:
 
     //check to see if we should vote on this
     void AutoCheck();
-    //total marble paid out by this budget
+    //total marco paid out by this budget
     CAmount GetTotalPayout();
     //vote on this finalized budget as a masternode
     void SubmitVote();

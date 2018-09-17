@@ -6,7 +6,7 @@
 #define BITCOIN_QT_NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/marble-config.h"
+#include "config/marco-config.h"
 #endif
 
 #include <QIcon>

@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-BUILDDIR="/root/Marble-src"
+BUILDDIR="/root/Marco-src"
 EXEEXT=""
 
 # These will turn into comments if they were disabled when configuring.
@@ -11,6 +11,6 @@ ENABLE_WALLET=1
 ENABLE_UTILS=1
 ENABLE_BITCOIND=1
 
-REAL_BITCOIND="$BUILDDIR/src/marbled${EXEEXT}"
-REAL_BITCOINCLI="$BUILDDIR/src/marble-cli${EXEEXT}"
+REAL_BITCOIND="$BUILDDIR/src/marcod${EXEEXT}"
+REAL_BITCOINCLI="$BUILDDIR/src/marco-cli${EXEEXT}"
 

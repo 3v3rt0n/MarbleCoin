@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Marco
+Comment=Marco P2P Cryptocurrency
+Comment[fr]=Marco, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Marco, eşten eşe kriptografik sanal para birimi
+Exec=marco-qt %u
+Terminal=false
+Type=Application
+Icon=marco128
+MimeType=x-scheme-handler/marco;
+Categories=Office;Finance;

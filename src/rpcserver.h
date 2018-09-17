@@ -96,7 +96,7 @@ public:
 };
 
 /**
- * Marble RPC command dispatcher.
+ * Marco RPC command dispatcher.
  */
 class CRPCTable
 {

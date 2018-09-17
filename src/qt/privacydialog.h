@@ -46,7 +46,7 @@ public:
 
     void setModel(WalletModel* model);
     void showOutOfSyncWarning(bool fShow);
-    void setZMarbleControlLabels(int64_t nAmount, int nQuantity);
+    void setZMarcoControlLabels(int64_t nAmount, int nQuantity);
 
 public slots:
     void setBalance(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance, 
@@ -100,7 +100,7 @@ private slots:
     void on_pushButtonMintReset_clicked();
     void on_pushButtonSpentReset_clicked();
     void on_pushButtonSpendzMARCO_clicked();
-    void on_pushButtonZMarbleControl_clicked();
+    void on_pushButtonZMarcoControl_clicked();
     void on_pasteButton_clicked();
     void updateDisplayUnit();
 };

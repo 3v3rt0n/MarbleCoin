@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between marble-cli and marbled)
- * of a given instance of the Marble system.
+ * CBaseChainParams defines the base parameters (shared between marco-cli and marcod)
+ * of a given instance of the Marco system.
  */
 class CBaseChainParams
 {

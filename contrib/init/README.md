@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: marbled.service
-Upstart: marbled.conf
-OpenRC:  marbled.openrc
-         marbled.openrcconf
-CentOS:  marbled.init
+SystemD: marcod.service
+Upstart: marcod.conf
+OpenRC:  marcod.openrc
+         marcod.openrcconf
+CentOS:  marcod.init
 
 have been made available to assist packagers in creating node packages here.
 

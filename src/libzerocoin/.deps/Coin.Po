@@ -163,7 +163,7 @@ libzerocoin/Coin.o: libzerocoin/Coin.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/string3.h libzerocoin/Denominations.h \
  uint256.h /usr/include/c++/4.8/cstring version.h \
  libzerocoin/ZerocoinDefines.h amount.h serialize.h util.h \
- config/marble-config.h compat.h /usr/include/arpa/inet.h \
+ config/marco-config.h compat.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio.h \
@@ -902,7 +902,7 @@ serialize.h:
 
 util.h:
 
-config/marble-config.h:
+config/marco-config.h:
 
 compat.h:
 

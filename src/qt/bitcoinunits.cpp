@@ -41,11 +41,11 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case MARCO:
-        return QString("marble");
+        return QString("marco");
     case mMARCO:
-        return QString("mmarble");
+        return QString("mmarco");
     case uMARCO:
-        return QString::fromUtf8("umarble");
+        return QString::fromUtf8("umarco");
     default:
         return QString("???");
     }

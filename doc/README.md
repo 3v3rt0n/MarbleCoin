@@ -1,39 +1,39 @@
-Marble Core
+Marco Core
 =====================
 
 Setup
 ---------------------
-[Marble Core](http://Marblecoin.com) is the original Marble client and it builds the backbone of the network. However, it downloads and stores the entire history of Marble transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Marco Core](http://Marcocoin.com) is the original Marco client and it builds the backbone of the network. However, it downloads and stores the entire history of Marco transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Marble on your native platform.
+The following are some helpful notes on how to run Marco on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/marble-qt (GUI, 32-bit) or bin/32/marbled (headless, 32-bit)
-- bin/64/marble-qt (GUI, 64-bit) or bin/64/marbled (headless, 64-bit)
+- bin/32/marco-qt (GUI, 32-bit) or bin/32/marcod (headless, 32-bit)
+- bin/64/marco-qt (GUI, 64-bit) or bin/64/marcod (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run marble-qt.exe.
+Unpack the files into a directory, and then run marco-qt.exe.
 
 ### OSX
 
-Drag Marble-Qt to your applications folder, and then run Marble-Qt.
+Drag Marco-Qt to your applications folder, and then run Marco-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Marble Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [Marco Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [Marble Forum](http://Marblecoin.com/).
-* Join one of our Discord groups [Marble Discord Groups](https://discord.gg/YcnvMqt).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [Marco Forum](http://Marcocoin.com/).
+* Join one of our Discord groups [Marco Discord Groups](https://discord.gg/YcnvMqt).
 
 Building
 ---------------------
-The following are developer notes on how to build Marble on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Marco on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build Marble on your native platform
 
 Development
 ---------------------
-The Marble repo's [root README](https://github.com/eastcoastcrypto/Marble/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Marco repo's [root README](https://github.com/eastcoastcrypto/Marco/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,7 +56,7 @@ The Marble repo's [root README](https://github.com/eastcoastcrypto/Marble/blob/m
 ### Resources
 
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) .
-* Join the [Marble-Dev] Discord groups [Marble Discord Groups](https://discord.gg/YcnvMqt).
+* Join the [Marco-Dev] Discord groups [Marco Discord Groups](https://discord.gg/YcnvMqt).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

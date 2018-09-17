@@ -2,7 +2,7 @@
 set -e
 
 ROOTDIR=dist
-BUNDLE=${ROOTDIR}/Marble-Qt.app
+BUNDLE=${ROOTDIR}/Marco-Qt.app
 CODESIGN=codesign
 TEMPDIR=sign.temp
 TEMPLIST=${TEMPDIR}/signatures.txt

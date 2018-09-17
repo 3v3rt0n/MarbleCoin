@@ -1,5 +1,5 @@
 compat/libbitcoin_util_a-strnlen.o: compat/strnlen.cpp \
- /usr/include/stdc-predef.h config/marble-config.h \
+ /usr/include/stdc-predef.h config/marco-config.h \
  /usr/include/c++/4.8/cstring \
  /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h \
@@ -13,7 +13,7 @@ compat/libbitcoin_util_a-strnlen.o: compat/strnlen.cpp \
 
 /usr/include/stdc-predef.h:
 
-config/marble-config.h:
+config/marco-config.h:
 
 /usr/include/c++/4.8/cstring:
 

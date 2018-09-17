@@ -13,7 +13,7 @@ static const int MODEL_UPDATE_DELAY = 250;
 /* AskPassphraseDialog -- Maximum passphrase length */
 static const int MAX_PASSMARCOASE_SIZE = 1024;
 
-/* Marble GUI -- Size of icons in status bar */
+/* Marco GUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 16;
 
 static const bool DEFAULT_SPLASHSCREEN = true;
@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "Marble"
-#define QAPP_ORG_DOMAIN "marble.org"
-#define QAPP_APP_NAME_DEFAULT "Marble-Qt"
-#define QAPP_APP_NAME_TESTNET "Marble-Qt-testnet"
+#define QAPP_ORG_NAME "Marco"
+#define QAPP_ORG_DOMAIN "marco.org"
+#define QAPP_APP_NAME_DEFAULT "Marco-Qt"
+#define QAPP_APP_NAME_TESTNET "Marco-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

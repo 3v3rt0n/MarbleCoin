@@ -487,7 +487,7 @@ libzerocoin/SerialNumberSignatureOfKnowledge.o: \
  /usr/include/c++/4.8/bitset libzerocoin/Params.h libzerocoin/bignum.h \
  /usr/include/openssl/bn.h serialize.h uint256.h version.h \
  libzerocoin/ZerocoinDefines.h libzerocoin/Coin.h \
- libzerocoin/Denominations.h amount.h util.h config/marble-config.h \
+ libzerocoin/Denominations.h amount.h util.h config/marco-config.h \
  compat.h /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
@@ -1741,7 +1741,7 @@ amount.h:
 
 util.h:
 
-config/marble-config.h:
+config/marco-config.h:
 
 compat.h:
 
