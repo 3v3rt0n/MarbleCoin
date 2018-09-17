@@ -13,7 +13,7 @@
  * for both marcod and marco-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Marco Core");
+const std::string CLIENT_NAME("Marco Polo");
 
 /**
  * Client version number
