@@ -1,0 +1,26 @@
+# /etc/conf.d/marbled: config file for /etc/init.d/marbled
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/marble/marble.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/marbled"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/marbled.pid"
+
+# Where to write marbled data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/marbled"
+
+# User and group to own marbled process
+#BITCOIND_USER="marble"
+#BITCOIND_GROUP="marble"
+
+# Path to marbled executable
+#BITCOIND_BIN="/usr/bin/marbled"
+
+# Nice value to run marbled under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
