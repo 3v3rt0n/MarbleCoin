@@ -1,7 +1,7 @@
 ### Marco is a fork of [PIVX](https://github.com/PIVX-Project/PIVX) that forked [Dash](https://github.com/dashpay/dash) that forked [Bitcoin](https://github.com/bitcoin/bitcoinp)
 
 
-# Marco Core integration/staging repository
+# Marco Polo integration/staging repository
 
 
 Marco is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
@@ -11,7 +11,7 @@ Marco is a cutting edge cryptocurrency, with many features not available in most
   technology used to secure the network and provide the above features, each Masternode is secured
   with a collateral of 10K MARCO.
 
-More information at [MarcoCoin.com](http://www.marcocoin.com) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php)
+More information at [themarcopolo.group](http://www.themarcopolo.group) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php)
 
 
 ### Coin Specs
