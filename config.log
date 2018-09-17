@@ -138,7 +138,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | /* end confdefs.h.  */
 | 
@@ -469,7 +469,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
@@ -495,7 +495,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
@@ -516,7 +516,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
@@ -537,7 +537,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
@@ -698,7 +698,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
@@ -718,7 +718,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
@@ -829,7 +829,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -861,7 +861,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -963,7 +963,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1001,7 +1001,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1042,7 +1042,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1078,7 +1078,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1125,7 +1125,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1167,7 +1167,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1209,7 +1209,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1252,7 +1252,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1328,7 +1328,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1404,7 +1404,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1447,7 +1447,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1500,7 +1500,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1593,7 +1593,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1715,7 +1715,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1785,7 +1785,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1855,7 +1855,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1925,7 +1925,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -1995,7 +1995,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2065,7 +2065,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2135,7 +2135,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2205,7 +2205,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2275,7 +2275,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2345,7 +2345,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2415,7 +2415,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2485,7 +2485,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2555,7 +2555,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2625,7 +2625,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2695,7 +2695,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2775,7 +2775,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2867,7 +2867,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -2928,7 +2928,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3020,7 +3020,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3081,7 +3081,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3173,7 +3173,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3234,7 +3234,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -3326,7 +3326,7 @@ configure: failed program was:
 | #define PACKAGE_TARNAME "marco"
 | #define PACKAGE_VERSION "1.2.1"
 | #define PACKAGE_STRING "Marco Core 1.2.1"
-| #define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+| #define PACKAGE_BUGREPORT "themarcopolo.group"
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | #define STDC_HEADERS 1
@@ -4029,7 +4029,7 @@ OBJEXT='o'
 OTOOL64=''
 OTOOL=''
 PACKAGE='marco'
-PACKAGE_BUGREPORT='www.marcopolocoin.io'
+PACKAGE_BUGREPORT='themarcopolo.group'
 PACKAGE_NAME='Marco Core'
 PACKAGE_STRING='Marco Core 1.2.1'
 PACKAGE_TARNAME='marco'
@@ -4174,7 +4174,7 @@ target_alias=''
 #define PACKAGE_TARNAME "marco"
 #define PACKAGE_VERSION "1.2.1"
 #define PACKAGE_STRING "Marco Core 1.2.1"
-#define PACKAGE_BUGREPORT "www.marcopolocoin.io"
+#define PACKAGE_BUGREPORT "themarcopolo.group"
 #define PACKAGE_URL ""
 #define HAVE_CXX11 1
 #define STDC_HEADERS 1

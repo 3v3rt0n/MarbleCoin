@@ -22,7 +22,7 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.marcopolocoin.io
+Homepage: http://themarcopolo.group
 Vcs-Git: git://github.com/marcoproject/Marco.git
 Vcs-Browser: http://github.com/marcoproject/Marco
 

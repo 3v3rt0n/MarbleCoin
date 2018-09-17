@@ -7,7 +7,7 @@ SetCompressor /SOLID lzma
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 1.2.1
 !define COMPANY "Marco Core project"
-!define URL https://www.marcopolocoin.io
+!define URL https://themarcopolo.group
 
 # MUI Symbol Definitions
 !define MUI_ICON "/root/Marco-src/share/pixmaps/bitcoin.ico"
